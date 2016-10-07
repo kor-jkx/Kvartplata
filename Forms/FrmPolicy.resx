@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="reportPolicy.ReportResourceString" xml:space="preserve">
+    <value>﻿&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;Report ScriptLanguage="CSharp" ReportInfo.Created="01/27/2012 16:45:31" ReportInfo.Modified="02/08/2012 11:59:36" ReportInfo.CreatorVersion="1.6.30.0"&gt;
+  &lt;ScriptText&gt;using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Windows.Forms;
+using System.Drawing;
+using System.Data;
+using FastReport;
+using FastReport.Data;
+using FastReport.Dialog;
+using FastReport.Barcode;
+using FastReport.Table;
+using FastReport.Utils;
+
+namespace FastReport
+{
+  public class ReportScript
+  {
+
+    private void Text3_BeforePrint(object sender, EventArgs e)
+    {
+        string num = Convert.ToString((int)Report.GetColumnValue(&amp;quot;Policy.policy_num&amp;quot;));
+      for (int i = num.Length; i&amp;lt;6;i++)
+      {
+        num = &amp;quot;0&amp;quot;+num;
+      }
+      ((TextObject)sender).Text = &amp;quot;№&amp;quot;+num;
+    }
+
+    private void Text34_BeforePrint(object sender, EventArgs e)
+    {
+      
+    }
+
+    private void Text51_BeforePrint(object sender, EventArgs e)
+    {
+      string flat,korp,room;
+      flat = &amp;quot;&amp;quot;;
+      korp = &amp;quot;&amp;quot;;
+      room = &amp;quot;&amp;quot;;
+      if ((string)Report.GetColumnValue(&amp;quot;Policy.nflat&amp;quot;) != &amp;quot;&amp;quot; &amp;amp;&amp;amp; (string)Report.GetColumnValue(&amp;quot;Main.nflat&amp;quot;) != &amp;quot;0&amp;quot;) 
+        flat = &amp;quot; кв.&amp;quot;+(string)Report.GetColumnValue(&amp;quot;Policy.nflat&amp;quot;);
+      else
+        flat = &amp;quot;&amp;quot;;
+      if ((string)Report.GetColumnValue(&amp;quot;Policy.home_korp&amp;quot;) != &amp;quot;&amp;quot;)
+        korp = &amp;quot; корп.&amp;quot;+(string)Report.GetColumnValue(&amp;quot;Policy.home_korp&amp;quot;);
+      else
+        korp = &amp;quot;&amp;quot;;
+      if ((string)Report.GetColumnValue(&amp;quot;Policy.numberroom&amp;quot;) != &amp;quot;&amp;quot;)
+        room = &amp;quot; ком.&amp;quot;+(string)Report.GetColumnValue(&amp;quot;Policy.numberroom&amp;quot;);
+      else
+        room = &amp;quot;&amp;quot;;
+      ((TextObject)sender).Text = &amp;quot;г.Павловский Посад &amp;quot;+(string)Report.GetColumnValue(&amp;quot;Policy.str&amp;quot;)+&amp;quot; д.&amp;quot;+(string)Report.GetColumnValue(&amp;quot;Policy.home&amp;quot;)+korp+flat+room;
+    }
+
+    private void Text53_BeforePrint(object sender, EventArgs e)
+    {
+      if  ((string)Report.GetColumnValue(&amp;quot;Policy.fio&amp;quot;) != &amp;quot;&amp;quot;)
+        ((TextObject)sender).Text = (string)Report.GetColumnValue(&amp;quot;Policy.fio&amp;quot;);
+      else
+        ((TextObject)sender).Text = &amp;quot;За счет кого следует (ст. 930 ГК РФ)&amp;quot;;
+    }
+  }
+}
+&lt;/ScriptText&gt;
+  &lt;Dictionary&gt;
+    &lt;OdbcDataConnection Name="Connection" ConnectionString="rijcmlqgRN9T0kkLQlCQnuucTGt3mxfgCblfj1j2aI6ZOsl3JI="&gt;
+      &lt;TableDataSource Name="Table" Alias="Policy" DataType="System.Int32" Enabled="true" SelectCommand="select * from lsPolicy"&gt;
+        &lt;Column Name="UNAME" Enabled="false" DataType="System.String"/&gt;
+        &lt;Column Name="DEDIT" Enabled="false" DataType="System.DateTime"/&gt;
+        &lt;Column Name="client_id" DataType="System.Int32"/&gt;
+        &lt;Column Name="dbeg" Enabled="false" DataType="System.DateTime"/&gt;
+        &lt;Column Name="dend" Enabled="false" DataType="System.DateTime"/&gt;
+        &lt;Column Name="policy_num" DataType="System.Int32"/&gt;
+        &lt;Column Name="dbeg" DataType="System.DateTime" PropName="Column"/&gt;
+        &lt;Column Name="dend" DataType="System.DateTime" PropName="Column"/&gt;
+        &lt;Column Name="fio" DataType="System.String" PropName="Column"/&gt;
+        &lt;Column Name="str" DataType="System.String" PropName="Column"/&gt;
+        &lt;Column Name="home" DataType="System.String" PropName="Column1"/&gt;
+        &lt;Column Name="home_korp" DataType="System.String" PropName="Column2"/&gt;
+        &lt;Column Name="nflat" DataType="System.String" PropName="Column3"/&gt;
+        &lt;Column Name="numberroom" DataType="System.String" PropName="Column4"/&gt;
+      &lt;/TableDataSource&gt;
+    &lt;/OdbcDataConnection&gt;
+  &lt;/Dictionary&gt;
+  &lt;ReportPage Name="Page1"&gt;
+    &lt;DataBand Name="Data1" Width="718.2" Height="1034.88" DataSource="Table"&gt;
+      &lt;TextObject Name="Text2" Left="288" Top="33.6" Width="59.52" Height="19.2" Text="ПОЛИС" Font="Arial, 10pt, style=Bold"/&gt;
+      &lt;TextObject Name="Text3" Left="377.28" Top="33.6" Width="221.76" Height="19.2" BeforePrintEvent="Text3_BeforePrint" Text="N [Policy.policy_num]"/&gt;
+      &lt;TextObject Name="Text1" Left="455.04" Top="2.88" Width="335.04" Height="28.8" Text="Филиал ООО &amp;quot;РОСГОССТРАХ&amp;quot;&amp;#13;&amp;#10;В МОСКВЕ И МОСКОВСКОЙ ОБЛАСТИ." Font="Times New Roman, 8pt, style=Italic"/&gt;
+      &lt;TextObject Name="Text4" Left="104.64" Top="53.76" Width="544.32" Height="19.2" Text="Добровольное страхование внутренней отделки и инженерного оборудования квартир" Font="Times New Roman, 9pt, style=Bold"/&gt;
+      &lt;TextObject Name="Text5" Left="350.4" Top="72.96" Width="336" Height="13.44" Text="Лицензия № С 097750 от 07.12.2009г." Font="Times New Roman, 7pt"/&gt;
+      &lt;TextObject Name="Text6" Left="3.84" Top="86.4" Width="683.52" Height="27.84" Border.Lines="All" Border.Width="0.25" Text="Настоящий полис является договором страхования и заключен на основании правил страхования № 167 в редакции, действующей на момент заключения договора страхования." Font="Times New Roman, 8pt"/&gt;
+      &lt;TextObject Name="Text7" Left="3.84" Top="114.24" Width="102.72" Height="17.28" Border.Lines="Left, Top" Border.Width="0.25" Text="&amp;lt;b&amp;gt;1. Страхователь: &amp;lt;/b&amp;gt;" Font="Times New Roman, 9pt" HtmlTags="true"/&gt;
+      &lt;TextObject Name="Text8" Left="332.16" Top="114.24" Width="41.28" Height="17.28" Border.Lines="Left, Top" Border.Width="0.25" Text="&amp;lt;b&amp;gt;Адрес:&amp;lt;/b&amp;gt;&amp;lt;i&amp;gt;&amp;lt;font color=&amp;quot;Silver&amp;quot;&amp;gt; регистрации&amp;lt;/font&amp;gt;&amp;lt;/i&amp;gt;" Font="Times New Roman, 9pt, style=Bold" HtmlTags="true"/&gt;
+      &lt;TextObject Name="Text9" Left="3.84" Top="148.8" Width="149.76" Height="17.28" Border.Lines="Left, Top" Border.Width="0.25" Text="&amp;lt;b&amp;gt;2. Выгодоприобретатель: &amp;lt;/b&amp;gt;" Font="Times New Roman, 9pt, style=Bold" HtmlTags="true"/&gt;
+      &lt;TextObject Name="Text10" Left="3.84" Top="183.36" Width="683.52" Height="17.28" Border.Lines="Left, Right, Top" Border.Width="0.25" Text="&amp;lt;b&amp;gt;3. Адрес&amp;lt;/b&amp;gt; (территория) &amp;lt;b&amp;gt;страхования:&amp;lt;/b&amp;gt;" Font="Times New Roman, 9pt, style=Bold" HtmlTags="true"/&gt;
+      &lt;TextObject Name="Text11" Left="3.84" Top="222.72" Width="290.88" Height="18.24" Border.Lines="Left, Top, Bottom" Border.Width="0.25" Text="&amp;lt;b&amp;gt;4. Срок действия договора:&amp;lt;/b&amp;gt; с 00ч. [Policy.dbeg]" WordWrap="false" Font="Times New Roman, 9pt, style=Bold" HtmlTags="true"&gt;
+        &lt;Formats&gt;
+          &lt;DateFormat Format="D"/&gt;
+          &lt;GeneralFormat/&gt;
+        &lt;/Formats&gt;
+      &lt;/TextObject&gt;
+      &lt;TextObject Name="Text12" Left="474.24" Top="222.72" Width="213.12" Height="18.24" Border.Lines="All" Border.Width="0.25" Text="&amp;lt;b&amp;gt;5. Валюта договора:&amp;lt;/b&amp;gt; рубли" Font="Times New Roman, 9pt, style=Bold" HtmlTags="true"/&gt;
+      &lt;TextObject Name="Text13" Left="3.84" Top="240.96" Width="683.52" Height="14.4" Border.Lines="Left, Right, Top" Border.Width="0.25" Text="6. СТРАХОВЫЕ РИСКИ:" Font="Times New Roman, 9pt, style=Bold"/&gt;
+      &lt;TextObject Name="Text14" Left="3.84" Top="255.36" Width="683.52" Height="99.84" Border.Lines="Left, Right, Bottom" Border.Width="0.25" Text="- пожар, включая воздействие продуктами сгорания, а также водой  (пеной) и другими средствами пожаротушения&amp;#13;&amp;#10;- взрыв бытового газа&amp;#13;&amp;#10;- повреждение водой в результате аварий систем водоснабжения, отопления, канализации и пожаротушения&amp;#13;&amp;#10;- проникновение воды и других жидкостей из соседних помещений, не принадлежащих Страхователю (Выгодоприобретателю).&amp;#13;&amp;#10;- сильный ветер (свыше 14м/с), ураган, смерч, град.&amp;#13;&amp;#10;(риски &amp;quot;а&amp;quot;, &amp;quot;б&amp;quot;, &amp;quot;в&amp;quot;, &amp;quot;г&amp;quot;, &amp;quot;з&amp;quot;, &amp;quot;к&amp;quot;, &amp;quot;л&amp;quot;, &amp;quot;п&amp;quot; в соответствии с п.3.3.1. Правил №167)" Font="Times New Roman, 9pt"/&gt;
+      &lt;TextObject Name="Text16" Left="3.84" Top="355.2" Width="358.08" Height="48.96" Border.Lines="All" Border.Width="0.25" Text="7. ОБЪЕКТ СТРАХОВАНИЯ" VertAlign="Center" Font="Times New Roman, 9pt, style=Bold"/&gt;
+      &lt;TextObject Name="Text17" Left="361.92" Top="355.2" Width="78.72" Height="48.96" Border.Lines="All" Border.Width="0.25" Text="Страховая сумма" VertAlign="Center" Font="Times New Roman, 9pt, style=Bold"/&gt;
+      &lt;TextObject Name="Text18" Left="440.64" Top="355.2" Width="78.72" Height="48.96" Border.Lines="All" Border.Width="0.25" Text="Тарифная ставка %" VertAlign="Center" Font="Times New Roman, 9pt, style=Bold"/&gt;
+      &lt;TextObject Name="Text19" Left="519.36" Top="355.2" Width="78.72" Height="48.96" Border.Lines="All" Border.Width="0.25" Text="Годовая страховая премия" VertAlign="Center" Font="Times New Roman, 9pt, style=Bold"/&gt;
+      &lt;TextObject Name="Text20" Left="598.08" Top="355.2" Width="89.28" Height="48.96" Border.Lines="All" Border.Width="0.25" Text="Ежемесячный страховой взнос" VertAlign="Center" Font="Times New Roman, 9pt, style=Bold"/&gt;
+      &lt;TextObject Name="Text21" Left="3.84" Top="404.16" Width="358.08" Height="18.24" Border.Lines="All" Border.Width="0.25" Text="Отделка и оборудование квартиры (жилого помещения)" VertAlign="Center" Font="Times New Roman, 9pt"/&gt;
+      &lt;TextObject Name="Text22" Left="361.92" Top="404.16" Width="78.72" Height="18.24" Border.Lines="All" Border.Width="0.25" Text="130 000" VertAlign="Center" Font="Times New Roman, 9pt"/&gt;
+      &lt;TextObject Name="Text23" Left="440.64" Top="404.16" Width="78.72" Height="18.24" Border.Lines="All" Border.Width="0.25" Text="0,849" VertAlign="Center" Font="Times New Roman, 9pt"/&gt;
+      &lt;TextObject Name="Text24" Left="519.36" Top="404.16" Width="78.72" Height="18.24" Border.Lines="All" Border.Width="0.25" Text="1104" VertAlign="Center" Font="Times New Roman, 9pt"/&gt;
+      &lt;TextObject Name="Text25" Left="598.08" Top="404.16" Width="89.28" Height="18.24" Border.Lines="All" Border.Width="0.25" Text="92 руб." VertAlign="Center" Font="Times New Roman, 9pt"/&gt;
+      &lt;TextObject Name="Text26" Left="3.84" Top="430.08" Width="683.52" Height="31.68" Border.Lines="All" Border.Width="0.25" Text="&amp;lt;b&amp;gt;8. Порядок оплаты страховой премии:&amp;lt;/b&amp;gt;&amp;#13;&amp;#10;Оплаты страховой премии производится ежемесячно, равными страховыми взносами." Font="Times New Roman, 9pt" HtmlTags="true"/&gt;
+      &lt;TextObject Name="Text27" Left="3.84" Top="469.44" Width="683.52" Height="195.84" Border.Lines="All" Border.Width="0.25" Text="9. Дополнительные условия в пределах обязательств по договору страхования (по соглашению сторон на дату выдачи полиса):&amp;#13;&amp;#10;9.1 Очередные страховые взносы уплачиваются до 30 числа текущего месяца.&amp;#13;&amp;#10;При неуплате Страхователем очередного страхового взноса в полном размере ответственность Страховщика по возмещению ущерба за события, наступившие с 00:00 часов первого числа месяца, следующего за месяцем неуплаты очередного взноса, прекращается. Ответственность Страховщика по возмещению ущерба возобновляется с 00:00 часов первого числа месяца, следующего за месяцем уплаты очередного взноса без увеличения календарного срока страхования, если с момента последней неуплаты прошло менее трех месяцев. Страховая выплата за убытки, полученные объектом страхования в  неоплаченный период договора, не производится.&amp;#13;&amp;#10;9.2 Если на момент страхового случая не будут полность оплачены страховые взносы за прошедший период страхования, то сумма задолженности удерживается из суммы страховой выплаты. В случае полной гибели объекта страхования из суммы страховой выплаты удерживаются неуплаченные страховые взносы за весь срок страхования.&amp;#13;&amp;#10;9.3 Если в течение срока действия договора страхования не оплачены три периода страхования подряд (три месяца подряд взносы не уплачивались в установленом размере), то договор прекращает свое действие по истечении 90 календарных дней со дня, следующего за последним днем оплаченного периода (оплаченного месяца)." Font="Times New Roman, 9pt" HtmlTags="true"/&gt;
+      &lt;TextObject Name="Text28" Left="3.84" Top="665.28" Width="683.52" Height="42.24" Border.Lines="All" Border.Width="0.25" Text="9.4 Страховая сумма по внутренней отделке и инженерному оборудованию распределяется следующим образом:&amp;#13;&amp;#10;Стены и перегородки - 20%, полы - 20%, потолки - 10%, окна - 10%, двери - 10%, сантехническое и инженерное оборудование - 25%, прочее - 5%." Font="Times New Roman, 9pt" HtmlTags="true"/&gt;
+      &lt;TextObject Name="Text29" Left="3.84" Top="715.2" Width="683.52" Height="87.36" Border.Lines="All" Border.Width="0.25" Text="9.5 При наступлении страхового события Страхователь (Выгодоприобретатель) обязан предоставить документ, подтверждающий стоимость объектов страхования. В случае непредоставления документа стоимость объектов определяется Страховщиком. При наступлении страхового случая Страхователь (Выгодоприобретатель) обязан предоставить документы, подтверждающие его имущественный интерес в отношении застрахованных объектов. В случае непредставления документов, подтверждающих наличие имущественного интереса, Страховщик вправе потребовать признания договора страхования недействительным в соответствии с законодательством РФ." Font="Times New Roman, 9pt" HtmlTags="true"/&gt;
+      &lt;TextObject Name="Text30" Left="3.84" Top="802.56" Width="341.76" Height="17.28" Border.Lines="All" Border.Width="0.25" Text="Проект (Акция): МЖ" Font="Times New Roman, 9pt, style=Bold"/&gt;
+      &lt;TextObject Name="Text31" Left="345.6" Top="802.56" Width="341.76" Height="17.28" Border.Lines="All" Border.Width="0.25" Text="Канал продаж: агентский" HorzAlign="Center" Font="Times New Roman, 9pt, style=Bold"/&gt;
+      &lt;TextObject Name="Text32" Left="3.84" Top="819.84" Width="341.76" Height="17.28" Border.Lines="All" Border.Width="0.25" Fill.Color="Silver" Text="Страхователь: (Ф.И.О.)" HorzAlign="Center" Font="Times New Roman, 9pt, style=Bold" TextFill.Color="White"/&gt;
+      &lt;TextObject Name="Text33" Left="345.6" Top="819.84" Width="341.76" Height="17.28" Border.Lines="All" Border.Width="0.25" Fill.Color="Silver" Text="Страховщик:" HorzAlign="Center" Font="Times New Roman, 9pt, style=Bold" TextFill.Color="White"/&gt;
+      &lt;TextObject Name="Text34" Left="3.84" Top="837.12" Width="341.76" Height="147.84" Border.Lines="All" Border.Width="0.25" BeforePrintEvent="Text34_BeforePrint" Text="&amp;#13;&amp;#10;&amp;lt;u&amp;gt;      [Policy.fio]     &amp;lt;/u&amp;gt;&amp;#13;&amp;#10;С условиями договора страхования согласен.&amp;#13;&amp;#10;Правила страхования и полис получил.&amp;#13;&amp;#10;&amp;#13;&amp;#10;_____________&amp;#13;&amp;#10;&amp;lt;font color=&amp;quot;Silver&amp;quot;&amp;gt;подпись&amp;lt;/font&amp;gt;&amp;#13;&amp;#10;Дата выдачи полиса и Правил страхования&amp;#13;&amp;#10;[Date]" Format="Date" Format.Format="D" Font="Times New Roman, 8pt" HtmlTags="true"/&gt;
+      &lt;TextObject Name="Text35" Left="345.6" Top="837.12" Width="341.76" Height="147.84" Border.Lines="All" Border.Width="0.25" Text="&amp;#13;&amp;#10;Агенство в г. Павловский Посад филиала ООО &amp;quot;Росгосстрах&amp;quot; в Москве и Московской области&amp;#13;&amp;#10;&amp;#13;&amp;#10;Адрес: МО г. Павловский Посад, ул. Ленина, д. 44&amp;#13;&amp;#10;&amp;#13;&amp;#10;Руководитель агенства Житникова Н.С.&amp;#13;&amp;#10;&amp;#13;&amp;#10;Доверенность № 468-Дхк      Дата выдачи: 12.01.11г.&amp;#13;&amp;#10;&amp;#13;&amp;#10;_____________&amp;#13;&amp;#10;&amp;lt;font color=&amp;quot;Silver&amp;quot;&amp;gt;подпись&amp;lt;/font&amp;gt;" Font="Times New Roman, 8pt" HtmlTags="true"/&gt;
+      &lt;TextObject Name="Text36" Left="3.84" Top="984" Width="683.52" Height="17.28" Border.Lines="All" Border.Width="0.25" Fill.Color="Silver" Font="Times New Roman, 8pt"/&gt;
+      &lt;TextObject Name="Text15" Left="448.32" Top="116.16" Width="11.52" Height="11.52" Border.Lines="All" Border.Width="0.25" Text="1" Font="Times New Roman, 8pt"/&gt;
+      &lt;TextObject Name="Text37" Left="459.84" Top="116.16" Width="11.52" Height="11.52" Border.Lines="All" Border.Width="0.25" Text="4" Font="Times New Roman, 8pt"/&gt;
+      &lt;TextObject Name="Text38" Left="471.36" Top="116.16" Width="11.52" Height="11.52" Border.Lines="All" Border.Width="0.25" Text="2" Font="Times New Roman, 8pt"/&gt;
+      &lt;TextObject Name="Text39" Left="482.88" Top="116.16" Width="11.52" Height="11.52" Border.Lines="All" Border.Width="0.25" Text="5" Font="Times New Roman, 8pt"/&gt;
+      &lt;TextObject Name="Text40" Left="494.4" Top="116.16" Width="11.52" Height="11.52" Border.Lines="All" Border.Width="0.25" Text="0" Font="Times New Roman, 8pt"/&gt;
+      &lt;TextObject Name="Text41" Left="505.92" Top="116.16" Width="11.52" Height="11.52" Border.Lines="All" Border.Width="0.25" Text="3" Font="Times New Roman, 8pt"/&gt;
+      &lt;TextObject Name="Text42" Left="203.52" Top="185.28" Width="11.52" Height="11.52" Border.Lines="All" Border.Width="0.25" Text="1" Font="Times New Roman, 8pt"/&gt;
+      &lt;TextObject Name="Text43" Left="215.04" Top="185.28" Width="11.52" Height="11.52" Border.Lines="All" Border.Width="0.25" Text="4" Font="Times New Roman, 8pt"/&gt;
+      &lt;TextObject Name="Text44" Left="226.56" Top="185.28" Width="11.52" Height="11.52" Border.Lines="All" Border.Width="0.25" Text="2" Font="Times New Roman, 8pt"/&gt;
+      &lt;TextObject Name="Text45" Left="238.08" Top="185.28" Width="11.52" Height="11.52" Border.Lines="All" Border.Width="0.25" Text="5" Font="Times New Roman, 8pt"/&gt;
+      &lt;TextObject Name="Text46" Left="249.6" Top="185.28" Width="11.52" Height="11.52" Border.Lines="All" Border.Width="0.25" Text="0" Font="Times New Roman, 8pt"/&gt;
+      &lt;TextObject Name="Text47" Left="261.12" Top="185.28" Width="11.52" Height="11.52" Border.Lines="All" Border.Width="0.25" Text="3" Font="Times New Roman, 8pt"/&gt;
+      &lt;TextObject Name="Text48" Left="3.84" Top="131.52" Width="328.32" Height="17.28" Border.Lines="Left, Right, Bottom" Border.Width="0.25" Text="[Policy.fio]" Font="Times New Roman, 9pt, style=Italic" HtmlTags="true"/&gt;
+      &lt;TextObject Name="Text49" Left="106.56" Top="114.24" Width="225.6" Height="17.28" Border.Lines="Right, Top" Border.Width="0.25" Text="&amp;lt;i&amp;gt;&amp;lt;font color=&amp;quot;Silver&amp;quot;&amp;gt;(Ф.И.О. или наименование юридического лица)&amp;lt;/font&amp;gt;&amp;lt;/i&amp;gt;" Font="Times New Roman, 8pt" HtmlTags="true"/&gt;
+      &lt;TextObject Name="Text50" Left="373.44" Top="114.24" Width="313.92" Height="17.28" Border.Lines="Right, Top" Border.Width="0.25" Text="&amp;lt;i&amp;gt;&amp;lt;font color=&amp;quot;Silver&amp;quot;&amp;gt; регистрации&amp;lt;/font&amp;gt;&amp;lt;/i&amp;gt;" Font="Times New Roman, 8pt" HtmlTags="true"/&gt;
+      &lt;TextObject Name="Text51" Left="332.16" Top="131.52" Width="355.2" Height="17.28" Border.Lines="Right, Bottom" Border.Width="0.25" BeforePrintEvent="Text51_BeforePrint" WordWrap="false" Font="Times New Roman, 9pt, style=Italic" HtmlTags="true"/&gt;
+      &lt;TextObject Name="Text52" Left="153.6" Top="148.8" Width="533.76" Height="17.28" Border.Lines="Right, Top" Border.Width="0.25" Text="&amp;lt;i&amp;gt;&amp;lt;font color=&amp;quot;Silver&amp;quot;&amp;gt;(Ф.И.О. или наименование юридического лица)&amp;lt;/font&amp;gt;&amp;lt;/i&amp;gt;" Font="Times New Roman, 8pt" HtmlTags="true"/&gt;
+      &lt;TextObject Name="Text53" Left="3.84" Top="166.08" Width="683.52" Height="17.28" Border.Lines="Left, Right, Bottom" Border.Width="0.25" BeforePrintEvent="Text53_BeforePrint" Text="[Policy.fio]" Font="Times New Roman, 9pt, style=Italic" HtmlTags="true"/&gt;
+      &lt;TextObject Name="Text54" Left="3.84" Top="200.64" Width="683.52" Height="17.28" Border.Lines="Left, Right, Bottom" Border.Width="0.25" BeforePrintEvent="Text51_BeforePrint" Font="Times New Roman, 9pt, style=Italic" HtmlTags="true"/&gt;
+      &lt;TextObject Name="Text56" Left="294.72" Top="222.72" Width="179.52" Height="18.24" Border.Lines="Right, Top, Bottom" Border.Width="0.25" Text="по 24ч. [Policy.dend]" Font="Times New Roman, 9pt" HtmlTags="true"&gt;
+        &lt;Formats&gt;
+          &lt;DateFormat Format="D"/&gt;
+          &lt;GeneralFormat/&gt;
+        &lt;/Formats&gt;
+      &lt;/TextObject&gt;
+    &lt;/DataBand&gt;
+  &lt;/ReportPage&gt;
+&lt;/Report&gt;
+</value>
+  </data>
+</root>

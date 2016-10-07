@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="Distribute" table="DBA.hmDistribute">
+    <id name="DistributeId" column="Distribute_id" >
+      <generator class="assigned"/>
+    </id>
+    <many-to-one name="Period" class="Period" column="Period_Id"/>
+    <many-to-one name="Month" class="Period" column="Month_Id"/>
+    <many-to-one name="Company" class="Company" column="Company_Id"/>
+    <many-to-one name="Service" class="Service" column="Service_Id"/>
+    <many-to-one name="Home" class="Home" column="IdHome"/>
+    <property name="CounterId" column="Counter_Id"/>
+    <property name ="Rent" column="Rent" not-null="true"/>
+    <property name ="Note" column="Note" not-null="true"/>
+    <property name ="UName" column="UName" not-null="true"/>
+    <property name ="DEdit" column="DEdit" not-null="true"/>
+    <property name ="Scheme" column="Scheme" />
+  </class>
+
+</hibernate-mapping>

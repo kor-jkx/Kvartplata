@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="dcohlTypeAccount" table="DBA.dcohlTypeAccount">
+    <id name="TypeAccountId" >
+      <column name="TypeAccount_Id" not-null="true" />
+    </id>
+    <property name="TypeAccountName" column="TypeAccount_name" not-null="true"/>
+    <property name="Uname" column="Uname" not-null="true"/>
+    <property name="Dedit" column="Dedit" not-null="true"/>
+  </class>
+</hibernate-mapping>

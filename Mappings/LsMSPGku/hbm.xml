@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">  
+  <class name="LsMSPGku" table="DBA.lsMSPGku">
+    <composite-id>
+      <key-many-to-one name="LsClient" class="LsClient" column="Client_id"/>
+      <key-many-to-one name="MSPId" class="DcMSP" column="MSP_id"/>
+      <key-many-to-one name="Person" class="Person" column="IdForm_MSP"/>
+      <key-many-to-one name="Period" class="Period" column="Period_Id"/>
+      <key-property name="DBeg"
+                   column="DBeg"/>
+    </composite-id>
+
+
+    <many-to-one name="MSPDocumentId" class="MspDocument" column="MSPDocument_id"/> 
+    <many-to-one name="Holder" class="Person" column="Holder"/>
+    <many-to-one name="FamilyId" class="LsFamily" column="Family_id" not-null="0"/>
+
+    <property name="DEnd"
+              column="Dend"/>
+    <property name="OnOff"
+          column="OnOff"/>
+    <property name="OnOffTmpSq"
+              column="OnOff_TmpSq"/>
+    <property name="Uname"
+              column="uname"/>
+    <property name="Dedit"
+              column="Dedit"/>
+    <property name="AcceptId"
+              column="Accept_id"/>
+    
+  </class>
+
+</hibernate-mapping>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="Adm_Scripts" table="DBA.Adm_Scripts">
+    <id name="Idscript" column="IDSCRIPT" >
+      <generator class="assigned"/>
+    </id>
+    <property name="Code" column="CODE"/>
+    <property name="Script" column="SCRIPT"/>
+    <property name="Uname" column="Uname" not-null="true"/>
+    <property name="Dedit" column="Dedit" not-null="true"/>
+
+  </class>
+
+</hibernate-mapping>

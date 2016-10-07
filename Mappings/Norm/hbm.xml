@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="Norm" table="DBA.dcNorm">
+    <id name="Norm_id" unsaved-value="0">
+      <generator class="assigned"/>
+    </id>
+    <property name="Norm_name" column="Norm_name" not-null="true"/>
+    <property name="Norm_num" column="Norm_num" not-null="true"/>
+    <many-to-one name="Service" column="Service_id" class ="Kvartplata.Classes.Service"/>
+    <property name="Uname" column="Uname" not-null="true"/>
+    <property name="Dedit" column="Dedit" not-null="true"/>
+    <many-to-one name="Manager" column="Manager_id" class ="Kvartplata.Classes.BaseOrg"/>
+    <set name="CmpNorms" inverse="true"
+      cascade="all-delete-orphan" order-by="Dbeg">
+      <key column="Norm_id"/>
+      <one-to-many class="Kvartplata.Classes.CmpNorm"/>
+    </set>
+    
+  </class>
+
+</hibernate-mapping>

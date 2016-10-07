@@ -1,0 +1,901 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: S:\soft-work\kor-jkx\kvartplata\Kvartplata.exe-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6E31B182-6A8A-4DC9-8713-B21C28DDB815}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>Kvartplata</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Kvartplata</RootNamespace>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.16.3.10</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>2</WarningLevel>
+    <NoWarn>CS0642;CS0168</NoWarn>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime">
+      <HintPath>lib\Antlr3.Runtime.DLL</HintPath>
+    </Reference>
+    <Reference Include="FastReport">
+      <HintPath>lib\FastReport.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport.Bars">
+      <HintPath>lib\FastReport.Bars.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport.Editor">
+      <HintPath>lib\FastReport.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="GenKeyKvrpl">
+      <HintPath>lib\GenKeyKvrpl.exe</HintPath>
+    </Reference>
+    <Reference Include="LinFu.DynamicProxy">
+      <HintPath>lib\LinFu.DynamicProxy.DLL</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>lib\log4net.DLL</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.ByteCode.LinFu">
+      <HintPath>lib\NHibernate.ByteCode.LinFu.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="NHibernate">
+      <HintPath>lib\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="NLog">
+      <HintPath>lib\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="SaveSettings">
+      <HintPath>lib\SaveSettings.dll</HintPath>
+    </Reference>
+    <Reference Include="Counters">
+      <HintPath>lib\Counters.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel" />
+    <Reference Include="Iesi.Collections">
+      <HintPath>lib\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="GenUinKv">
+      <HintPath>lib\GenUinKv.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\__Boxed.cs" />
+    <Compile Include="PrivateImplementationDetails.cs" />
+    <Compile Include="sbsit\utils\DBF.cs" />
+    <Compile Include="Crypt.cs" />
+    <Compile Include="Domain.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\Resources.cs" />
+    <Compile Include="StaticResourse\CallDll.cs" />
+    <Compile Include="Smirnov\EnumAccess.cs" />
+    <Compile Include="Smirnov\TextCase.cs" />
+    <Compile Include="Smirnov\RuDateAndMoneyConverter.cs" />
+    <Compile Include="Smirnov\Forms\MessageWait.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TextBoxWithPromting.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmAgreement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmBaseForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmBills.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ReportArenda.cs" />
+    <Compile Include="Forms\FrmCloseScheme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmContract.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmDcOnlTypeAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmDetailAllRent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmFileClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmGuild.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmArgument.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmBasik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmAudit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmBank.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmBaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmChangeAttribute.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmAboutProgr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmBigSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmChoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmAbsence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmAttribute.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmBalanceDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmChooseObject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmClientCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmCoeffLocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmCorrect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmCorrectPeni.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmCounters.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmCrossService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmCrossType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmCurrentPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmDetailCorrectRent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmDi_PhonesServ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ViewService.cs" />
+    <Compile Include="Forms\FrmEditOrg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmHandMadeDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmHandMadeDetailPeni.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmHomeParam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmLegislation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmClientCardChoose.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmLoadPays.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmLsWorkDistribute.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmMakeEntrance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmMassChooseObject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmMSP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmNewHomesTariff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmNoteBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmOrg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmOrgPersons.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmParam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmPaymentOhl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ListHome.cs" />
+    <Compile Include="Forms\FrmPolicy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmProgress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmPurposePay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmQuality.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmQuarterSum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmQuickPay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmRcptAccounts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmReceipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmReceipts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmRecviz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmRightDoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmScheme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmRegion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmSearchDog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmSearchTabNum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmSelectAccountForOverhaul.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmSpash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmSprAccounts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmStrSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmSelectPeriod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmServiceParam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmSourcePay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmTariffs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmTypeCounter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmTypeDelivery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmTypeNoteBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmTypeSeal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmUZP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmConnect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UCBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UCMspDocument.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UCServParam.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Controls\UCCrossService.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Controls\UCCrossType.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Controls\UCCmpCoeffLocation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Controls\UCCounterLocation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Controls\UCRegion.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Controls\UCTypeSeal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Controls\UCCmpReceipt.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Controls\UCNorm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Controls\UCNormCost.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Controls\UCTariffCost.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Controls\UСVariant.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Controls\UCCmpParam.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Controls\UCLsSupplier.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Controls\UCMSP.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Controls\UCMSPPercent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Controls\UCParam.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Controls\UCPensDoc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Controls\UCPfr.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Controls\UCReceipt.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Controls\UCSupplier.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Classes\Absence.cs" />
+    <Compile Include="Classes\AbsenceCoeff.cs" />
+    <Compile Include="Classes\ActionPeni.cs" />
+    <Compile Include="Classes\Address.cs" />
+    <Compile Include="Classes\Adm_Scripts.cs" />
+    <Compile Include="Classes\Agreement.cs" />
+    <Compile Include="Classes\AppSettingsWriter.cs" />
+    <Compile Include="Classes\CauseOut.cs" />
+    <Compile Include="Classes\dcohlTypeAccount.cs" />
+    <Compile Include="Classes\DI_RULEORG.cs" />
+    <Compile Include="Classes\LsArenda.cs" />
+    <Compile Include="Classes\Audit.cs" />
+    <Compile Include="Classes\Balance.cs" />
+    <Compile Include="Classes\BalancePeni.cs" />
+    <Compile Include="Classes\Bank.cs" />
+    <Compile Include="Classes\BaseCounter.cs" />
+    <Compile Include="Classes\BaseOrg.cs" />
+    <Compile Include="Classes\BaseOrgPerson.cs" />
+    <Compile Include="Classes\BaseTariff.cs" />
+    <Compile Include="Classes\Bill.cs" />
+    <Compile Include="Classes\Bond.cs" />
+    <Compile Include="Classes\BuiltIn.cs" />
+    <Compile Include="Classes\CalendarCell.cs" />
+    <Compile Include="Classes\CalendarColumn.cs" />
+    <Compile Include="Classes\CalendarEditingControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Classes\City.cs" />
+    <Compile Include="Classes\ClassTable.cs" />
+    <Compile Include="Classes\ClosedPeriod.cs" />
+    <Compile Include="Classes\CmpCoeffLocation.cs" />
+    <Compile Include="Classes\CmpHmReceipt.cs" />
+    <Compile Include="Classes\CmpNorm.cs" />
+    <Compile Include="Classes\CmpParam.cs" />
+    <Compile Include="Classes\CmpReceipt.cs" />
+    <Compile Include="Classes\cmpTariffCost.cs" />
+    <Compile Include="Classes\Contract.cs" />
+    <Compile Include="Classes\CorrectRent.cs" />
+    <Compile Include="Classes\CounterLocation.cs" />
+    <Compile Include="Classes\CompanyParam.cs" />
+    <Compile Include="Classes\CompanyPeriod.cs" />
+    <Compile Include="Classes\Complex.cs" />
+    <Compile Include="Classes\CorrectPeni.cs" />
+    <Compile Include="Classes\Counter.cs" />
+    <Compile Include="Classes\CounterDetail.cs" />
+    <Compile Include="Classes\CounterScheme.cs" />
+    <Compile Include="Classes\CrossService.cs" />
+    <Compile Include="Classes\CrossType.cs" />
+    <Compile Include="Classes\dcUnitMeasuring.cs" />
+    <Compile Include="Classes\DetailEvidence.cs" />
+    <Compile Include="Classes\DistrictHome.cs" />
+    <Compile Include="Classes\Dogovor.cs" />
+    <Compile Include="Classes\DogPeriod.cs" />
+    <Compile Include="Classes\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Classes\Guild.cs" />
+    <Compile Include="Classes\IniFile.cs" />
+    <Compile Include="Classes\Instalment.cs" />
+    <Compile Include="Classes\lsWorkDistribute.cs" />
+    <Compile Include="Classes\lsWorkPayRent.cs" />
+    <Compile Include="Classes\NoteBook.cs" />
+    <Compile Include="Classes\ohlAccounts.cs" />
+    <Compile Include="Classes\OhlPayment.cs" />
+    <Compile Include="Classes\ParamForeign.cs" />
+    <Compile Include="Classes\PayDoc.cs" />
+    <Compile Include="Classes\Policy.cs" />
+    <Compile Include="Classes\RcptAccounts.cs" />
+    <Compile Include="Classes\Register.cs" />
+    <Compile Include="Classes\RentPeni.cs" />
+    <Compile Include="Classes\SndAddress.cs" />
+    <Compile Include="Classes\TypeArendaDocument.cs" />
+    <Compile Include="Classes\TypeNoteBook.cs" />
+    <Compile Include="Classes\UsesType.cs" />
+    <Compile Include="Classes\hmWorkDistribute.cs" />
+    <Compile Include="Classes\ReceiptParam.cs" />
+    <Compile Include="Classes\FrmCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Classes\MaskedTextBoxColumn.cs" />
+    <Compile Include="Classes\MaskedTextBoxCell.cs" />
+    <Compile Include="Classes\MaskedTextBoxEditingControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Classes\Pers.cs" />
+    <Compile Include="Classes\Seal.cs" />
+    <Compile Include="Classes\SupplierClient.cs" />
+    <Compile Include="Classes\TypeSeal.cs" />
+    <Compile Include="Classes\DepReg.cs" />
+    <Compile Include="Classes\Distribute.cs" />
+    <Compile Include="Classes\DistributeDetail.cs" />
+    <Compile Include="Classes\LsServiceParam.cs" />
+    <Compile Include="Classes\MonthPicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Classes\HomesPhones.cs" />
+    <Compile Include="Classes\Mwl.cs" />
+    <Compile Include="Classes\Di_PhonesServ.cs" />
+    <Compile Include="Classes\Dog.cs" />
+    <Compile Include="Classes\Evidence.cs" />
+    <Compile Include="Classes\CounterRelation.cs" />
+    <Compile Include="Classes\DcMSP.cs" />
+    <Compile Include="Classes\Deliver.cs" />
+    <Compile Include="Classes\FrFamily.cs" />
+    <Compile Include="Classes\HomeParam.cs" />
+    <Compile Include="Classes\InputBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Classes\LsFamily.cs" />
+    <Compile Include="Classes\LsSupplier.cs" />
+    <Compile Include="Classes\MaskDateCell.cs" />
+    <Compile Include="Classes\MaskDateColumn.cs" />
+    <Compile Include="Classes\MaskDateEditingControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Classes\MSPDoc.cs" />
+    <Compile Include="Classes\dcShare.cs" />
+    <Compile Include="Classes\FlatCategory.cs" />
+    <Compile Include="Classes\Fond.cs" />
+    <Compile Include="Classes\FormStateSaver.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Classes\HomeLink.cs" />
+    <Compile Include="Classes\KvrplHelper.cs" />
+    <Compile Include="Classes\Legislation.cs" />
+    <Compile Include="Classes\LsAbsence.cs" />
+    <Compile Include="Classes\LsClient.cs" />
+    <Compile Include="Classes\ClientParam.cs" />
+    <Compile Include="Classes\Company.cs" />
+    <Compile Include="Classes\LsQuality.cs" />
+    <Compile Include="Classes\LsService.cs" />
+    <Compile Include="Classes\LsMSPGku.cs" />
+    <Compile Include="Classes\MspDocument.cs" />
+    <Compile Include="Classes\Norm.cs" />
+    <Compile Include="Classes\OleDbHelper.cs" />
+    <Compile Include="Classes\OleDbHelperParameterCache.cs" />
+    <Compile Include="Classes\Operation.cs" />
+    <Compile Include="Classes\Options.cs" />
+    <Compile Include="Classes\Overpay.cs" />
+    <Compile Include="Classes\OwnDoc.cs" />
+    <Compile Include="Classes\Owner.cs" />
+    <Compile Include="Classes\OwnerDoc.cs" />
+    <Compile Include="Classes\ParamRelation.cs" />
+    <Compile Include="Classes\Pens.cs" />
+    <Compile Include="Classes\PensDoc.cs" />
+    <Compile Include="Classes\Person.cs" />
+    <Compile Include="Classes\Postaver.cs" />
+    <Compile Include="Classes\Proxy.cs" />
+    <Compile Include="Classes\Quality.cs" />
+    <Compile Include="Classes\Receipt.cs" />
+    <Compile Include="Classes\Reg.cs" />
+    <Compile Include="Classes\Registration.cs" />
+    <Compile Include="Classes\Relation.cs" />
+    <Compile Include="Classes\Rent.cs" />
+    <Compile Include="Classes\RightDoc.cs" />
+    <Compile Include="Classes\Scanner.cs" />
+    <Compile Include="Classes\Scheme.cs" />
+    <Compile Include="Classes\SdcMSPPercent.cs" />
+    <Compile Include="Classes\ServiceParam.cs" />
+    <Compile Include="Classes\SocFamily.cs" />
+    <Compile Include="Classes\SocSaldo.cs" />
+    <Compile Include="Classes\Spreading.cs" />
+    <Compile Include="Classes\StatLic.cs" />
+    <Compile Include="Classes\Str.cs" />
+    <Compile Include="Classes\Flat.cs" />
+    <Compile Include="Classes\Param.cs" />
+    <Compile Include="Classes\Period.cs" />
+    <Compile Include="Classes\PurposePay.cs" />
+    <Compile Include="Classes\Raion.cs" />
+    <Compile Include="Classes\Service.cs" />
+    <Compile Include="Classes\SourcePay.cs" />
+    <Compile Include="Classes\StrAll.cs" />
+    <Compile Include="Classes\StreetRu.cs" />
+    <Compile Include="Classes\CmpSupplier.cs" />
+    <Compile Include="Classes\AdmTbl.cs" />
+    <Compile Include="Classes\Tariff.cs" />
+    <Compile Include="Classes\Transfer.cs" />
+    <Compile Include="Classes\TypeCounter.cs" />
+    <Compile Include="Classes\UnitMeasuring.cs" />
+    <Compile Include="Classes\YesNo.cs" />
+    <Compile Include="Classes\Home.cs" />
+    <Compile Include="Classes\Payment.cs" />
+    <Compile Include="Classes\Supplier.cs" />
+    <Compile Include="Classes\RentMSP.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Classes\Form1.resx" />
+    <EmbeddedResource Include="Classes\FrmCheck.resx" />
+    <EmbeddedResource Include="config.xml" />
+    <EmbeddedResource Include="Forms\Controls\UCCmpParam.resx" />
+    <EmbeddedResource Include="Forms\Controls\UCLsSupplier.resx" />
+    <EmbeddedResource Include="Forms\Controls\UCMSPPercent.resx" />
+    <EmbeddedResource Include="Forms\Controls\UCNorm.resx" />
+    <EmbeddedResource Include="Forms\Controls\UCPensDoc.resx" />
+    <EmbeddedResource Include="Forms\Controls\UCPfr.resx" />
+    <EmbeddedResource Include="Forms\Controls\UCRegion.resx" />
+    <EmbeddedResource Include="Forms\Controls\UCSupplier.resx" />
+    <EmbeddedResource Include="Forms\Controls\UСVariant.resx" />
+    <EmbeddedResource Include="Forms\FrmAboutProgr.resx" />
+    <EmbeddedResource Include="Forms\FrmAbsence.resx" />
+    <EmbeddedResource Include="Forms\FrmAgreement.resx" />
+    <EmbeddedResource Include="Forms\FrmArgument.resx" />
+    <EmbeddedResource Include="Forms\FrmAttribute.resx" />
+    <EmbeddedResource Include="Forms\FrmAudit.resx" />
+    <EmbeddedResource Include="Forms\FrmBalanceDetail.resx" />
+    <EmbeddedResource Include="Forms\FrmBank.resx" />
+    <EmbeddedResource Include="Forms\FrmBase.resx" />
+    <EmbeddedResource Include="Forms\FrmBaseForm.resx" />
+    <EmbeddedResource Include="Forms\FrmBaseForm1.resx" />
+    <EmbeddedResource Include="Forms\FrmBasik.resx" />
+    <EmbeddedResource Include="Forms\FrmBigSearch.resx" />
+    <EmbeddedResource Include="Forms\FrmBills.resx" />
+    <EmbeddedResource Include="Forms\FrmChangeAttribute.resx" />
+    <EmbeddedResource Include="Forms\FrmChoice.resx" />
+    <EmbeddedResource Include="Forms\FrmChooseObject.resx" />
+    <EmbeddedResource Include="Forms\FrmClientCard.resx" />
+    <EmbeddedResource Include="Forms\FrmClientCardChoose.resx" />
+    <EmbeddedResource Include="Forms\FrmCloseScheme.resx" />
+    <EmbeddedResource Include="Forms\FrmCoeffLocation.resx" />
+    <EmbeddedResource Include="Forms\FrmConnect.resx" />
+    <EmbeddedResource Include="Forms\FrmContract.resx" />
+    <EmbeddedResource Include="Forms\FrmCorrect.resx" />
+    <EmbeddedResource Include="Forms\FrmCorrectPeni.resx" />
+    <EmbeddedResource Include="Forms\FrmCounters.resx" />
+    <EmbeddedResource Include="Forms\FrmCrossService.resx" />
+    <EmbeddedResource Include="Forms\FrmCrossType.resx" />
+    <EmbeddedResource Include="Forms\FrmCurrentPayment.resx" />
+    <EmbeddedResource Include="Forms\FrmDcOnlTypeAccount.resx" />
+    <EmbeddedResource Include="Forms\FrmDetailAllRent.resx" />
+    <EmbeddedResource Include="Forms\FrmDetailCorrectRent.resx" />
+    <EmbeddedResource Include="Forms\FrmDi_PhonesServ.resx" />
+    <EmbeddedResource Include="Forms\FrmEditOrg.resx" />
+    <EmbeddedResource Include="Forms\FrmFileClient.resx" />
+    <EmbeddedResource Include="Forms\FrmGuild.resx" />
+    <EmbeddedResource Include="Forms\FrmHandMadeDetail.resx" />
+    <EmbeddedResource Include="Forms\FrmHandMadeDetailPeni.resx" />
+    <EmbeddedResource Include="Forms\FrmHomeParam.resx" />
+    <EmbeddedResource Include="Forms\FrmLegislation.resx" />
+    <EmbeddedResource Include="Forms\FrmList.resx" />
+    <EmbeddedResource Include="Forms\FrmLoadPays.resx" />
+    <EmbeddedResource Include="Forms\FrmLsWorkDistribute.resx" />
+    <EmbeddedResource Include="Forms\FrmMakeEntrance.resx" />
+    <EmbeddedResource Include="Forms\FrmMassChooseObject.resx" />
+    <EmbeddedResource Include="Forms\FrmMSP.resx" />
+    <EmbeddedResource Include="Forms\FrmNewHomesTariff.resx" />
+    <EmbeddedResource Include="Forms\FrmNoteBook.resx" />
+    <EmbeddedResource Include="Forms\FrmOptions.resx" />
+    <EmbeddedResource Include="Forms\FrmOrg.resx" />
+    <EmbeddedResource Include="Forms\FrmOrgPersons.resx" />
+    <EmbeddedResource Include="Forms\FrmParam.resx" />
+    <EmbeddedResource Include="Forms\FrmPayment.resx" />
+    <EmbeddedResource Include="Forms\FrmPaymentOhl.resx" />
+    <EmbeddedResource Include="Forms\FrmPolicy.resx" />
+    <EmbeddedResource Include="Forms\frmProgress.resx" />
+    <EmbeddedResource Include="Forms\FrmPurposePay.resx" />
+    <EmbeddedResource Include="Forms\FrmQuality.resx" />
+    <EmbeddedResource Include="Forms\FrmQuarterSum.resx" />
+    <EmbeddedResource Include="Forms\FrmQuickPay.resx" />
+    <EmbeddedResource Include="Forms\FrmRcptAccounts.resx" />
+    <EmbeddedResource Include="Forms\FrmReceipt.resx" />
+    <EmbeddedResource Include="Forms\FrmReceipts.resx" />
+    <EmbeddedResource Include="Forms\FrmRecviz.resx" />
+    <EmbeddedResource Include="Forms\FrmRegion.resx" />
+    <EmbeddedResource Include="Forms\FrmRightDoc.resx" />
+    <EmbeddedResource Include="Forms\FrmScheme.resx" />
+    <EmbeddedResource Include="Forms\FrmSearch.resx" />
+    <EmbeddedResource Include="Forms\FrmSearchDog.resx" />
+    <EmbeddedResource Include="Forms\FrmSearchTabNum.resx" />
+    <EmbeddedResource Include="Forms\FrmSelectAccountForOverhaul.resx" />
+    <EmbeddedResource Include="Forms\FrmSelectPeriod.resx" />
+    <EmbeddedResource Include="Forms\FrmServiceParam.resx" />
+    <EmbeddedResource Include="Forms\FrmSourcePay.resx" />
+    <EmbeddedResource Include="Forms\FrmSpash.resx" />
+    <EmbeddedResource Include="Forms\FrmSprAccounts.resx" />
+    <EmbeddedResource Include="Forms\FrmStrSearch.resx" />
+    <EmbeddedResource Include="Forms\FrmSupplier.resx" />
+    <EmbeddedResource Include="Forms\FrmTariffs.resx" />
+    <EmbeddedResource Include="Forms\FrmTypeCounter.resx" />
+    <EmbeddedResource Include="Forms\FrmTypeDelivery.resx" />
+    <EmbeddedResource Include="Forms\FrmTypeNoteBook.resx" />
+    <EmbeddedResource Include="Forms\FrmTypeSeal.resx" />
+    <EmbeddedResource Include="Forms\FrmUZP.resx" />
+    <EmbeddedResource Include="Forms\MainForm.resx" />
+    <EmbeddedResource Include="Forms\UCBase.resx" />
+    <EmbeddedResource Include="Forms\UCMspDocument.resx" />
+    <EmbeddedResource Include="Forms\UCServParam.resx" />
+    <EmbeddedResource Include="hibernate\cfg.xml" />
+    <EmbeddedResource Include="Mappings\Absence\hbm.xml" />
+    <EmbeddedResource Include="Mappings\AbsenceCoeff\hbm.xml" />
+    <EmbeddedResource Include="Mappings\ActionPeni\hbm.xml" />
+    <EmbeddedResource Include="Mappings\Address\hbm.xml" />
+    <EmbeddedResource Include="Mappings\Adm_Scripts\hbm.xml" />
+    <EmbeddedResource Include="Mappings\AdmTbl\hbm.xml" />
+    <EmbeddedResource Include="Mappings\Agreement\hbm.xml" />
+    <EmbeddedResource Include="Mappings\Audit\hbm.xml" />
+    <EmbeddedResource Include="Mappings\Balance\hbm.xml" />
+    <EmbeddedResource Include="Mappings\BalancePeni\hbm.xml" />
+    <EmbeddedResource Include="Mappings\Bank\hbm.xml" />
+    <EmbeddedResource Include="Mappings\BaseCounter\hbm.xml" />
+    <EmbeddedResource Include="Mappings\BaseOrg\hbm.xml" />
+    <EmbeddedResource Include="Mappings\BaseOrgPerson\hbm.xml" />
+    <EmbeddedResource Include="Mappings\BaseTariff\hbm.xml" />
+    <EmbeddedResource Include="Mappings\Bill\hbm.xml" />
+    <EmbeddedResource Include="Mappings\Bond\hbm.xml" />
+    <EmbeddedResource Include="Mappings\BuiltIn\hbm.xml" />
+    <EmbeddedResource Include="Mappings\City\hbm.xml" />
+    <EmbeddedResource Include="Mappings\ClassTable\hbm.xml" />
+    <EmbeddedResource Include="Mappings\ClientParam\hbm.xml" />
+    <EmbeddedResource Include="Mappings\ClosedPeriod\hbm.xml" />
+    <EmbeddedResource Include="Mappings\CmpCoeffLocation\hbm.xml" />
+    <EmbeddedResource Include="Mappings\CmpHmReceipt\hbm.xml" />
+    <EmbeddedResource Include="Mappings\cmpNorm\hbm.xml" />
+    <EmbeddedResource Include="Mappings\CmpParam\hbm.xml" />
+    <EmbeddedResource Include="Mappings\CmpReceipt\hbm.xml" />
+    <EmbeddedResource Include="Mappings\CmpSupplier\hbm.xml" />
+    <EmbeddedResource Include="Mappings\cmpTariffCost\hbm.xml" />
+    <EmbeddedResource Include="Mappings\Company\hbm.xml" />
+    <EmbeddedResource Include="Mappings\CompanyParam\hbm.xml" />
+    <EmbeddedResource Include="Mappings\CompanyPeriod\hbm.xml" />
+    <EmbeddedResource Include="Mappings\Complex\hbm.xml" />
+    <EmbeddedResource Include="Mappings\Contract\hbm.xml" />
+    <EmbeddedResource Include="Mappings\CorrectPeni\hbm.xml" />
+    <EmbeddedResource Include="Mappings\CorrectRent\hbm.xml" />
+    <EmbeddedResource Include="Mappings\Counter\hbm.xml" />
+    <EmbeddedResource Include="Mappings\CounterDetail\hbm.xml" />
+    <EmbeddedResource Include="Mappings\CounterLocation\hbm.xml" />
+    <EmbeddedResource Include="Mappings\CounterRelation\hbm.xml" />
+    <EmbeddedResource Include="Mappings\CounterScheme\hbm.xml" />
+    <EmbeddedResource Include="Mappings\CrossService\hbm.xml" />
+    <EmbeddedResource Include="Mappings\CrossType\hbm.xml" />
+    <EmbeddedResource Include="Mappings\DcMSP\hbm.xml" />
+    <EmbeddedResource Include="Mappings\dcohlCauseOut\hbm.xml" />
+    <EmbeddedResource Include="Mappings\dcohlTypeAccount\hbm.xml" />
+    <EmbeddedResource Include="Mappings\dcShare\hbm.xml" />
+    <EmbeddedResource Include="Mappings\dcUnitMeasuring\hbm.xml" />
+    <EmbeddedResource Include="Mappings\Deliver\hbm.xml" />
+    <EmbeddedResource Include="Mappings\DepReg\hbm.xml" />
+    <EmbeddedResource Include="Mappings\DetailEvidence\hbm.xml" />
+    <EmbeddedResource Include="Mappings\Di_PhonesServ\hbm.xml" />
+    <EmbeddedResource Include="Mappings\Di_Ruleorg\hbm.xml" />
+    <EmbeddedResource Include="Mappings\Distribute\hbm.xml" />
+    <EmbeddedResource Include="Mappings\DistributeDetail\hbm.xml" />
+    <EmbeddedResource Include="Mappings\DistrictHome\hbm.xml" />
+    <EmbeddedResource Include="Mappings\Dog\hbm.xml" />
+    <EmbeddedResource Include="Mappings\Dogovor\hbm.xml" />
+    <EmbeddedResource Include="Mappings\DogPeriod\hbm.xml" />
+    <EmbeddedResource Include="Mappings\Evidence\hbm.xml" />
+    <EmbeddedResource Include="Mappings\Flat\hbm.xml" />
+    <EmbeddedResource Include="Mappings\FlatCategory\hbm.xml" />
+    <EmbeddedResource Include="Mappings\Fond\hbm.xml" />
+    <EmbeddedResource Include="Mappings\FrFamily\hbm.xml" />
+    <EmbeddedResource Include="Mappings\Guild\hbm.xml" />
+    <EmbeddedResource Include="Mappings\hmWorkDistribute\hbm.xml" />
+    <EmbeddedResource Include="Mappings\Home\hbm.xml" />
+    <EmbeddedResource Include="Mappings\HomeLink\hbm.xml" />
+    <EmbeddedResource Include="Mappings\HomeParam\hbm.xml" />
+    <EmbeddedResource Include="Mappings\HomesPhones\hbm.xml" />
+    <EmbeddedResource Include="Mappings\Instalment\hbm.xml" />
+    <EmbeddedResource Include="Mappings\Legislation\hbm.xml" />
+    <EmbeddedResource Include="Mappings\LsAbsence\hbm.xml" />
+    <EmbeddedResource Include="Mappings\LsArenda\hbm.xml" />
+    <EmbeddedResource Include="Mappings\LsClient\hbm.xml" />
+    <EmbeddedResource Include="Mappings\LsFamily\hbm.xml" />
+    <EmbeddedResource Include="Mappings\LsMSPGku\hbm.xml" />
+    <EmbeddedResource Include="Mappings\LsQuality\hbm.xml" />
+    <EmbeddedResource Include="Mappings\LsService\hbm.xml" />
+    <EmbeddedResource Include="Mappings\LsServiceParam\hbm.xml" />
+    <EmbeddedResource Include="Mappings\LsSupplier\hbm.xml" />
+    <EmbeddedResource Include="Mappings\lsWorkDistribute\hbm.xml" />
+    <EmbeddedResource Include="Mappings\lsWorkPayRent\hbm.xml" />
+    <EmbeddedResource Include="Mappings\MSPDoc\hbm.xml" />
+    <EmbeddedResource Include="Mappings\MspDocument\hbm.xml" />
+    <EmbeddedResource Include="Mappings\Mwl\hbm.xml" />
+    <EmbeddedResource Include="Mappings\Norm\hbm.xml" />
+    <EmbeddedResource Include="Mappings\NoteBook\hbm.xml" />
+    <EmbeddedResource Include="Mappings\ohlAccounts\hbm.xml" />
+    <EmbeddedResource Include="Mappings\Operation\hbm.xml" />
+    <EmbeddedResource Include="Mappings\Overpay\hbm.xml" />
+    <EmbeddedResource Include="Mappings\OwnDoc\hbm.xml" />
+    <EmbeddedResource Include="Mappings\Owner\hbm.xml" />
+    <EmbeddedResource Include="Mappings\OwnerDoc\hbm.xml" />
+    <EmbeddedResource Include="Mappings\Param\hbm.xml" />
+    <EmbeddedResource Include="Mappings\ParamForeign\hbm.xml" />
+    <EmbeddedResource Include="Mappings\ParamRelation\hbm.xml" />
+    <EmbeddedResource Include="Mappings\PayDoc\hbm.xml" />
+    <EmbeddedResource Include="Mappings\Payment\hbm.xml" />
+    <EmbeddedResource Include="Mappings\Pens\hbm.xml" />
+    <EmbeddedResource Include="Mappings\PensDoc\hbm.xml" />
+    <EmbeddedResource Include="Mappings\Period\hbm.xml" />
+    <EmbeddedResource Include="Mappings\Pers\hbm.xml" />
+    <EmbeddedResource Include="Mappings\Person\hbm.xml" />
+    <EmbeddedResource Include="Mappings\Policy\hbm.xml" />
+    <EmbeddedResource Include="Mappings\Postaver\hbm.xml" />
+    <EmbeddedResource Include="Mappings\Proxy\hbm.xml" />
+    <EmbeddedResource Include="Mappings\PurposePay\hbm.xml" />
+    <EmbeddedResource Include="Mappings\Quality\hbm.xml" />
+    <EmbeddedResource Include="Mappings\Raion\hbm.xml" />
+    <EmbeddedResource Include="Mappings\RcptAccounts\hbm.xml" />
+    <EmbeddedResource Include="Mappings\Receipt\hbm.xml" />
+    <EmbeddedResource Include="Mappings\ReceiptParam\hbm.xml" />
+    <EmbeddedResource Include="Mappings\Reg\hbm.xml" />
+    <EmbeddedResource Include="Mappings\Register\hbm.xml" />
+    <EmbeddedResource Include="Mappings\Registration\hbm.xml" />
+    <EmbeddedResource Include="Mappings\Relation\hbm.xml" />
+    <EmbeddedResource Include="Mappings\Rent\hbm.xml" />
+    <EmbeddedResource Include="Mappings\RentMSP\hbm.xml" />
+    <EmbeddedResource Include="Mappings\RentPeni\hbm.xml" />
+    <EmbeddedResource Include="Mappings\RightDoc\hbm.xml" />
+    <EmbeddedResource Include="Mappings\Scheme\hbm.xml" />
+    <EmbeddedResource Include="Mappings\SdcMSPPercent\hbm.xml" />
+    <EmbeddedResource Include="Mappings\Seal\hbm.xml" />
+    <EmbeddedResource Include="Mappings\Service\hbm.xml" />
+    <EmbeddedResource Include="Mappings\ServiceParam\hbm.xml" />
+    <EmbeddedResource Include="Mappings\SndAdress\hbm.xml" />
+    <EmbeddedResource Include="Mappings\SocFamily\hbm.xml" />
+    <EmbeddedResource Include="Mappings\SocSaldo\hbm.xml" />
+    <EmbeddedResource Include="Mappings\SourcePay\hbm.xml" />
+    <EmbeddedResource Include="Mappings\Spreading\hbm.xml" />
+    <EmbeddedResource Include="Mappings\StatLic\hbm.xml" />
+    <EmbeddedResource Include="Mappings\Str\hbm.xml" />
+    <EmbeddedResource Include="Mappings\StrAll\hbm.xml" />
+    <EmbeddedResource Include="Mappings\StreetRu\hbm.xml" />
+    <EmbeddedResource Include="Mappings\Supplier\hbm.xml" />
+    <EmbeddedResource Include="Mappings\SupplierClient\hbm.xml" />
+    <EmbeddedResource Include="Mappings\Tariff\hbm.xml" />
+    <EmbeddedResource Include="Mappings\Transfer\hbm.xml" />
+    <EmbeddedResource Include="Mappings\TypeArendaDocument\hbm.xml" />
+    <EmbeddedResource Include="Mappings\TypeCounter\hbm.xml" />
+    <EmbeddedResource Include="Mappings\TypeNoteBook\hbm.xml" />
+    <EmbeddedResource Include="Mappings\TypeSeal\hbm.xml" />
+    <EmbeddedResource Include="Mappings\UnitMeasuring\hbm.xml" />
+    <EmbeddedResource Include="Mappings\UsesType\hbm.xml" />
+    <EmbeddedResource Include="Mappings\YesNo\hbm.xml" />
+    <EmbeddedResource Include="Properties\Resources.resx" />
+    <EmbeddedResource Include="Smirnov\Forms\MessageWait.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

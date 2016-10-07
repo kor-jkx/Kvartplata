@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="LsQuality" table="DBA.LsQuality">
+    <composite-id>
+      <key-many-to-one name="LsClient" class="LsClient" column="Client_Id"/>
+      <key-many-to-one name="Period" class="Period" column="Period_Id"/>
+      <key-property name="DBeg"
+                   column="DBeg"/>
+      <key-many-to-one name="Quality" class="Quality" column="Quality_Id"/>
+    </composite-id>
+
+    <property name="DEnd"
+              column="DEnd"/>
+    <property name="UName"
+          column="UName"/>
+    <property name="DEdit"
+          column="DEdit"/>
+ 
+  </class>
+  <query name="UpdateQuality">
+    <![CDATA[
+        update LsQuality lq set DBeg=:dbeg1,DEnd=:dend,Quality=:quality1,UName=:uname,DEdit=:dedit
+        where lq.LsClient=:client and lq.Period=:period
+        and lq.DBeg=:dbeg2 and lq.Quality=:quality2
+        ]]>
+  </query>
+
+</hibernate-mapping>

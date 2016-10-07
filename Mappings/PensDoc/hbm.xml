@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="PensDoc" table="DBA.PensDoc">
+    <id name="IdPensDoc" unsaved-value="0">
+      <column name="IdPensDoc" not-null="true" />
+      <generator class="assigned"/>
+    </id>
+    <many-to-one name="Person" class="Person" column="IdPers"/>
+    <many-to-one name="Pens" class="Pens" column="IdPens"/>
+
+    <property name="DBeg"
+             column="Startday"/>
+    <property name="DEnd"
+             column="Last"/>
+    <property name="SeriaPens"
+              column="seriapens"/>
+    <property name="DatePens"
+              column="DatePens"  not-null="false"/>
+    <property name="OutPens"
+              column="outpens"/>
+    <property name="Uname"
+          column="Uname"/>
+    <property name="Dedit"
+          column="Dedit"/>
+  </class>
+
+</hibernate-mapping>

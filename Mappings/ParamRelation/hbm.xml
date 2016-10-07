@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="ParamRelation" table="DBA.srvParam_Relation">
+    <id name="ParamId" unsaved-value="0">
+      <column name="Param_id" not-null="true" />
+      <generator class="identity"/>
+    </id>
+    <property name="TableId"
+              column="Table_id"/>
+  </class>
+
+</hibernate-mapping>

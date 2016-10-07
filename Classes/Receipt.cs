@@ -1,0 +1,66 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: Kvartplata.Classes.Receipt
+// Assembly: Kvartplata, Version=1.16.3.10, Culture=neutral, PublicKeyToken=null
+// MVID: 07D514F7-94DF-4C8B-8A8A-7DDC3C754113
+// Assembly location: S:\soft-work\kor-jkx\kvartplata\Kvartplata.exe
+
+using System;
+
+namespace Kvartplata.Classes
+{
+  public class Receipt
+  {
+    private short receiptId;
+    private string receiptName;
+    private string uName;
+    private DateTime dEdit;
+
+    public virtual short ReceiptId
+    {
+      get
+      {
+        return this.receiptId;
+      }
+      set
+      {
+        this.receiptId = value;
+      }
+    }
+
+    public virtual string ReceiptName
+    {
+      get
+      {
+        return this.receiptName;
+      }
+      set
+      {
+        this.receiptName = value;
+      }
+    }
+
+    public virtual string UName
+    {
+      get
+      {
+        return this.uName;
+      }
+      set
+      {
+        this.uName = value;
+      }
+    }
+
+    public virtual DateTime DEdit
+    {
+      get
+      {
+        return this.dEdit;
+      }
+      set
+      {
+        this.dEdit = value;
+      }
+    }
+  }
+}

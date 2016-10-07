@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="Supplier" table="DBA.dcSupplier" >
+    <id name="SupplierId" unsaved-value="0" >
+      <column name="Supplier_id" not-null="true"  />
+      <generator class="assigned"/>
+    </id>
+    <many-to-one name="Recipient" class="BaseOrg" column="recipient_id" />
+    <many-to-one name="Perfomer" class="BaseOrg" column="perfomer_id"/>
+
+    <property name="UName" column="uname" />
+    <property name="DEdit" column="dedit" />
+
+  </class>
+
+</hibernate-mapping>

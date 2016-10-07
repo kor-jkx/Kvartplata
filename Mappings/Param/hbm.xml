@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="Param" table="DBA.dcParam" where="Param_id>0">
+    <id name="ParamId" column="Param_id" >
+      <generator class="assigned"/>
+    </id>
+    <property name="ParamName"
+              column="Param_name"/>
+    <property name="Param_type" column="Param_type" not-null="true"/>
+    <property name="Sorter" column="Sorter" not-null="true" unique="true"/>
+    <property name="Uname" column="Uname" not-null="true"/>
+    <property name="Dedit" column="Dedit" not-null="true"/>
+    <property name="Areal" column="Areal" not-null="true" />
+    
+  </class>
+
+</hibernate-mapping>

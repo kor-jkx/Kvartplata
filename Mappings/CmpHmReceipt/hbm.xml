@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="CmpHmReceipt" table="DBA.CmpHmReceipt">
+    <composite-id >
+      <key-many-to-one name="Complex" column="Complex_id" class="Complex"/>
+      <key-many-to-one name="Service" column="Service_id" class="Service"/>
+      <key-many-to-one name="Company" column="Company_id" class="Company"/>
+      <key-property name="HomeId" column="Idhome"   />
+      <key-many-to-one name="Supplier" column="Supplier_id" class="Supplier"/>
+      <key-many-to-one name="Receipt" column="Receipt_id" class="Receipt"/>
+      <key-property name="DBeg" column="DBeg" />
+    </composite-id>
+
+    <property name="DEnd" column="DEnd" />
+    <property name="UName" column="Uname" />
+    <property name="DEdit" column="Dedit" />
+
+  </class>
+
+</hibernate-mapping>

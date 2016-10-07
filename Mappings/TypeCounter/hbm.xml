@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="TypeCounter" table="DBA.dcTypeCounter">
+    <id name="TypeCounter_id" column="TypeCounter_id" >
+      <generator class="assigned"/>
+    </id>
+    <property name="TypeCounter_name"
+              column="TypeCounter_name" not-null="true"/>
+    <property name="CDigit" column="CDigit" not-null="true"/>
+    <property name="Uname" column="Uname" not-null="true"/>
+    <property name="Dedit" column="Dedit" not-null="true"/>
+
+  </class>
+
+</hibernate-mapping>

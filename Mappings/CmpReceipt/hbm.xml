@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="CmpReceipt" table="DBA.cmpReceipt">
+    <composite-id>
+      <key-property name="CompanyId"
+                     column="Company_id"/>
+      <key-property name="ReceiptId"
+                   column="Receipt_id"/>
+    </composite-id>
+
+    <property name="SupplierId" column="Supplier_Id" not-null="false"/>
+    <property name="Account"
+      column="Account"
+      not-null="false"/>
+    <property name="UName" column="UName"
+      not-null="true"/>
+    <property name="DEdit" column="DEdit" not-null="true"/>
+    <many-to-one name="Bank" class="Bank" column="Bank_Id" />
+    <many-to-one name="Seller" class="BaseOrg" column="seller_id" />
+    <many-to-one name="Consignor" class="BaseOrg" column="consignor_id" />
+    <property name="RecipientId" column="recipient_id"/>
+    <property name="PrintShow" column="PrintShow" />
+  </class>
+
+</hibernate-mapping>

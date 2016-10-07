@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="Person" table="DBA.Form_A" >
+    <id name="PersonId" unsaved-value="0" >
+      <column name="IdForm" not-null="true"  />
+      <generator class="assigned"/>
+    </id>
+    <property name="Family"
+              column="Family" not-null="true"/>
+    <many-to-one name="LsClient" class="LsClient" column="Idlic" fetch="join"  />
+    <many-to-one name="Reg" class="Registration" column="TypePropis"/>
+    <many-to-one name="Relation" class="Relation" column="Rodstv"/>
+    <many-to-one name="Owner" class="Owner" column="Owner"/>
+    <property name="Name"
+              column="Name" not-null="true" />
+    <property name="LastName"
+              column="LastName" not-null="true" />
+    <property name="FirstPropDate"
+          column="FirstPropDate" not-null="false" />
+    <property name="OutToDate"
+      column="OutToDate" not-null="false" />
+    <property name="BornDate"
+  column="BornDate" not-null="false" />
+    <property name="LastPropDate"
+  column="LastPropDate" not-null="false" />
+    <property name="RegDate"
+  column="RegDate" not-null="true" />
+    <property name="RegOutDate"
+  column="RegOutDate" not-null="false" />
+    <property name="DieDate"
+  column="DieDate" not-null="false" />
+    <property name="Archive"
+    column="Archive" />
+    <property name="RegDEdit"
+      column="RegDEdit" not-null="false" />
+    <property name="OutDEdit"
+      column="OutDEdit" not-null="false" />
+
+    <property name="UNameReg" column="UName_Reg" not-null="false" />
+    <property name="UNameUnReg" column="UName_UnReg" not-null="false" />
+    <property name="Snils"       column="Idstrah" not-null="false" />
+    <property name="FamilyNum"   column="FamilyNum" not-null="true" />
+    <property name="Consent" column="Address" />
+    <many-to-one name="BaseOrg" class="BaseOrg" column="idbaseorg"/>
+    <many-to-one name="Guild" class="Guild" column="deesp"/>
+    <property name="Number" column="percentsharestring" />  
+
+
+  </class>
+
+</hibernate-mapping>

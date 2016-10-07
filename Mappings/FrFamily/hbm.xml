@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+  <class name="FrFamily" table="DBA.frFamily">
+    <composite-id>
+      <key-many-to-one name="LsFamily" class="LsFamily" column="Family_Id"/>
+      <key-many-to-one name="Person" class="Person" column="IdForm"/>
+      <key-many-to-one name="Period" class="Period" column="Period_Id"/>
+      <key-property name="DBeg"
+                   column="DBeg"/>
+    </composite-id>
+
+    <property name="DEnd"
+              column="DEnd"/>
+    <property name="OnOff"
+          column="OnOff"/>    
+    <property name="Uname"
+              column="uname"/>
+    <property name="Dedit"
+              column="Dedit"/>
+
+  </class>
+
+</hibernate-mapping>

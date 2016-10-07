@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="CounterDetail" table="DBA.cntrDetail">
+    <composite-id>
+      <key-many-to-one name="Period" class="Period" column="Period_Id"/>
+      <key-many-to-one name="Counter" class="Counter" column="Counter_Id"/>
+      <key-many-to-one name="Service" class="Service" column="Service_Id"/>
+      <key-many-to-one name="Month" class="Period" column="Month_Id"/>
+    </composite-id>
+    <property name ="Evidence" column="Evidence" />
+    <property name ="EvidenceNorm" column="Evidence_norm" />
+    <!--<property name ="EvidenceCntr" column="Evidence_cntr" />-->
+    <property name ="EvidenceNormAr" column="Evidence_norm110" />
+    <property name ="EvidenceCntrAr" column="Evidence_cntr110" />
+    <property name ="Coeff" column="Coeff" />
+    <property name ="NormCount" column="Norm_count" />
+    <property name ="NormUnit" column="Norm_unit" />
+    <property name ="EvidenceCross" column="Evidence_cross"/>
+    <property name ="EvidenceCntr" column="Evidence_cntr" />
+    <property name ="EvidenceOdnNorm" column="Evidence_odn_norm" />
+    <property name ="EvidenceOdnNorm110" column="Evidence_odn_norm110" />
+    <property name ="EvidenceOdnCntr" column="Evidence_odn_cntr" />
+    <property name ="EvidenceOdnCntr110" column="Evidence_odn_cntr110" />
+    
+  </class>
+
+</hibernate-mapping>

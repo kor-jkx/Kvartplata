@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="DI_RULEORG" table="DBA.DI_RULEORG">
+    <id name="Idrul" unsaved-value="0">
+      <column name="Idrul" not-null="true" />
+      <generator class="identity"/>
+    </id>
+    <property name="Namerul"
+              column="Namerul"/>
+  </class>
+</hibernate-mapping>

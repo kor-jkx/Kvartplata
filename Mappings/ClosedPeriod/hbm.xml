@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="ClosedPeriod" table="DBA.cmpPeriod">
+    <composite-id>
+      <key-property name="Company_id"
+                     column="Company_id"/>
+      <key-property name="Complex_id"
+                     column="Complex_id"/>
+    </composite-id>
+    <property name="Period_id" column="Period_id" not-null="true"/>
+  </class>
+
+</hibernate-mapping>

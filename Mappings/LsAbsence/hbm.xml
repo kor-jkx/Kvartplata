@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="LsAbsence" table="DBA.LsAbsence">
+    <composite-id>
+      <key-many-to-one name="LsClient" class="LsClient" column="Client_Id"/>
+      <key-many-to-one name="Period" class="Period" column="Period_Id"/>
+      <key-property name="DBeg"
+                   column="DBeg"/>
+      <key-many-to-one name="Person" class="Person" column="IdForm"/>
+      <key-property name="Motive"
+                   column="motive_id"/>
+    </composite-id>
+
+    <property name="DEnd"
+              column="DEnd"/>
+    <many-to-one name="Absence" class="Absence" column="Absence_id"/>
+    <property name="Document"
+          column="Document"/>
+    <many-to-one name="OnOff" class="YesNo" column="onoff"/>
+    <!--<property name="Motive" column="motive_id"/>-->
+    <property name="UName"
+      column="UName"/>
+    <property name="DEdit"
+      column="DEdit"/>
+  </class>
+  <query name="UpdateAbsence">
+    <![CDATA[
+        update LsAbsence la set DBeg=:dbeg1,DEnd=:dend,Absence=:abs,Person=:pers1,Document=:doc,UName=:uname,DEdit=:dedit,OnOff=:onoff
+        where la.LsClient=:client and la.Period=:period
+        and la.DBeg=:dbeg2 and la.Person=:pers2 and la.Absence=:abs2
+        ]]>
+  </query>
+
+</hibernate-mapping>

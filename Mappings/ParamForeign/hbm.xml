@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="ParamForeign" table="DBA.lsParamForeign" >
+    <composite-id  >
+      <key-many-to-one name="LsClient" class="LsClient" column="Client_Id"   />
+      <key-many-to-one name="Period" class="Period" column="Period_Id"  />
+      <key-many-to-one name="Service" class="Service" column="Service_Id" />
+      <key-property name="Code" column="Code" />
+      <key-property name="DBeg" column="DBeg" />
+    </composite-id>
+    <property name="DEnd" column="DEnd" />
+    <property name="P101" column="P101" />
+    <property name="P102" column="P102" />
+    <property name="P2" column="P2" />
+    <many-to-one name="BaseTariff" class="BaseTariff" column="basetariff_id"  />
+    <property name="NormValue" column="Norm_Value"  />
+    <property name="Cost" column="Cost" />
+    <property name="ParamValue"  column="Param_Value" />
+  </class>
+
+</hibernate-mapping>

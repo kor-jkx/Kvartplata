@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="Tariff" table="DBA.dcTariff">
+    <id name="Tariff_id" unsaved-value="0">     
+      <generator class="assigned"/>
+    </id>
+    <property name="Tariff_name" column="Tariff_name" not-null="true"/>
+    <property name="Tariff_num" column="Tariff_num" not-null="true"/>
+    <property name="Counter_id" column="Counter" not-null="false"/>
+  <!--  <property name="BaseTariff_id" column="BaseTariff_id" not-null="false"/>-->
+    <many-to-one name="Service" column="Service_id" class ="Kvartplata.Classes.Service"/>
+    <many-to-one name="Manager" column="Manager_id" class ="Kvartplata.Classes.BaseOrg"/>
+    <property name="Uname" column="Uname" not-null="true"/>
+    <property name="Dedit" column="Dedit" not-null="true"/>
+
+    <!-- <set name="TariffCost" inverse="true" where="Period_id=0"
+      cascade="all-delete-orphan" order-by="Dbeg">
+      <key column="Tariff_id"/>
+      <one-to-many class="Kvartplata.Classes.cmpTariffCost"/>
+    </set>
+    -->
+  </class>
+
+</hibernate-mapping>

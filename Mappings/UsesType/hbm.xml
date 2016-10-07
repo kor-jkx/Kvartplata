@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="UsesType" table="DBA.dcUsesType">
+    <id name="UsesTypeId" column="usestype_id" >
+      <generator class="assigned"/>
+    </id>
+    <property name="UsesTypeName" column="usestype_name" />
+    <property name="UName" column="uname" />
+    <property name="DEdit" column="dedit" />
+   </class>
+
+</hibernate-mapping>

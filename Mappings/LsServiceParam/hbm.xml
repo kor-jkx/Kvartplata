@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+  <class name="LsServiceParam" table="DBA.lsServiceParam">
+    <composite-id>
+      <key-many-to-one name="LsClient" class="LsClient" column="Client_Id"/>
+      <key-property name="DBeg" column="DBeg"/>
+      <key-many-to-one name="Period" class="Period" column="Period_Id"/>
+      <key-many-to-one name="Param" class="Param" column="Param_Id"/>
+      <key-many-to-one name="Service" class="Service" column="Service_Id"/>
+    </composite-id>
+
+    <property name="ParamValue"
+          column="Param_value"/>
+    <property name="DEnd"
+              column="DEnd"/>
+    <property name="UName"
+              column="uname"/>
+    <property name="DEdit"
+              column="Dedit"/>
+
+  </class>
+
+</hibernate-mapping>

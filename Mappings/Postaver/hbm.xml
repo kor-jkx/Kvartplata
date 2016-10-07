@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="Postaver" table="DBA.POSTAVER">
+    <id name="IDPOSTAVER" unsaved-value="0">
+      <column name="IDPOSTAVER" />
+      <generator class="assigned"/>
+    </id>
+    <property name="IDBASEORG" column="IDBASEORG" />
+  </class>
+
+</hibernate-mapping>

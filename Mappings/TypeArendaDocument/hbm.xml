@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="TypeArendaDocument" table="DBA.dcTypeArendaDocument">
+    <id name="TypeDocument_id" column="TypeDocument_id" >
+      <generator class="assigned"/>
+    </id>
+    <property name="TypeDocument_name"
+              column="TypeDocument_name"/>
+    <property name="Uname" column="Uname"/>
+    <property name="Dedit" column="Dedit"/>
+
+  </class>
+
+</hibernate-mapping>

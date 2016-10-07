@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="Bill" table="DBA.lsBill" >
+    <composite-id  >
+      <key-many-to-one name="LsClient" class="LsClient" column="Client_Id"   />
+      <key-many-to-one name="Period" class="Period" column="Period_Id"  />
+      <key-many-to-one name="Month" class="Period" column="Month_Id" />
+      <key-many-to-one name="Receipt" class="Receipt" column="Receipt_Id" />
+      <key-property name="BillType" column="Bill_Type" />
+    </composite-id>
+    <property name="BillNum" column="bill_num"/>
+    <property name="BillDate" column="bill_date"/>
+    <property name="UName" column="uname"/>
+    <property name="DEdit" column="dedit"/>
+  </class>
+
+</hibernate-mapping>

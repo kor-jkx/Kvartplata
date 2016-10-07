@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="Bank" table="DBA.Di_Bank">
+    <id name="BankId" unsaved-value="0">
+      <column name="IdBank" not-null="true" />
+      <generator class="assigned"/>
+    </id>
+    <property name="BankName" column="NameBank"/>
+    <property name="NameMin" column="Name_Min"/>
+    <property name="BIK" column="BIK"/>
+    <property name="INN" column="INN"/>
+    <property name="KorSch" column="Kor_sch"/>
+    <many-to-one class="Reg" name="Reg" column="IdCity"></many-to-one>
+  </class>
+
+</hibernate-mapping>

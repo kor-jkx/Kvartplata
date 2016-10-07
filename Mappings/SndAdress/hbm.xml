@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+  
+  <class name="SndAddress" table="DBA.sndAdress">
+    <id name="SndAddressId" column="SndAdress_Id" >
+      <generator class="assigned"/>
+    </id>
+    <property name="UploadDir" column="UploadDir" />
+    <property name="Account_Type" column="Account_type" />
+    <property name="Account" column="Account"/>
+    <property name="Receipt_id" column="Receipt_id" />
+    <property name="DownloadDir" column="DownloadDir" />
+    <property name="EmailAdress" column="EmailAdress" />
+    <property name="Active" column="Active" />
+    <property name="FTPAdress" column="FTPAdress"/>
+    <!--<property name="SndAddressId" column="id_SndAdress" not-null="false"/>-->
+  </class>
+  
+</hibernate-mapping>

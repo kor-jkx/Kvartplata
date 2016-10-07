@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+  <class name="hmWorkDistribute" table="DBA.hmWorkDistribute">
+    <id name="WorkDistribute" unsaved-value="0">
+      <column name="WorkDistribute_id" not-null="true" />
+      <generator class="assigned"/>
+    </id>
+    <many-to-one name="Company" class="Company" column="Company_id" fetch="join"/>
+    <many-to-one name="Home" class="Home" column="IdHome" fetch="join"/>
+    <many-to-one name="Period" class="Period" column="Period_id" fetch="join"/>
+    <many-to-one name="Service" class="Service" column="Service_id" fetch="join"/>
+    <!--<many-to-one name="Scheme" class="Scheme" column="Scheme" fetch="join"/>-->
+    <property name="Scheme"
+             column="Scheme"
+             not-null="true"/>
+    <property name="Rent"
+             column="Rent"
+             not-null="true"/>
+    <property name="ParamValue"
+             column="Param_value"
+             not-null="true"/>
+    <property name="Uname"
+              column="Uname"
+              not-null="true"/>
+    <property name="Dedit"
+              column="Dedit"
+    not-null="true"/>
+  </class>
+</hibernate-mapping>

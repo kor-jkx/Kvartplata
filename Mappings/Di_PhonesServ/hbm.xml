@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="Di_PhonesServ" table="DBA.Di_PhonesServ">
+    <id name="Idservice" column="Idservice" >
+      <generator class="assigned" />
+    </id>
+    <property name="Nameservice"
+              column="Nameservice" not-null="true"/>
+    <property name="ViewService"
+            column="viewservice" not-null="true"/>
+<!--    <property name="Uname" column="Uname" not-null="true"/>
+    <property name="Dedit" column="Dedit" not-null="true"/>-->
+
+  </class>
+
+</hibernate-mapping>

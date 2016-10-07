@@ -1,0 +1,959 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="report1.ReportResourceString" xml:space="preserve">
+    <value>﻿&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;Report ScriptLanguage="CSharp" ReportInfo.Created="01/25/2013 15:32:43" ReportInfo.Modified="03/25/2013 13:08:32" ReportInfo.CreatorVersion="1.6.30.0"&gt;
+  &lt;ScriptText&gt;using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Windows.Forms;
+using System.Drawing;
+using System.Data;
+using FastReport;
+using FastReport.Data;
+using FastReport.Dialog;
+using FastReport.Barcode;
+using FastReport.Table;
+using FastReport.Utils;
+
+namespace FastReport
+{
+  public class ReportScript
+  {
+    private string strAudit;
+    private Int16 cnt5;
+    private Int16 cnt10;
+    private Int16 cnt;   //счетчик напечатанных строк
+    private Int16 cnt2;
+    
+    private void Memo11_BeforePrint(object sender, EventArgs e)
+    {
+      String flat,room,korp;
+      flat = &amp;quot;&amp;quot;;
+      korp = &amp;quot;&amp;quot;;
+      room = &amp;quot;&amp;quot;;
+      if ((string)Report.GetColumnValue(&amp;quot;Main.nflat&amp;quot;) != &amp;quot;&amp;quot; &amp;amp;&amp;amp; (string)Report.GetColumnValue(&amp;quot;Main.nflat&amp;quot;) != &amp;quot;0&amp;quot;)
+        flat = &amp;quot; кв.&amp;quot;+(string)Report.GetColumnValue(&amp;quot;Main.nflat&amp;quot;);
+      else 
+        flat = &amp;quot;&amp;quot;;
+      if ((string)Report.GetColumnValue(&amp;quot;Main.home_korp&amp;quot;) != &amp;quot;&amp;quot;)
+        korp = &amp;quot; корп.&amp;quot;+(string)Report.GetColumnValue(&amp;quot;Main.home_korp&amp;quot;);
+      else 
+        korp = &amp;quot;&amp;quot;;
+      if ((string)Report.GetColumnValue(&amp;quot;Main.numberroom&amp;quot;) != &amp;quot;&amp;quot;)
+        room = &amp;quot; ком.&amp;quot;+(string)Report.GetColumnValue(&amp;quot;Main.numberroom&amp;quot;);
+      else 
+        room = &amp;quot;&amp;quot;;
+      ((TextObject)sender).Text = (string)Report.GetColumnValue(&amp;quot;Main.str&amp;quot;)+&amp;quot; д.&amp;quot;+(string)Report.GetColumnValue(&amp;quot;Main.home&amp;quot;)+korp+flat+room;
+    }
+
+    private void Memo282_BeforePrint(object sender, EventArgs e)
+    {
+      if ((string)Report.GetColumnValue(&amp;quot;Main.mess&amp;quot;) != &amp;quot;&amp;quot;) 
+        ((TextObject)sender).Text = strAudit+(string)Report.GetColumnValue(&amp;quot;Main.mess&amp;quot;);
+      else
+        ((TextObject)sender).Text = strAudit+(string)Report.GetColumnValue(&amp;quot;Main.company_name&amp;quot;);
+      strAudit = &amp;quot;&amp;quot;;
+    }
+
+    private void Text5_BeforePrint(object sender, EventArgs e)
+    {
+      if ((string)Report.GetColumnValue(&amp;quot;Tarif.sname&amp;quot;) != &amp;quot;Дол. финанс. кап. ремонта&amp;quot; )
+        ((TextObject)sender).Font = new Font(((TextObject)sender).Font, System.Drawing.FontStyle.Regular);
+      else
+        ((TextObject)sender).Font = new Font(((TextObject)sender).Font,System.Drawing.FontStyle.Bold);
+    }
+
+    private void Text57_BeforePrint(object sender, EventArgs e)
+    {
+      if ((decimal)Report.GetColumnValue(&amp;quot;Itog.peniout&amp;quot;) &amp;gt; 0) 
+        ((TextObject)sender).Visible = true;
+      else
+        ((TextObject)sender).Visible = false;
+    }
+
+    private void Memo41_BeforePrint(object sender, EventArgs e)
+    {
+      decimal i = (decimal)Report.GetColumnValue(&amp;quot;Itog.out2&amp;quot;);
+      decimal sumItog;
+      if ((decimal)Report.GetColumnValue(&amp;quot;Itog.peniout&amp;quot;) &amp;lt;= 0)
+        sumItog = (decimal)Report.GetColumnValue(&amp;quot;Itog.out2&amp;quot;)+(decimal)Report.GetColumnValue(&amp;quot;Itog.bankproc&amp;quot;);
+      else
+        if (i &amp;gt; 0) 
+        sumItog = (decimal)Report.GetColumnValue(&amp;quot;Itog.out2&amp;quot;)+(decimal)Report.GetColumnValue(&amp;quot;Itog.bankproc&amp;quot;)+(decimal)Report.GetColumnValue(&amp;quot;Itog.peniout&amp;quot;);
+      else
+        sumItog = (decimal)Report.GetColumnValue(&amp;quot;Itog.peniout&amp;quot;)+(decimal)Report.GetColumnValue(&amp;quot;Itog.bankproc&amp;quot;);
+      ((TextObject)sender).Text = string.Format(&amp;quot;{0:### ##0.00 }&amp;quot;,sumItog);
+    }
+
+    private void Memo3_BeforePrint(object sender, EventArgs e)
+    {
+      if ((decimal)Report.GetColumnValue(&amp;quot;Itog.dolg&amp;quot;) != 0) 
+      {
+        ((TextObject)sender).Visible = true;
+        if ((decimal)Report.GetColumnValue(&amp;quot;Itog.dolg&amp;quot;) &amp;gt; 0) 
+          ((TextObject)sender).Text = &amp;quot;Долг на &amp;quot;+ string.Format(&amp;quot;{0:d}&amp;quot;,(DateTime)Report.GetColumnValue(&amp;quot;Main.period&amp;quot;));// ((DateTime)Report.GetColumnValue(&amp;quot;Main.period&amp;quot;)).ToShortDateString;
+        else
+          ((TextObject)sender).Text = &amp;quot;Перепл. на &amp;quot;+ string.Format(&amp;quot;{0:d}&amp;quot;,(DateTime)Report.GetColumnValue(&amp;quot;Main.period&amp;quot;));
+      }
+      else
+        ((TextObject)sender).Visible = false;
+    }
+
+    private void Memo349_BeforePrint(object sender, EventArgs e)
+    {
+      if ((decimal)Report.GetColumnValue(&amp;quot;Itog.sumcomp&amp;quot;)+(decimal)Report.GetColumnValue(&amp;quot;Main.sumcomp&amp;quot;) != 0)
+        ((TextObject)sender).Text = &amp;quot;Компенсация /n&amp;quot;+&amp;quot;за отопление:&amp;quot;;
+      else
+        ((TextObject)sender).Text = &amp;quot;&amp;quot;;
+    }
+
+    private void Memo33_BeforePrint(object sender, EventArgs e)
+    {
+      if ((decimal)Report.GetColumnValue(&amp;quot;Itog.dolg&amp;quot;) != 0) 
+        ((TextObject)sender).Visible = true;
+      else
+        ((TextObject)sender).Visible = false;
+    }
+
+    private void Memo292_BeforePrint(object sender, EventArgs e)
+    {
+      if ((decimal)Report.GetColumnValue(&amp;quot;Main.sumstar&amp;quot;) != 0) 
+        ((TextObject)sender).Visible = true;
+      else
+        ((TextObject)sender).Visible = false;
+    }
+
+    private void Memo42_BeforePrint(object sender, EventArgs e)
+    {
+      if  ((string)Report.GetColumnValue(&amp;quot;Counters.counter_num&amp;quot;)==&amp;quot;99999999999999999999&amp;quot;)
+        ((TextObject)sender).Text = &amp;quot;&amp;quot;;
+      else 
+        ((TextObject)sender).Text =((TextObject)sender).Text ;
+      //  if ((Int16)Report.GetColumnValue(&amp;quot;Counters.service_id&amp;quot;) == 5) 
+      //  ((TextObject)sender).Text = (string)Report.GetColumnValue(&amp;quot;Counters.counter_num&amp;quot;);
+      //   else
+      // {
+      // while &amp;lt;frxdsCounters.&amp;quot;service_id&amp;quot;&amp;gt; &amp;lt; Sender.Tag do
+      //  ((TextObject)sender).Text := &amp;lt;NextC&amp;gt;;
+      //  if (&amp;lt;frxdsCounters.&amp;quot;service_id&amp;quot;&amp;gt; = Sender.Tag) or ((&amp;lt;frxdsCounters.&amp;quot;service_id&amp;quot;&amp;gt; = 23) and (Sender.Tag = 17)) then
+      //  ((TextObject)sender).Text = &amp;lt;frxdsCounters.&amp;quot;counter_num&amp;quot;&amp;gt;
+      //    else
+      //     ((TextObject)sender).Text = &amp;quot;&amp;quot;;
+      //   }
+    }
+
+    private void Text84_BeforePrint(object sender, EventArgs e)
+    {
+      if ((Int16)Report.GetColumnValue(&amp;quot;Main.tmpnumjilec&amp;quot;) &amp;gt; 0) 
+        ((TextObject)sender).Visible = true;
+      else
+        ((TextObject)sender).Visible = false;
+    }
+
+    private void Memo121_BeforePrint(object sender, EventArgs e)
+    {
+      if ((string)Report.GetColumnValue(&amp;quot;Main.codehelp&amp;quot;) != &amp;quot;&amp;quot; || (string)Report.GetColumnValue(&amp;quot;Main.codesoc&amp;quot;) != &amp;quot;&amp;quot;)
+        ((TextObject)sender).Visible = true;
+      else
+        ((TextObject)sender).Visible = false;
+    }
+
+    private void Text86_BeforePrint(object sender, EventArgs e)
+    {
+      if ((string)Report.GetColumnValue(&amp;quot;Main.codehelp&amp;quot;) != &amp;quot;&amp;quot;)
+        ((TextObject)sender).Text = (string)Report.GetColumnValue(&amp;quot;Main.codesoc&amp;quot;)+&amp;quot;(&amp;quot;+(string)Report.GetColumnValue(&amp;quot;Main.codehelp&amp;quot;)+&amp;quot;)&amp;quot;;
+      else
+        ((TextObject)sender).Text = (string)Report.GetColumnValue(&amp;quot;Main.codesoc&amp;quot;);
+    }
+
+    private void Text89_BeforePrint(object sender, EventArgs e)
+    {
+      if ((decimal)Report.GetColumnValue(&amp;quot;Main.incsoc&amp;quot;) == 0 &amp;amp;&amp;amp; (decimal)Report.GetColumnValue(&amp;quot;Main.calcsoc&amp;quot;) == 0 &amp;amp;&amp;amp; 
+        (decimal)Report.GetColumnValue(&amp;quot;Main.topaysoc&amp;quot;) == 0 &amp;amp;&amp;amp; (decimal)Report.GetColumnValue(&amp;quot;Main.outsoc&amp;quot;) == 0) 
+        ((TextObject)sender).Visible = false;
+      else
+        ((TextObject)sender).Visible = true;
+    }
+
+    private void Text98_BeforePrint(object sender, EventArgs e)
+    {
+      if ((decimal)Report.GetColumnValue(&amp;quot;Main.topaysoc&amp;quot;) == 0) 
+        ((TextObject)sender).Visible = false;
+      else
+        ((TextObject)sender).Visible = true;
+    }
+
+    private void Memo24_BeforePrint(object sender, EventArgs e)
+    {
+      if ((Int16)Report.GetColumnValue(&amp;quot;Counters.service_id&amp;quot;) == 5) 
+        ((TextObject)sender).Text = &amp;quot;х.вода&amp;quot;;
+      else
+        if ((Int16)Report.GetColumnValue(&amp;quot;Counters.service_id&amp;quot;) == 10) 
+        ((TextObject)sender).Text = &amp;quot;г.вода&amp;quot;;  
+      else
+        if ((Int16)Report.GetColumnValue(&amp;quot;Counters.service_id&amp;quot;) == 17 || (Int16)Report.GetColumnValue(&amp;quot;Counters.service_id&amp;quot;) == 23) 
+        ((TextObject)sender).Text = &amp;quot;электрич.&amp;quot;;      
+      //      else 
+      //        ((TextObject)sender).Text = &amp;quot;&amp;quot;; 
+    }
+
+    private void Memo37_BeforePrint(object sender, EventArgs e)
+    {
+      if ((Int16)Report.GetColumnValue(&amp;quot;Counters.service_id&amp;quot;) == 5 || (Int16)Report.GetColumnValue(&amp;quot;Counters.service_id&amp;quot;) == 10) 
+        ((TextObject)sender).Text = &amp;quot;м3&amp;quot;;
+  
+    }
+
+    private void Data8_BeforePrint(object sender, EventArgs e)
+    {
+      if ((Int16)(Report.GetColumnValue(&amp;quot;Counters.service_id&amp;quot;)) != 5 &amp;amp;&amp;amp; (Int16)(Report.GetColumnValue(&amp;quot;Counters.service_id&amp;quot;)) != 10 &amp;amp;&amp;amp;
+        (Int16)(Report.GetColumnValue(&amp;quot;Counters.service_id&amp;quot;)) != 17 &amp;amp;&amp;amp; (Int16)(Report.GetColumnValue(&amp;quot;Counters.service_id&amp;quot;)) != 23 &amp;amp;&amp;amp;
+        (Int16)(Report.GetColumnValue(&amp;quot;Counters.service_id&amp;quot;)) != 1000)
+        ((DataBand)sender).Visible = false;
+      else
+        ((DataBand)sender).Visible = true;
+      if (((DataBand)sender).Name == &amp;quot;Data8&amp;quot;)
+        cnt +=1;
+      else 
+        cnt2+=1;
+      //Лишние строчки не печатаем
+      if  ((Int16)(Report.GetColumnValue(&amp;quot;Counters.service_id&amp;quot;)) == 5 &amp;amp;&amp;amp; ( ( ((DataBand)sender).Name == &amp;quot;Data8&amp;quot; &amp;amp;&amp;amp; cnt&amp;gt;3) || cnt2&amp;gt;3))
+      {
+        ((DataBand)sender).Visible = false; 
+        if (((DataBand)sender).Name == &amp;quot;Data8&amp;quot;)
+          cnt --;
+        else 
+          cnt2--;
+      }
+      if  ((Int16)(Report.GetColumnValue(&amp;quot;Counters.service_id&amp;quot;)) == 10 &amp;amp;&amp;amp; ( (((DataBand)sender).Name == &amp;quot;Data8&amp;quot; &amp;amp;&amp;amp; cnt&amp;gt;6) || cnt2&amp;gt;6)) 
+      {
+        ((DataBand)sender).Visible = false; 
+        if (((DataBand)sender).Name == &amp;quot;Data8&amp;quot;)
+          cnt --;
+        else 
+          cnt2--;
+      }
+      
+    }
+
+    private void Memo22_BeforePrint(object sender, EventArgs e)
+    {
+      //  cnt = 0;
+    }
+
+
+
+    private void Memo1_BeforePrint(object sender, EventArgs e)
+    {
+      cnt = 0;
+      cnt2 = 0;
+    }
+
+    private void Memo104_BeforePrint(object sender, EventArgs e)
+    {
+      //    if ((Double)Report.GetColumnValue(&amp;quot;Counters.evidence_current&amp;quot;) == Convert.ToDouble(0) &amp;amp;&amp;amp;    //(string)Report.GetColumnValue(&amp;quot;Counters.counter_num&amp;quot;) == &amp;quot;&amp;quot; &amp;amp;&amp;amp; 
+      //      (Double)Report.GetColumnValue(&amp;quot;Counters.evidence_past&amp;quot;) == Convert.ToDouble(0))
+      if ((decimal)Report.GetColumnValue(&amp;quot;Counters.evidence_current&amp;quot;) == 0 &amp;amp;&amp;amp;   //(string)Report.GetColumnValue(&amp;quot;Counters.counter_num&amp;quot;) == &amp;quot;&amp;quot; &amp;amp;&amp;amp;
+        (decimal)Report.GetColumnValue(&amp;quot;Counters.evidence_past&amp;quot;) == 0)
+        ((TextObject)sender).Text = &amp;quot;&amp;quot;;
+      //   else 
+      //     ((TextObject)sender).Text = ((TextObject)sender).Text;
+    }
+
+    private void Text123_BeforePrint(object sender, EventArgs e)
+    {
+      //  ((TextObject)sender).Text= string.Format(&amp;quot;{0:d}&amp;quot;,(DateTime)Report.GetColumnValue(&amp;quot;DetailEvidence.start1&amp;quot;));     // - {1:d},(DateTime)Report.GetColumnValue(&amp;quot;DetailEvidence.finish1&amp;quot;
+      //    ((TextObject)sender).Text = string.Format(&amp;quot;{0:d}&amp;quot;,(DateTime)Report.GetColumnValue(&amp;quot;Main.period&amp;quot;));
+      //  ((TextObject)sender).Text= string.Format(&amp;quot;{0:d}-{1:d}&amp;quot;,(string)Report.GetColumnValue(&amp;quot;DetailEvidence.start1&amp;quot;),(string)Report.GetColumnValue(&amp;quot;DetailEvidence.finish1&amp;quot;));
+      //FormatDateTime('dd.mm.yyyy',&amp;lt;frxdsYK.&amp;quot;start1&amp;quot;&amp;gt;)+'-'+FormatDateTime('dd.mm.yyyy',&amp;lt;frxdsYK.&amp;quot;finish1&amp;quot;&amp;gt;)
+  
+      if ((Decimal)Report.GetColumnValue(&amp;quot;DetailEvidence.evidence1&amp;quot;) !=0)
+        ((TextObject)sender).Text= string.Format(&amp;quot;{0:d}-{1:d}&amp;quot;,(DateTime)Report.GetColumnValue(&amp;quot;DetailEvidence.start1&amp;quot;),(DateTime)Report.GetColumnValue(&amp;quot;DetailEvidence.finish1&amp;quot;));
+      else
+        ((TextObject)sender).Text=&amp;quot;&amp;quot;;
+
+    }
+
+    private void Text126_BeforePrint(object sender, EventArgs e)
+    { //
+      if ((Decimal)Report.GetColumnValue(&amp;quot;DetailEvidence.evidence2&amp;quot;) !=0)
+        ((TextObject)sender).Text= string.Format(&amp;quot;{0:d}-{1:d}&amp;quot;,(DateTime)Report.GetColumnValue(&amp;quot;DetailEvidence.start2&amp;quot;),(DateTime)Report.GetColumnValue(&amp;quot;DetailEvidence.finish2&amp;quot;));
+      else
+        ((TextObject)sender).Text=&amp;quot;&amp;quot;;
+    }
+
+    private void Line8_BeforePrint(object sender, EventArgs e)
+    {
+      
+    }
+
+    private void Page8_StartPage(object sender, EventArgs e)
+    {
+      // cnt = 0;
+    }
+
+    private void Bar1_BeforePrint(object sender, EventArgs e)
+    { 
+
+      decimal gku = (decimal)Report.GetColumnValue(&amp;quot;Itog.out2&amp;quot;);
+      if (gku+(decimal)Report.GetColumnValue(&amp;quot;Itog.bankproc&amp;quot;) &amp;gt; 0)
+        gku = gku+(decimal)Report.GetColumnValue(&amp;quot;Itog.bankproc&amp;quot;);
+      else 
+        gku = 0;
+      ((BarcodeObject) sender).Text = string.Format(&amp;quot;{0:00}&amp;quot;,(Int32)Report.GetColumnValue(&amp;quot;Itog.receipt_id&amp;quot;))+string.Format(&amp;quot;{0:000000000}&amp;quot;,(Int32)Report.GetColumnValue(&amp;quot;Main.client_id&amp;quot;))+
+        string.Format(&amp;quot;{0:MM}&amp;quot;,(DateTime)Report.GetColumnValue(&amp;quot;Main.period&amp;quot;))+string.Format(&amp;quot;{0:yy}&amp;quot;,(DateTime)Report.GetColumnValue(&amp;quot;Main.period&amp;quot;))+
+        string.Format(&amp;quot;{0:0000000}&amp;quot;,gku*100);
+      
+
+      //  ((BarcodeObject) sender).Text =((BarcodeObject) sender).Text +string.Format(&amp;quot;{0:0000000}&amp;quot;,gku*100);
+
+      //  ((BarcodeObject) sender).Text =  Convert.ToString((int)Report.GetColumnValue(&amp;quot;Main.client_id&amp;quot;));
+      /*     if not cbCode.Checked then
+      begin
+      gku := 0;
+      if QReceipt.FieldByName('receipt_id').AsInteger = 1 then
+      if City in [1,23] then
+      StrCode:= '01'
+      else
+      StrCode:= '00'
+      else
+      StrCode := StrBar(QReceipt.FieldByName('receipt_id').AsString,2);
+      gku := QItog.FieldByName('out2').AsCurrency;
+      if gku+QMain.FieldByName('bankproc').AsCurrency &amp;gt; 0 then
+      ParValue := StrCode+StrBar(QMain.FieldByName('client_id').AsString,9)+StrBar(IntToStr(M),2)+StrBar(IntToStr(Y-2000),2)+StrBar(FloatToStr(Round((gku+QMain.FieldByName('bankproc').AsCurrency)*100)),7)
+      else
+      ParValue := StrCode+StrBar(QMain.FieldByName('client_id').AsString,9)+StrBar(IntToStr(M),2)+StrBar(IntToStr(Y-2000),2)+StrBar(IntToStr(0),7);
+      end
+      else
+      ParValue := '';   */
+    }
+
+    private void Barcode1_BeforePrint(object sender, EventArgs e)
+    {
+      if ((decimal)Report.GetColumnValue(&amp;quot;Itog.peniout&amp;quot;) &amp;gt; 0)
+        ((BarcodeObject) sender).Text= &amp;quot;99&amp;quot;+string.Format(&amp;quot;{0:000000000}&amp;quot;,(Int32)Report.GetColumnValue(&amp;quot;Main.client_id&amp;quot;))+
+          string.Format(&amp;quot;{0:0000000}&amp;quot;,(decimal)Report.GetColumnValue(&amp;quot;Itog.peniout&amp;quot;)*100);  
+      else
+        ((BarcodeObject) sender).Text= &amp;quot;&amp;quot;;
+    }
+
+    private void Text15_BeforePrint(object sender, EventArgs e)
+    {
+   /*   if ((Int16)Report.GetColumnValue(&amp;quot;Tarif.boilservice_id&amp;quot;) == 1) 
+      {
+      if ((string)Report.GetColumnValue(&amp;quot;Tarif.sname&amp;quot;) != &amp;quot;Дол. финанс. кап. ремонта&amp;quot; )
+        ((TextObject)sender).Font = new Font(((TextObject)sender).Font, System.Drawing.FontStyle.Regular);
+      else
+        ((TextObject)sender).Font = new Font(((TextObject)sender).Font,System.Drawing.FontStyle.Bold);
+    }
+      else 
+      ((TextObject)sender).Text = &amp;quot;&amp;quot;;
+      }      */}
+
+    private void Text85_BeforePrint(object sender, EventArgs e)
+    {
+      if ((decimal)Report.GetColumnValue(&amp;quot;Main.subsid&amp;quot;) != 0)
+        ((TextObject)sender).Visible = true;
+      else
+        ((TextObject)sender).Visible = false;
+    }
+
+ /*   private void Barcode2_BeforePrint(object sender, EventArgs e)
+    {
+      //   decimal gku = (decimal)Report.GetColumnValue(&amp;quot;Itog.out2&amp;quot;);
+      //   if (gku+(decimal)Report.GetColumnValue(&amp;quot;Itog.bankproc&amp;quot;) &amp;gt; 0)
+      //     gku = gku+(decimal)Report.GetColumnValue(&amp;quot;Itog.bankproc&amp;quot;);
+      //   else 
+      //     gku = 0;
+      ((BarcodeObject) sender).Text = string.Format(&amp;quot;{0:00}&amp;quot;,(Int32)Report.GetColumnValue(&amp;quot;Itog.receipt_id&amp;quot;))+string.Format(&amp;quot;{0:000000000}&amp;quot;,(Int32)Report.GetColumnValue(&amp;quot;Main.client_id&amp;quot;))+
+        string.Format(&amp;quot;{0:MM}&amp;quot;,(DateTime)Report.GetColumnValue(&amp;quot;Main.period&amp;quot;))+string.Format(&amp;quot;{0:yy}&amp;quot;,(DateTime)Report.GetColumnValue(&amp;quot;Main.period&amp;quot;))+
+        string.Format(&amp;quot;{0:0000000}&amp;quot;,0);
+    }
+  */
+    private void Barcode2_BeforePrint(object sender, EventArgs e)
+    {
+      ((BarcodeObject) sender).Text = string.Format(&amp;quot;{0:00}&amp;quot;,0)+string.Format(&amp;quot;{0:000000000}&amp;quot;,(Int32)Report.GetColumnValue(&amp;quot;Main.client_id&amp;quot;))+
+          string.Format(&amp;quot;{0:MM}&amp;quot;,(DateTime)Report.GetColumnValue(&amp;quot;Main.period&amp;quot;))+string.Format(&amp;quot;{0:yy}&amp;quot;,(DateTime)Report.GetColumnValue(&amp;quot;Main.period&amp;quot;))+string.Format(&amp;quot;{0:0000000}&amp;quot;,0);
+    }
+  }
+}
+&lt;/ScriptText&gt;
+  &lt;Dictionary&gt;
+    &lt;OdbcDataConnection Name="Connection" ConnectionString="rijcmlqgRN9T0kkLQlCQnuucTGt3q7Y33lAK4JBdVyJ46a8Xq4="&gt;
+      &lt;TableDataSource Name="Table" Alias="Main" DataType="System.Int32" Enabled="true" SelectCommand="select 101000001 as client_id,1 as company_id,1 as manager_id,11111 as idhome,'2012_12_01' as period,'' as fio,'' as nflat,'' as home_korp,'' as numberroom,'' as str,'' as home,'' as flatpl,0 as numjilec,0 as tmpnumjilec, '' as company_name,'' as company_sname, '' as address,'' as worktime,'' as worktimecash,'' as phoneacc,'' as shiefregion,'' as schet,'' as bik,'' as coraccount,''as email,'' as site, '' as messages,'' as mess,0.00 as sumstar, 0.00 as sumcomp,'' as codehelp,'' as codesoc,0.00 as incsoc, 0.00 as calcsoc,0.00 as topaysoc, 0.00 as outsoc, '2012-12-01' as nextperiod,0.00 subsid"&gt;
+        &lt;Column Name="client_id" DataType="System.Int32"/&gt;
+        &lt;Column Name="company_id" DataType="System.Int16"/&gt;
+        &lt;Column Name="manager_id" DataType="System.Int32"/&gt;
+        &lt;Column Name="idhome" DataType="System.Int32"/&gt;
+        &lt;Column Name="period" DataType="System.DateTime" Format="Date"/&gt;
+        &lt;Column Name="fio" DataType="System.String"/&gt;
+        &lt;Column Name="nflat" DataType="System.String"/&gt;
+        &lt;Column Name="home_korp" DataType="System.String"/&gt;
+        &lt;Column Name="numberroom" DataType="System.String"/&gt;
+        &lt;Column Name="str" DataType="System.String"/&gt;
+        &lt;Column Name="home" DataType="System.String"/&gt;
+        &lt;Column Name="flatpl" DataType="System.String"/&gt;
+        &lt;Column Name="numjilec" DataType="System.Int16" Format="Number"/&gt;
+        &lt;Column Name="tmpnumjilec" DataType="System.Int16" Format="Number"/&gt;
+        &lt;Column Name="company_name" DataType="System.String"/&gt;
+        &lt;Column Name="address" DataType="System.String"/&gt;
+        &lt;Column Name="worktime" DataType="System.String"/&gt;
+        &lt;Column Name="phoneacc" DataType="System.String"/&gt;
+        &lt;Column Name="shiefregion" DataType="System.String"/&gt;
+        &lt;Column Name="schet" DataType="System.String"/&gt;
+        &lt;Column Name="bik" DataType="System.String"/&gt;
+        &lt;Column Name="coraccount" DataType="System.String"/&gt;
+        &lt;Column Name="company_sname" DataType="System.String"/&gt;
+        &lt;Column Name="worktimecash" DataType="System.String"/&gt;
+        &lt;Column Name="email" DataType="System.String"/&gt;
+        &lt;Column Name="site" DataType="System.String"/&gt;
+        &lt;Column Name="messages" DataType="System.String"/&gt;
+        &lt;Column Name="mess" DataType="System.String"/&gt;
+        &lt;Column Name="sumstar" DataType="System.Decimal"/&gt;
+        &lt;Column Name="sumcomp" DataType="System.Decimal"/&gt;
+        &lt;Column Name="codehelp" DataType="System.String"/&gt;
+        &lt;Column Name="codesoc" DataType="System.String"/&gt;
+        &lt;Column Name="incsoc" DataType="System.Decimal"/&gt;
+        &lt;Column Name="calcsoc" DataType="System.Decimal"/&gt;
+        &lt;Column Name="topaysoc" DataType="System.Decimal"/&gt;
+        &lt;Column Name="outsoc" DataType="System.Decimal"/&gt;
+        &lt;Column Name="nextperiod" DataType="System.DateTime"/&gt;
+        &lt;Column Name="subsid" DataType="System.Decimal"/&gt;
+      &lt;/TableDataSource&gt;
+      &lt;TableDataSource Name="Table1" Alias="Tarif" DataType="System.Int32" Enabled="true" SelectCommand="select 1 as client_id,'' as sname, 0.00 as tax,0.0000 as quota,'' as edizm,0.0000 as volume, 0.00 as calc, 0.00 as past,0.00 as past1, 0.00 as itog,0.00 as comphelp, 0.0000 as homevol,0.0000 as homecountervol,0.0000 as evidence_home"&gt;
+        &lt;Column Name="client_id" DataType="System.Int16"/&gt;
+        &lt;Column Name="sname" DataType="System.String"/&gt;
+        &lt;Column Name="tax" DataType="System.Decimal"/&gt;
+        &lt;Column Name="quota" DataType="System.Double"/&gt;
+        &lt;Column Name="edizm" DataType="System.String"/&gt;
+        &lt;Column Name="volume" DataType="System.Double"/&gt;
+        &lt;Column Name="calc" DataType="System.Decimal"/&gt;
+        &lt;Column Name="past1" DataType="System.Decimal"/&gt;
+        &lt;Column Name="itog" DataType="System.Decimal"/&gt;
+        &lt;Column Name="comphelp" DataType="System.Decimal"/&gt;
+        &lt;Column Name="homevol" DataType="System.Double"/&gt;
+        &lt;Column Name="homecountervol" DataType="System.Double"/&gt;
+        &lt;Column Name="evidence_home" DataType="System.Double"/&gt;
+        &lt;Column Name="past" DataType="System.Decimal"/&gt;
+        &lt;CommandParameter Name="client_id" DataType="10" Expression="[Main.client_id]" DefaultValue="0"/&gt;
+        &lt;CommandParameter Name="company_id" DataType="10" Expression="[Main.company_id]" DefaultValue="0"/&gt;
+        &lt;CommandParameter Name="manager_id" DataType="10" Expression="[Main.manager_id]" DefaultValue="0"/&gt;
+        &lt;CommandParameter Name="idhome" DataType="10" Expression="[Main.idhome]" DefaultValue="0"/&gt;
+        &lt;CommandParameter Name="bankproc" DataType="6" Expression="[Itog.bankproc]" DefaultValue="0"/&gt;
+      &lt;/TableDataSource&gt;
+      &lt;TableDataSource Name="Table2" Alias="Itog" DataType="System.Int32" Enabled="true" SelectCommand="select 1 as receipt_id,'' as shiefregion,'' as inn,'' as bik, '' as schet,'' as coraccount, 0.00 as itog, 0.00 as dolg, 0.00 as pay, 0.00 as sumstar,0.00 as sumcomp,0.00 as peniout,0.00 as out2,0.00 as bankproc, 0.00 as calc, 0.00 as past, 0.00 as past1,0.00 as help,0.00 as comphelp"&gt;
+        &lt;Column Name="receipt_id" DataType="System.Int16"/&gt;
+        &lt;Column Name="shiefregion" DataType="System.String"/&gt;
+        &lt;Column Name="inn" DataType="System.String"/&gt;
+        &lt;Column Name="bik" DataType="System.String"/&gt;
+        &lt;Column Name="schet" DataType="System.String"/&gt;
+        &lt;Column Name="coraccount" DataType="System.String"/&gt;
+        &lt;Column Name="itog" DataType="System.Decimal"/&gt;
+        &lt;Column Name="dolg" DataType="System.Decimal"/&gt;
+        &lt;Column Name="pay" DataType="System.Decimal"/&gt;
+        &lt;Column Name="sumstar" DataType="System.Decimal"/&gt;
+        &lt;Column Name="sumcomp" DataType="System.Decimal"/&gt;
+        &lt;Column Name="peniout" DataType="System.Decimal"/&gt;
+        &lt;Column Name="out2" DataType="System.Decimal"/&gt;
+        &lt;Column Name="bankproc" DataType="System.Decimal"/&gt;
+        &lt;Column Name="calc" DataType="System.Decimal"/&gt;
+        &lt;Column Name="past" DataType="System.Decimal"/&gt;
+        &lt;Column Name="past1" DataType="System.Decimal"/&gt;
+        &lt;Column Name="help" DataType="System.Decimal"/&gt;
+        &lt;Column Name="comphelp" DataType="System.Decimal"/&gt;
+        &lt;CommandParameter Name="client_id" DataType="10" Expression="[Main.client_id]" DefaultValue="0"/&gt;
+        &lt;CommandParameter Name="idhome" DataType="10" Expression="[Main.idhome]" DefaultValue="0"/&gt;
+        &lt;CommandParameter Name="company_id" DataType="10" Expression="[Main.company_id]" DefaultValue="0"/&gt;
+        &lt;CommandParameter Name="manager_id" DataType="10" Expression="[Main.manager_id]" DefaultValue="0"/&gt;
+      &lt;/TableDataSource&gt;
+      &lt;TableDataSource Name="Table3" Alias="Counters" DataType="System.Int32" Enabled="true" SelectCommand="select '' as counter_num,0 as service_id,0.0000 as evidence_current,0.0000 as evidence_past"&gt;
+        &lt;Column Name="counter_num" DataType="System.String"/&gt;
+        &lt;Column Name="service_id" DataType="System.Int16"/&gt;
+        &lt;Column Name="evidence_current" DataType="System.Double"/&gt;
+        &lt;Column Name="evidence_past" DataType="System.Double"/&gt;
+        &lt;CommandParameter Name="client_id" DataType="10" Expression="[Main.client_id]" DefaultValue="0"/&gt;
+        &lt;CommandParameter Name="company_id" DataType="10" Expression="[Main.company_id]" DefaultValue="0"/&gt;
+      &lt;/TableDataSource&gt;
+      &lt;TableDataSource Name="Table4" Alias="MSP" DataType="System.Int32" Enabled="true" SelectCommand="select 0.00 as socpay,'' as socfio"&gt;
+        &lt;Column Name="socpay" DataType="System.Decimal"/&gt;
+        &lt;Column Name="socfio" DataType="System.String"/&gt;
+        &lt;CommandParameter Name="client_id" DataType="10" Expression="[Main.client_id]" DefaultValue="0"/&gt;
+      &lt;/TableDataSource&gt;
+      &lt;TableDataSource Name="Table5" Alias="DetailEvidence" DataType="System.Int32" Enabled="true" SelectCommand="select '2012_01_01' as start1, '2012_01_01' as finish1,0 as kol1,0.00 as evidence1,0.00 as evidence2, '2012_01_01' as start2, '2012_01_01' as finish2,0 as kol2"&gt;
+        &lt;Column Name="start1" DataType="System.DateTime" Format="Date"/&gt;
+        &lt;Column Name="finish1" DataType="System.DateTime" Format="Date"/&gt;
+        &lt;Column Name="kol1" DataType="System.Int16"/&gt;
+        &lt;Column Name="evidence1" DataType="System.Decimal"/&gt;
+        &lt;Column Name="evidence2" DataType="System.Decimal"/&gt;
+        &lt;Column Name="start2" DataType="System.DateTime" Format="Date"/&gt;
+        &lt;Column Name="finish2" DataType="System.DateTime" Format="Date"/&gt;
+        &lt;Column Name="kol2" DataType="System.Int16"/&gt;
+        &lt;CommandParameter Name="client_id" DataType="10" Expression="[Main.client_id]" DefaultValue="0"/&gt;
+        &lt;CommandParameter Name="company_id" DataType="10" Expression="[Main.company_id]" DefaultValue="0"/&gt;
+      &lt;/TableDataSource&gt;
+    &lt;/OdbcDataConnection&gt;
+  &lt;/Dictionary&gt;
+  &lt;ReportPage LeftMargin="5" TopMargin="5" RightMargin="5" BottomMargin="5"&gt;
+    &lt;ReportTitleBand Name="ReportTitle1" Width="756"/&gt;
+    &lt;DataBand Name="Data1" Top="3.57" Width="756" Height="784.16" Guides="431.04,411.84,411.84" DataSource="Table"&gt;
+      &lt;TextObject Name="Memo1" Left="261.12" Top="13.44" Width="68.16" Height="12.48" BeforePrintEvent="Memo1_BeforePrint" Text="С Ч Е Т" Padding="2, 1, 2, 1" VertAlign="Center" Font="Arial, 9pt, style=Bold"/&gt;
+      &lt;SubreportObject Name="Counters1" Left="574.08" Top="80.64" Width="176.64" Height="57.6" ReportPage="Page7" PrintOnParent="true"/&gt;
+      &lt;LineObject Name="Line2" Left="7.08" Top="181.48" Width="715" Border.Style="DashDot"/&gt;
+      &lt;TextObject Name="Memo2" Left="193.92" Top="13.44" Width="64.32" Height="12.48" Text="[Date]" Padding="2, 1, 2, 1" Format="Date" Format.Format="d" VertAlign="Center" Font="Arial, 8pt"/&gt;
+      &lt;TextObject Name="Memo7" Left="468.48" Top="59.52" Width="70.08" Height="14.4" Border.Lines="All" Border.Width="0.5" Fill.Color="White" Text="[Main.client_id]" Padding="2, 1, 2, 1" HorzAlign="Center" VertAlign="Center" WordWrap="false" Font="Arial, 10pt, style=Bold"/&gt;
+      &lt;TextObject Name="Memo10" Left="193.92" Top="59.52" Width="270.72" Height="16.32" Fill.Color="White" Text="[Main.fio]" Padding="2, 1, 2, 1" VertAlign="Bottom" WordWrap="false" Font="Arial, 10pt, style=Bold"/&gt;
+      &lt;TextObject Name="Memo11" Left="194.08" Top="74.48" Width="358.44" Height="14" Fill.Color="White" BeforePrintEvent="Memo11_BeforePrint" Text="[Main.str] д.[Main.home] [Main.home_korp] [Main.nflat]" Padding="2, 1, 2, 1" VertAlign="Center" WordWrap="false" Font="Arial, 10pt, style=Bold"/&gt;
+      &lt;TextObject Name="Memo18" Left="259.08" Top="221.44" Width="90" Height="13" Text="КВИТАНЦИЯ" Padding="2, 1, 2, 1" VertAlign="Center" Font="Arial, 9pt, style=Bold"/&gt;
+      &lt;TextObject Name="Memo19" Left="195.08" Top="221.44" Width="64" Height="13" Text="[Date]" Padding="2, 1, 2, 1" Format="Date" Format.Format="d" VertAlign="Center" Font="Arial, 8pt"/&gt;
+      &lt;TextObject Name="Memo21" Left="470.08" Top="233.48" Width="76.72" Height="14" Border.Lines="All" Border.Width="0.5" Fill.Color="White" Text="[Main.client_id]" Padding="2, 1, 2, 1" HorzAlign="Center" VertAlign="Center" WordWrap="false" Font="Arial, 10pt, style=Bold"/&gt;
+      &lt;TextObject Name="Memo31" Left="4.08" Top="222.44" Width="189" Height="41" Text="[Main.messages]" Padding="2, 1, 2, 1" HorzAlign="Center" VertAlign="Center" Font="Arial, 8pt, style=Bold"/&gt;
+      &lt;TextObject Name="Memo60" Left="6.08" Top="29.44" Width="185" Height="41" Fill.Color="White" Text="[Main.company_sname]" Padding="2, 1, 2, 1" VertAlign="Center" Font="Arial, 12pt, style=Bold"/&gt;
+      &lt;TextObject Name="Memo72" Left="5.08" Top="182.48" Width="191" Height="12" Text="Адрес: [Main.address]" Padding="2, 1, 2, 1" HideValue="0" VertAlign="Center" WordWrap="false" Font="Arial, 8pt"/&gt;
+      &lt;TextObject Name="Memo219" Left="196.08" Top="194.48" Width="541" Height="12" Text="Часы приема: [Main.worktime]" Padding="2, 1, 2, 1" HideValue="0" VertAlign="Center" WordWrap="false" Font="Arial, 8pt"/&gt;
+      &lt;TextObject Name="Memo221" Left="5.08" Top="12.48" Width="144" Height="14" Text="к оплате до 10.12.2012" Padding="2, 1, 2, 1" VertAlign="Center" Font="Arial, 8pt"/&gt;
+      &lt;TextObject Name="Memo12" Left="195.08" Top="234.48" Width="271" Height="14" Fill.Color="White" Text="[Main.fio]" Padding="2, 1, 2, 1" VertAlign="Center" WordWrap="false" Font="Arial, 10pt, style=Bold"/&gt;
+      &lt;TextObject Name="Memo25" Left="333.12" Top="12.48" Width="22.08" Height="14.4" Text="за" Padding="2, 1, 2, 1" Format="Date" Format.Format="MMMM yyyy" VertAlign="Center" Font="Arial, 9pt"/&gt;
+      &lt;TextObject Name="Memo29" Left="617" Top="171.84" Width="103" Height="8.64" Border.Lines="Top" Border.Width="0.5" Fill.Color="White" Text="(подпись плательщика)" Padding="2, 1, 2, 1" HorzAlign="Center" VertAlign="Bottom" Font="Arial, 5pt"/&gt;
+      &lt;TextObject Name="Memo100" Left="194.08" Top="88.48" Width="88" Height="12" Text="Кол-во прожив.: " Padding="2, 1, 2, 1" HideValue="0" VertAlign="Center" WordWrap="false" Font="Arial, 8pt"/&gt;
+      &lt;TextObject Name="Memo121" Left="390.4" Top="88.48" Width="67.08" Height="12" BeforePrintEvent="Memo121_BeforePrint" Text="Код льготы:" Padding="2, 1, 2, 1" HideValue="0" VertAlign="Center" WordWrap="false" Font="Arial, 8pt"/&gt;
+      &lt;TextObject Name="Memo39" Left="559.96" Top="222.36" Width="185.36" Height="13" Text="Срок хранения квитанции 3 года" Padding="2, 1, 2, 1" HideValue="0" VertAlign="Center" WordWrap="false" Font="Arial, 8pt"/&gt;
+      &lt;TextObject Name="Memo62" Left="196.08" Top="182.48" Width="541" Height="12" Text="Часы оплаты: [Main.worktimecash]" Padding="2, 1, 2, 1" HideValue="0" VertAlign="Center" WordWrap="false" Font="Arial, 8pt"/&gt;
+      &lt;LineObject Name="Line1" Left="5.08" Top="221.44" Width="730" Border.Style="DashDot"/&gt;
+      &lt;TextObject Name="Memo9" Left="195.08" Top="249.44" Width="345" Height="14" Fill.Color="White" BeforePrintEvent="Memo11_BeforePrint" Text="Александра Невского ул. д.1 кв.1" Padding="2, 1, 2, 1" VertAlign="Center" WordWrap="false" Font="Arial, 10pt, style=Bold"/&gt;
+      &lt;TextObject Name="Memo8" Left="5.08" Top="194.48" Width="191" Height="12" Text="Тел. бухгалтерии: [Main.phoneacc]" Padding="2, 1, 2, 1" HideValue="0" VertAlign="Center" Font="Arial, 8pt"/&gt;
+      &lt;TextObject Name="Memo416" Left="5.08" Top="206.48" Width="191" Height="12.96" Text="Адрес сайта: [Main.site]" Padding="2, 1, 2, 1" HideValue="0" VertAlign="Center" Font="Arial, 8pt"/&gt;
+      &lt;TextObject Name="Memo417" Left="196.08" Top="206.48" Width="541" Height="12.96" Text="Адрес электронной почты: [Main.email]" Padding="2, 1, 2, 1" HideValue="0" VertAlign="Center" Font="Arial, 8pt"/&gt;
+      &lt;LineObject Name="Line3" Left="-1.92" Top="525.12" Width="764.16" Border.Style="Dot" Border.Width="0.1"/&gt;
+      &lt;TextObject Name="Memo266" Left="1.92" Top="498.24" Width="507.84" Height="10.56" Fill.Color="White" Text="*Перерасчеты по показаниям приборов учета за предыдущие периоды." Padding="2, 1, 2, 1" HideValue="0" VertAlign="Bottom" Font="Arial, 6pt"/&gt;
+      &lt;TextObject Name="Memo267" Left="1.92" Top="510.72" Width="507.84" Height="10.56" Fill.Color="White" Text="**Перерасчеты, связанные с временным отсутствием или недопоставкой услуг." Padding="2, 1, 2, 1" HideValue="0" VertAlign="Bottom" Font="Arial, 6pt"/&gt;
+      &lt;TextObject Name="Memo70" Left="189.12" Top="527.04" Width="90.24" Height="12.48" Text="Общая площадь:" Padding="2, 1, 2, 1" HideValue="0" VertAlign="Center" WordWrap="false" Font="Arial, 8pt"/&gt;
+      &lt;TextObject Name="Memo74" Left="279.36" Top="527.04" Width="67.2" Height="12.48" Text="[Main.flatpl]" Padding="2, 1, 2, 1" HideValue="0" Format="Number" Format.UseLocale="false" Format.DecimalDigits="1" Format.DecimalSeparator="," Format.GroupSeparator=" " Format.NegativePattern="1" VertAlign="Center" Font="Arial, 8pt"/&gt;
+      &lt;TextObject Name="Memo80" Left="189.12" Top="539.52" Width="90.24" Height="12.48" Text="Кол-во прожив.: " Padding="2, 1, 2, 1" HideValue="0" VertAlign="Center" Font="Arial, 8pt"/&gt;
+      &lt;TextObject Name="Memo82" Left="279.36" Top="539.52" Width="67.2" Height="12.48" Text="[[Main.numjilec]+[Main.tmpnumjilec]]" Padding="2, 1, 2, 1" HideValue="0" VertAlign="Center" Font="Arial, 8pt"/&gt;
+      &lt;TextObject Name="Memo32" Left="189.12" Top="585.6" Width="24.96" Height="19.2" Border.Lines="All" Border.Width="0.1" Fill.Color="240, 240, 240" ShiftMode="WhenOverlapped" Text="ХВС " Padding="2, 1, 2, 1" HorzAlign="Center" VertAlign="Center" Font="Arial, 5pt"/&gt;
+      &lt;TextObject Name="Memo50" Left="189.12" Top="604.8" Width="24.96" Height="19.2" Border.Lines="All" Border.Width="0.1" Fill.Color="240, 240, 240" ShiftMode="WhenOverlapped" Text="ГВС" Padding="2, 1, 2, 1" HorzAlign="Center" VertAlign="Center" Font="Arial, 5pt"/&gt;
+      &lt;TextObject Name="Memo481" Left="214.08" Top="575.04" Width="76.8" Height="10.56" Border.Lines="All" Border.Width="0.1" Fill.Color="238, 238, 238" ShiftMode="WhenOverlapped" Text="За период" Padding="2, 1, 2, 1" HorzAlign="Center" VertAlign="Center" Font="Arial, 5pt"/&gt;
+      &lt;TextObject Name="Memo482" Left="327.36" Top="575.04" Width="72.96" Height="10.56" Border.Lines="All" Border.Width="0.1" Fill.Color="238, 238, 238" ShiftMode="WhenOverlapped" Text="Расход" Padding="2, 1, 2, 1" HorzAlign="Center" VertAlign="Center" Font="Arial, 5pt"/&gt;
+      &lt;TextObject Name="Memo483" Left="290.88" Top="575.04" Width="36.48" Height="10.56" Border.Lines="All" Border.Width="0.1" Fill.Color="238, 238, 238" ShiftMode="WhenOverlapped" Text="Кол. дней" Padding="2, 1, 2, 1" HorzAlign="Center" VertAlign="Center" WordWrap="false" Font="Arial, 5pt"/&gt;
+      &lt;TextObject Name="Memo485" Left="189.12" Top="575.04" Width="24.96" Height="10.56" Border.Lines="All" Border.Width="0.1" Fill.Color="238, 238, 238" ShiftMode="WhenOverlapped" Text="Услуга" Padding="2, 1, 2, 1" HorzAlign="Center" VertAlign="Center" WordWrap="false" Font="Arial, 5pt"/&gt;
+      &lt;TextObject Name="Memo282" Left="0.96" Top="691.2" Width="745.92" Height="37.44" Border.Lines="All" Border.Width="0.1" BeforePrintEvent="Memo282_BeforePrint" Text="[Main.mess]" Padding="2, 1, 2, 1" HideValue="0" Font="Arial, 9pt"/&gt;
+      &lt;LineObject Name="Line4" Left="-2.88" Top="731.52" Width="764.16" Border.Style="Dot"/&gt;
+      &lt;TextObject Name="Text1" Left="356.16" Top="12.48" Width="156.48" Height="14.4" Text="[Main.period]" Padding="2, 1, 2, 1" Format="Date" Format.Format="MMMM yyyy" VertAlign="Center" Font="Arial, 9pt"/&gt;
+      &lt;TextObject Name="Text2" Left="349.44" Top="220.8" Width="21.6" Height="14" Text="за" Padding="2, 1, 2, 1" Format="Date" Format.Format="MMMM yyyy" VertAlign="Center" Font="Arial, 9pt"/&gt;
+      &lt;TextObject Name="Text3" Left="370.52" Top="220.8" Width="156" Height="14" Text="[Main.period]" Padding="2, 1, 2, 1" Format="Date" Format.Format="MMMM yyyy" VertAlign="Center" Font="Arial, 9pt"/&gt;
+      &lt;TextObject Name="Text4" Left="282.24" Top="88.32" Width="96" Height="12.48" Text="[[Main.numjilec]+[Main.tmpnumjilec]]" Font="Arial, 8pt"/&gt;
+      &lt;SubreportObject Name="Tarif" Left="3.84" Top="300.48" Width="744.96" Height="27.84" ReportPage="Page1" PrintOnParent="true"/&gt;
+      &lt;SubreportObject Name="Recviz" Left="193.92" Top="25.92" Width="96" Height="19.2" ReportPage="Page3" PrintOnParent="true"/&gt;
+      &lt;SubreportObject Name="Itog2" Left="545.28" Top="526.08" Width="199.68" Height="120.96" ReportPage="Page4" PrintOnParent="true"/&gt;
+      &lt;SubreportObject Name="TarifItog" Left="3.84" Top="480" Width="750.72" Height="16.32" ReportPage="Page5" PrintOnParent="true"/&gt;
+      &lt;TextObject Name="Text84" Left="189.12" Top="552" Width="179.52" Height="11.52" BeforePrintEvent="Text84_BeforePrint" Text="в т.ч. временно [Main.tmpnumjilec]" Font="Arial, 8pt"/&gt;
+      &lt;TextObject Name="Text86" Left="456.96" Top="88.32" Width="105.48" Height="12" BeforePrintEvent="Text86_BeforePrint" Text="[Main.codehelp]" Padding="2, 1, 2, 1" HideValue="0" VertAlign="Center" WordWrap="false" Font="Arial, 8pt"/&gt;
+      &lt;TextObject Name="Text87" Left="189.12" Top="563.52" Width="72" Height="11.52" BeforePrintEvent="Memo121_BeforePrint" Text="Код льготы:" Padding="2, 1, 2, 1" HideValue="0" VertAlign="Center" WordWrap="false" Font="Arial, 8pt"/&gt;
+      &lt;TextObject Name="Text88" Left="279.36" Top="563.52" Width="106.56" Height="11.52" BeforePrintEvent="Text86_BeforePrint" Text="[Main.codehelp]" Padding="2, 1, 2, 1" HideValue="0" VertAlign="Center" WordWrap="false" Font="Arial, 8pt"/&gt;
+      &lt;TextObject Name="Text89" Left="0.96" Top="651.84" Width="108.48" Height="14.4" BeforePrintEvent="Text89_BeforePrint" Text="Начисления МСП" Font="Arial, 8pt, style=Bold"/&gt;
+      &lt;TextObject Name="Text90" Left="0.96" Top="666.24" Width="57.6" Height="10.56" Border.Lines="All" Border.Width="0.5" BeforePrintEvent="Text89_BeforePrint" Text="На [Main.period]" Format="Date" Format.Format="d" WordWrap="false" Font="Arial, 6pt"/&gt;
+      &lt;TextObject Name="Text91" Left="0.96" Top="676.8" Width="57.6" Height="10.56" Border.Lines="All" Border.Width="0.5" BeforePrintEvent="Text89_BeforePrint" Text="[Main.incsoc]" Format="Number" Format.UseLocale="true" HorzAlign="Right" WordWrap="false" Font="Arial, 6pt"/&gt;
+      &lt;TextObject Name="Text92" Left="58.56" Top="666.24" Width="49.92" Height="10.56" Border.Lines="All" Border.Width="0.5" BeforePrintEvent="Text89_BeforePrint" Text="Начислено" WordWrap="false" Font="Arial, 6pt"/&gt;
+      &lt;TextObject Name="Text93" Left="58.56" Top="676.8" Width="49.92" Height="10.56" Border.Lines="All" Border.Width="0.5" BeforePrintEvent="Text89_BeforePrint" Text="[Main.calcsoc]" Format="Number" Format.UseLocale="true" HorzAlign="Right" WordWrap="false" Font="Arial, 6pt"/&gt;
+      &lt;TextObject Name="Text94" Left="108.48" Top="666.24" Width="49.92" Height="10.56" Border.Lines="All" Border.Width="0.5" BeforePrintEvent="Text89_BeforePrint" Text="К выплате" WordWrap="false" Font="Arial, 6pt"/&gt;
+      &lt;TextObject Name="Text95" Left="108.48" Top="676.8" Width="49.92" Height="10.56" Border.Lines="All" Border.Width="0.5" BeforePrintEvent="Text89_BeforePrint" Text="[Main.topaysoc]" Format="Number" Format.UseLocale="true" HorzAlign="Right" WordWrap="false" Font="Arial, 6pt"/&gt;
+      &lt;TextObject Name="Text96" Left="158.4" Top="666.24" Width="59.52" Height="10.56" Border.Lines="All" Border.Width="0.5" BeforePrintEvent="Text89_BeforePrint" Text="На [Main.nextperiod]" Format="Date" Format.Format="d" WordWrap="false" Font="Arial, 6pt"/&gt;
+      &lt;TextObject Name="Text97" Left="158.4" Top="676.8" Width="59.52" Height="10.56" Border.Lines="All" Border.Width="0.5" BeforePrintEvent="Text89_BeforePrint" Text="[Main.outsoc]" Format="Number" Format.UseLocale="true" HorzAlign="Right" WordWrap="false" Font="Arial, 6pt"/&gt;
+      &lt;SubreportObject Name="MSP" Left="309.12" Top="666.24" Width="96" Height="23.04" ReportPage="Page6" PrintOnParent="true"/&gt;
+      &lt;TextObject Name="Text98" Left="223.68" Top="666.24" Width="85.44" Height="10.56" Border.Lines="All" Border.Width="0.5" BeforePrintEvent="Text98_BeforePrint" Text="ФИО льготника&amp;#13;&amp;#10;" WordWrap="false" Font="Arial, 6pt"/&gt;
+      &lt;TextObject Name="Text99" Left="223.68" Top="676.8" Width="85.44" Height="10.56" Border.Lines="All" Border.Width="0.5" BeforePrintEvent="Text98_BeforePrint" Text="К выплате в [Main.nextperiod]" Format="Custom" Format.Format="MM.yyyy" WordWrap="false" Font="Arial, 6pt"/&gt;
+      &lt;TextObject Name="Memo4" Left="619.2" Top="59.52" Width="41.28" Height="21.12" Border.Lines="Left, Right, Top" Border.Width="0.5" Fill.Color="238, 238, 238" Text="прибор учета" Padding="2, 1, 2, 1" HorzAlign="Center" VertAlign="Center" Font="Arial, 6pt"/&gt;
+      &lt;TextObject Name="Memo5" Left="683.52" Top="68.16" Width="34.56" Height="12.48" Border.Lines="Left, Right, Top" Border.Width="0.5" Fill.Color="238, 238, 238" Text="пред." Padding="2, 1, 2, 1" HorzAlign="Center" VertAlign="Bottom" Font="Arial, 6pt"/&gt;
+      &lt;TextObject Name="Memo6" Left="660.48" Top="59.52" Width="23.04" Height="21.12" Border.Lines="Left, Right, Top" Border.Width="0.5" Fill.Color="238, 238, 238" Text="ед. изм." Padding="2, 1, 2, 1" HorzAlign="Center" VertAlign="Center" Font="Arial, 6pt"/&gt;
+      &lt;TextObject Name="Memo16" Left="683.52" Top="59.52" Width="69.12" Height="9.6" Border.Lines="All" Border.Width="0.5" Fill.Color="238, 238, 238" Text="показания пр.уч." Padding="2, 1, 2, 1" HorzAlign="Center" VertAlign="Bottom" Font="Arial, 6pt"/&gt;
+      &lt;TextObject Name="Memo23" Left="718.08" Top="69.12" Width="34.56" Height="11.52" Border.Lines="Left, Right, Top" Border.Width="0.5" Fill.Color="238, 238, 238" Text="наст." Padding="2, 1, 2, 1" HorzAlign="Center" VertAlign="Bottom" Font="Arial, 6pt"/&gt;
+      &lt;TextObject Name="Memo22" Left="574.08" Top="59.52" Width="45.12" Height="21.12" Border.Lines="Left, Right, Top" Border.Width="0.5" Fill.Color="238, 238, 238" BeforePrintEvent="Memo22_BeforePrint" Text="услуга" Padding="2, 1, 2, 1" HorzAlign="Center" VertAlign="Center" Font="Arial, 6pt"/&gt;
+      &lt;LineObject Name="Line5" Left="574.08" Top="155.52" Width="178.56" Border.Width="0.5"/&gt;
+      &lt;LineObject Name="Line6" Left="574.08" Top="80.45" Width="178.56" Border.Width="0.5"/&gt;
+      &lt;TextObject Name="Text107" Left="46.08" Top="527.04" Width="41.28" Height="21.12" Border.Lines="Left, Right, Top" Border.Width="0.5" Fill.Color="238, 238, 238" Text="прибор учета" Padding="2, 1, 2, 1" HorzAlign="Center" VertAlign="Center" Font="Arial, 6pt"/&gt;
+      &lt;TextObject Name="Text108" Left="110.4" Top="535.68" Width="34.56" Height="12.48" Border.Lines="Left, Right, Top" Border.Width="0.5" Fill.Color="238, 238, 238" Text="пред." Padding="2, 1, 2, 1" HorzAlign="Center" VertAlign="Bottom" Font="Arial, 6pt"/&gt;
+      &lt;TextObject Name="Text109" Left="87.36" Top="527.04" Width="23.04" Height="21.12" Border.Lines="Left, Right, Top" Border.Width="0.5" Fill.Color="238, 238, 238" Text="ед. изм." Padding="2, 1, 2, 1" HorzAlign="Center" VertAlign="Center" Font="Arial, 6pt"/&gt;
+      &lt;TextObject Name="Text110" Left="110.4" Top="527.04" Width="69.12" Height="9.6" Border.Lines="All" Border.Width="0.5" Fill.Color="238, 238, 238" Text="показания пр.уч." Padding="2, 1, 2, 1" HorzAlign="Center" VertAlign="Bottom" Font="Arial, 6pt"/&gt;
+      &lt;TextObject Name="Text111" Left="144.96" Top="536.64" Width="34.56" Height="11.52" Border.Lines="Left, Right, Top" Border.Width="0.5" Fill.Color="238, 238, 238" Text="наст." Padding="2, 1, 2, 1" HorzAlign="Center" VertAlign="Bottom" Font="Arial, 6pt"/&gt;
+      &lt;TextObject Name="Text112" Left="0.96" Top="527.04" Width="45.12" Height="21.12" Border.Lines="Left, Right, Top" Border.Width="0.5" Fill.Color="238, 238, 238" BeforePrintEvent="Memo22_BeforePrint" Text="услуга" Padding="2, 1, 2, 1" HorzAlign="Center" VertAlign="Center" Font="Arial, 6pt"/&gt;
+      &lt;LineObject Name="Line7" Left="0.96" Top="623.23" Width="178.56" Border.Width="0.5"/&gt;
+      &lt;LineObject Name="Line8" Left="0.96" Top="548.93" Width="178.56" Border.Width="0.5" BeforePrintEvent="Line8_BeforePrint"/&gt;
+      &lt;SubreportObject Name="Counters2" Left="0.96" Top="549.12" Width="180.48" Height="71.04" ReportPage="Page8" PrintOnParent="true"/&gt;
+      &lt;SubreportObject Name="DetailEvidence" Left="214.08" Top="585.6" Width="171.84" Height="38.4" ReportPage="Page9" PrintOnParent="true"/&gt;
+      &lt;SubreportObject Name="Itog1" Left="193.92" Top="100.8" Width="375.36" Height="78.72" ReportPage="Page10" PrintOnParent="true"/&gt;
+      &lt;SubreportObject Name="ReceiptCode" Left="5.76" Top="70.08" Width="96" Height="19.2" ReportPage="Page2" PrintOnParent="true"/&gt;
+      &lt;TextObject Name="Text139" Left="3.84" Top="291.84" Width="140.16" Height="8.64" Border.Lines="All" Border.Width="0.5" Fill.Color="White" Text="А" Padding="2, 1, 2, 1" HorzAlign="Center" VertAlign="Center" Font="Microsoft Sans Serif, 5pt"/&gt;
+      &lt;TextObject Name="Text140" Left="315.84" Top="291.84" Width="49.92" Height="8.64" Border.Lines="All" Border.Width="0.5" Fill.Color="White" Text="5" Padding="2, 1, 2, 1" HorzAlign="Center" VertAlign="Center" Font="Microsoft Sans Serif, 5pt"/&gt;
+      &lt;TextObject Name="Text141" Left="415.68" Top="291.84" Width="49.92" Height="8.64" Border.Lines="All" Border.Width="0.5" Fill.Color="White" Text="7" Padding="2, 1, 2, 1" HorzAlign="Center" VertAlign="Center" Font="Microsoft Sans Serif, 5pt"/&gt;
+      &lt;TextObject Name="Text142" Left="515.52" Top="291.84" Width="49.92" Height="8.64" Border.Lines="All" Border.Width="0.5" Fill.Color="White" Text="9" Padding="2, 1, 2, 1" HorzAlign="Center" VertAlign="Center" Font="Microsoft Sans Serif, 5pt"/&gt;
+      &lt;TextObject Name="Text143" Left="465.6" Top="291.84" Width="49.92" Height="8.64" Border.Lines="All" Border.Width="0.5" Fill.Color="White" Text="8" Padding="2, 1, 2, 1" HorzAlign="Center" VertAlign="Center" Font="Microsoft Sans Serif, 5pt"/&gt;
+      &lt;TextObject Name="Text144" Left="144" Top="291.84" Width="45.12" Height="8.64" Border.Lines="All" Border.Width="0.5" Fill.Color="White" Text="1" Padding="2, 1, 2, 1" HorzAlign="Center" VertAlign="Center" Font="Microsoft Sans Serif, 5pt"/&gt;
+      &lt;TextObject Name="Text145" Left="189.12" Top="291.84" Width="41.28" Height="8.64" Border.Lines="All" Border.Width="0.5" Fill.Color="White" Text="2" Padding="2, 1, 2, 1" HorzAlign="Center" VertAlign="Center" Font="Microsoft Sans Serif, 5pt"/&gt;
+      &lt;TextObject Name="Text146" Left="230.4" Top="291.84" Width="40.32" Height="8.64" Border.Lines="All" Border.Width="0.5" Fill.Color="White" Text="3" Padding="2, 1, 2, 1" HorzAlign="Center" VertAlign="Center" Font="Microsoft Sans Serif, 5pt"/&gt;
+      &lt;TextObject Name="Text147" Left="270.72" Top="291.84" Width="45.12" Height="8.64" Border.Lines="All" Border.Width="0.5" Fill.Color="White" Text="4" Padding="2, 1, 2, 1" HorzAlign="Center" VertAlign="Center" Font="Microsoft Sans Serif, 5pt"/&gt;
+      &lt;TextObject Name="Text148" Left="3.84" Top="263.04" Width="140.16" Height="28.8" Border.Lines="All" Border.Width="0.5" Fill.Color="White" Text="Вид платежа" Padding="2, 1, 2, 1" HorzAlign="Center" VertAlign="Center" Font="Arial, 6pt"/&gt;
+      &lt;TextObject Name="Text149" Left="315.84" Top="263.04" Width="49.92" Height="28.8" Border.Lines="All" Border.Width="0.5" Fill.Color="White" Text="Стоимость &amp;#13;&amp;#10;по тарифу&amp;#13;&amp;#10;населения" Padding="2, 1, 2, 1" HorzAlign="Center" VertAlign="Center" Font="Arial, 6pt"/&gt;
+      &lt;TextObject Name="Text150" Left="415.68" Top="263.04" Width="49.92" Height="28.8" Border.Lines="All" Border.Width="0.5" Fill.Color="White" Text="Перерас&amp;#13;&amp;#10;четы - прочее**" Padding="2, 1, 2, 1" HorzAlign="Center" VertAlign="Center" Font="Arial, 6pt"/&gt;
+      &lt;TextObject Name="Text151" Left="515.52" Top="263.04" Width="49.92" Height="28.8" Border.Lines="All" Border.Width="0.5" Fill.Color="White" Text="Компенса&amp;#13;&amp;#10;ция (льгота)" Padding="2, 1, 2, 1" HorzAlign="Center" VertAlign="Center" Font="Arial, 6pt"/&gt;
+      &lt;TextObject Name="Text152" Left="465.6" Top="263.04" Width="49.92" Height="28.8" Border.Lines="All" Border.Width="0.5" Fill.Color="White" Text="Итого начислено" Padding="2, 1, 2, 1" HorzAlign="Center" VertAlign="Center" Font="Arial, 6pt"/&gt;
+      &lt;TextObject Name="Text153" Left="144" Top="263.04" Width="45.12" Height="28.8" Border.Lines="All" Border.Width="0.5" Fill.Color="White" Text="Тариф&amp;#13;&amp;#10;для  нас-ния" Padding="2, 1, 2, 1" HorzAlign="Center" VertAlign="Center" Font="Arial, 6pt"/&gt;
+      &lt;TextObject Name="Text154" Left="189.12" Top="263.04" Width="41.28" Height="28.8" Border.Lines="All" Border.Width="0.5" Fill.Color="White" Text="Норматив потреб." Padding="2, 1, 2, 1" HorzAlign="Center" VertAlign="Center" Font="Arial, 6pt"/&gt;
+      &lt;TextObject Name="Text155" Left="230.4" Top="263.04" Width="40.32" Height="28.8" Border.Lines="All" Border.Width="0.5" Fill.Color="White" Text="Еди. изм. потреб." Padding="2, 1, 2, 1" HorzAlign="Center" VertAlign="Center" Font="Arial, 6pt"/&gt;
+      &lt;TextObject Name="Text156" Left="270.72" Top="263.04" Width="45.12" Height="28.8" Border.Lines="All" Border.Width="0.5" Fill.Color="White" Text="Объем потреб. ком.усл." Padding="2, 1, 2, 1" HorzAlign="Center" VertAlign="Center" Font="Arial, 6pt"/&gt;
+      &lt;TextObject Name="Text157" Left="365.76" Top="291.84" Width="49.92" Height="8.64" Border.Lines="All" Border.Width="0.5" Fill.Color="White" Text="6" Padding="2, 1, 2, 1" HorzAlign="Center" VertAlign="Center" Font="Microsoft Sans Serif, 5pt"/&gt;
+      &lt;TextObject Name="Text158" Left="365.76" Top="263.04" Width="49.92" Height="28.8" Border.Lines="All" Border.Width="0.5" Fill.Color="White" Text="Перерас&amp;#13;&amp;#10;четы*" Padding="2, 1, 2, 1" HorzAlign="Center" VertAlign="Center" Font="Arial, 6pt"/&gt;
+      &lt;TextObject Name="Text159" Left="565.44" Top="263.04" Width="59.52" Height="28.8" Border.Lines="All" Border.Width="0.5" Fill.Color="White" Text="Суммарный объем комм. услуг" Padding="2, 1, 2, 1" HorzAlign="Center" VertAlign="Center" Font="Arial, 6pt"/&gt;
+      &lt;TextObject Name="Text160" Left="565.44" Top="291.84" Width="59.52" Height="8.64" Border.Lines="All" Border.Width="0.5" Fill.Color="White" Text="10" Padding="2, 1, 2, 1" HorzAlign="Center" VertAlign="Center" Font="Arial, 5pt"/&gt;
+      &lt;TextObject Name="Text161" Left="624.96" Top="263.04" Width="54.72" Height="28.8" Border.Lines="All" Border.Width="0.5" Fill.Color="White" Text="Объем по ОДПУ" Padding="2, 1, 2, 1" HorzAlign="Center" VertAlign="Center" Font="Arial, 6pt"/&gt;
+      &lt;TextObject Name="Text162" Left="624.96" Top="291.84" Width="54.72" Height="8.64" Border.Lines="All" Border.Width="0.5" Fill.Color="White" Text="11" Padding="2, 1, 2, 1" HorzAlign="Center" VertAlign="Center" Font="Arial, 5pt"/&gt;
+      &lt;TextObject Name="Text163" Left="679.68" Top="291.84" Width="65.28" Height="8.64" Border.Lines="All" Border.Width="0.5" Fill.Color="White" Text="12" Padding="2, 1, 2, 1" HorzAlign="Center" VertAlign="Center" Font="Arial, 5pt"/&gt;
+      &lt;TextObject Name="Text164" Left="679.68" Top="263.04" Width="65.28" Height="28.8" Border.Lines="All" Border.Width="0.5" Fill.Color="White" Text="Показания ОДПУ" Padding="2, 1, 2, 1" HorzAlign="Center" VertAlign="Center" Font="Arial, 6pt"/&gt;
+    &lt;/DataBand&gt;
+  &lt;/ReportPage&gt;
+  &lt;ReportPage Name="Page1" Guides="709.44"&gt;
+    &lt;DataBand Name="Data2" Width="718.2" Height="10.56" Guides="4.8" DataSource="Table1"&gt;
+      &lt;TextObject Name="Text5" Width="140.16" Height="10.56" Border.Lines="Left, Right" Border.Width="0.5" Fill.Color="White" BeforePrintEvent="Text5_BeforePrint" Text="[Tarif.sname]" Padding="2, 1, 2, 1" HideZeros="true" HideValue="0" VertAlign="Center" WordWrap="false" Font="Arial, 6pt"/&gt;
+      &lt;TextObject Name="Text6" Left="140.16" Width="45.12" Height="10.56" Border.Lines="Left, Right" Border.Width="0.5" Fill.Color="White" BeforePrintEvent="Text5_BeforePrint" Text="[Tarif.tax]" Padding="2, 1, 2, 1" HideZeros="true" HideValue="0" Format="Number" Format.UseLocale="true" HorzAlign="Right" VertAlign="Center" WordWrap="false" Font="Arial, 7pt"/&gt;
+      &lt;TextObject Name="Text7" Left="185.28" Width="41.28" Height="10.56" Border.Lines="Left, Right" Border.Width="0.5" Fill.Color="White" BeforePrintEvent="Text5_BeforePrint" Text="[Tarif.quota]" Padding="2, 1, 2, 1" HideZeros="true" HideValue="0" Format="Number" Format.UseLocale="false" Format.DecimalDigits="4" Format.DecimalSeparator="," Format.GroupSeparator=" " Format.NegativePattern="1" HorzAlign="Right" VertAlign="Center" WordWrap="false" Font="Arial, 7pt"/&gt;
+      &lt;TextObject Name="Text8" Left="226.56" Width="40.32" Height="10.56" Border.Lines="Left, Right" Border.Width="0.5" Fill.Color="White" BeforePrintEvent="Text5_BeforePrint" Text="[Tarif.edizm]" Padding="2, 1, 2, 1" HideZeros="true" HorzAlign="Center" VertAlign="Center" WordWrap="false" Font="Arial, 7pt"/&gt;
+      &lt;TextObject Name="Text9" Left="266.88" Width="45.12" Height="10.56" Border.Lines="Left, Right" Border.Width="0.5" Fill.Color="White" BeforePrintEvent="Text5_BeforePrint" Text="[Tarif.volume]" Padding="2, 1, 2, 1" HideZeros="true" HideValue="0" Format="Number" Format.UseLocale="false" Format.DecimalDigits="4" Format.DecimalSeparator="," Format.GroupSeparator=" " Format.NegativePattern="1" HorzAlign="Right" VertAlign="Center" WordWrap="false" Font="Arial, 7pt"/&gt;
+      &lt;TextObject Name="Text10" Left="312" Width="49.92" Height="10.56" Border.Lines="Left, Right" Border.Width="0.5" Fill.Color="White" BeforePrintEvent="Text5_BeforePrint" Text="[Tarif.calc]" Padding="2, 1, 2, 1" HideZeros="true" HideValue="0" Format="Number" Format.UseLocale="true" HorzAlign="Right" VertAlign="Center" WordWrap="false" Font="Arial, 7pt"/&gt;
+      &lt;TextObject Name="Text11" Left="361.92" Width="49.92" Height="10.56" Border.Lines="Left, Right" Border.Width="0.5" Fill.Color="White" BeforePrintEvent="Text5_BeforePrint" Text="[Tarif.past1]" Padding="2, 1, 2, 1" HideZeros="true" HideValue="0" Format="Number" Format.UseLocale="true" HorzAlign="Right" VertAlign="Center" WordWrap="false" Font="Arial, 7pt"/&gt;
+      &lt;TextObject Name="Text12" Left="411.84" Width="49.92" Height="10.56" Border.Lines="Left, Right" Border.Width="0.5" Fill.Color="White" BeforePrintEvent="Text5_BeforePrint" Text="[[Tarif.past]-[Tarif.past1]]" Padding="2, 1, 2, 1" HideZeros="true" HideValue="0" Format="Number" Format.UseLocale="true" HorzAlign="Right" VertAlign="Center" WordWrap="false" Font="Arial, 7pt"/&gt;
+      &lt;TextObject Name="Text13" Left="461.76" Width="49.92" Height="10.56" Border.Lines="Left, Right" Border.Width="0.5" Fill.Color="White" BeforePrintEvent="Text5_BeforePrint" Text="[Tarif.itog]" Padding="2, 1, 2, 1" HideZeros="true" HideValue="0" Format="Number" Format.UseLocale="true" HorzAlign="Right" VertAlign="Center" WordWrap="false" Font="Arial, 7pt"/&gt;
+      &lt;TextObject Name="Text14" Left="511.68" Width="49.92" Height="10.56" Border.Lines="Left, Right" Border.Width="0.5" Fill.Color="White" BeforePrintEvent="Text5_BeforePrint" Text="[Tarif.comphelp]" Padding="2, 1, 2, 1" HideZeros="true" HideValue="0" Format="Number" Format.UseLocale="true" HorzAlign="Right" VertAlign="Center" WordWrap="false" Font="Arial, 7pt"/&gt;
+      &lt;TextObject Name="Text15" Left="561.6" Width="59.52" Height="10.56" Border.Lines="Left, Right" Border.Width="0.5" Fill.Color="White" BeforePrintEvent="Text5_BeforePrint" Text="[Tarif.homevol]" Padding="2, 1, 2, 1" HideZeros="true" HideValue="0" Format="Number" Format.UseLocale="false" Format.DecimalDigits="4" Format.DecimalSeparator="," Format.GroupSeparator=" " Format.NegativePattern="1" HorzAlign="Right" VertAlign="Center" WordWrap="false" Font="Arial, 7pt"/&gt;
+      &lt;TextObject Name="Text16" Left="621.12" Width="54.72" Height="10.56" Border.Lines="Left, Right" Border.Width="0.5" Fill.Color="White" BeforePrintEvent="Text5_BeforePrint" Text="[Tarif.homecountervol]" Padding="2, 1, 2, 1" HideZeros="true" HideValue="0" Format="Number" Format.UseLocale="false" Format.DecimalDigits="4" Format.DecimalSeparator="," Format.GroupSeparator=" " Format.NegativePattern="1" HorzAlign="Right" VertAlign="Center" WordWrap="false" Font="Arial, 7pt"/&gt;
+      &lt;TextObject Name="Text17" Left="675.84" Width="65.28" Height="10.56" Border.Lines="Left, Right" Border.Width="0.5" Fill.Color="White" BeforePrintEvent="Text5_BeforePrint" Text="[Tarif.evidence_home]" Padding="2, 1, 2, 1" HideZeros="true" HideValue="0" Format="Number" Format.UseLocale="false" Format.DecimalDigits="4" Format.DecimalSeparator="," Format.GroupSeparator=" " Format.NegativePattern="1" HorzAlign="Right" VertAlign="Center" WordWrap="false" Font="Arial, 7pt"/&gt;
+      &lt;ChildBand Name="Child1" Top="13.12" Width="718.2" Height="10.56" CompleteToNRows="17"&gt;
+        &lt;TextObject Name="Text44" Width="140.16" Height="10.56" Border.Lines="Left, Right" Border.Width="0.5" Fill.Color="White" Padding="2, 1, 2, 1" HideZeros="true" HideValue="0" VertAlign="Bottom" Font="Arial, 6pt"/&gt;
+        &lt;TextObject Name="Text45" Left="140.16" Width="45.12" Height="10.56" Border.Lines="Left, Right" Border.Width="0.5" Fill.Color="White" Padding="2, 1, 2, 1" HideZeros="true" HideValue="0" Format="Number" Format.UseLocale="true" HorzAlign="Right" VertAlign="Bottom" Font="Arial, 7pt"/&gt;
+        &lt;TextObject Name="Text46" Left="185.28" Width="41.28" Height="10.56" Border.Lines="Left, Right" Border.Width="0.5" Fill.Color="White" Padding="2, 1, 2, 1" HideZeros="true" HideValue="0" Format="Number" Format.UseLocale="true" HorzAlign="Right" VertAlign="Bottom" Font="Arial, 7pt"/&gt;
+        &lt;TextObject Name="Text47" Left="226.56" Width="40.32" Height="10.56" Border.Lines="Left, Right" Border.Width="0.5" Fill.Color="White" Padding="2, 1, 2, 1" HideZeros="true" HorzAlign="Center" VertAlign="Bottom" Font="Arial, 7pt"/&gt;
+        &lt;TextObject Name="Text48" Left="266.88" Width="45.12" Height="10.56" Border.Lines="Left, Right" Border.Width="0.5" Fill.Color="White" Padding="2, 1, 2, 1" HideZeros="true" HideValue="0" Format="Number" Format.UseLocale="true" HorzAlign="Right" VertAlign="Bottom" Font="Arial, 7pt"/&gt;
+        &lt;TextObject Name="Text49" Left="312" Width="49.92" Height="10.56" Border.Lines="Left, Right" Border.Width="0.5" Fill.Color="White" Padding="2, 1, 2, 1" HideZeros="true" HideValue="0" Format="Number" Format.UseLocale="true" HorzAlign="Right" VertAlign="Bottom" Font="Arial, 7pt"/&gt;
+        &lt;TextObject Name="Text50" Left="361.92" Width="49.92" Height="10.56" Border.Lines="Left, Right" Border.Width="0.5" Fill.Color="White" Padding="2, 1, 2, 1" HideZeros="true" HideValue="0" Format="Number" Format.UseLocale="true" HorzAlign="Right" VertAlign="Bottom" WordWrap="false" Font="Arial, 7pt"/&gt;
+        &lt;TextObject Name="Text51" Left="411.84" Width="49.92" Height="10.56" Border.Lines="Left, Right" Border.Width="0.5" Fill.Color="White" Padding="2, 1, 2, 1" HideZeros="true" HideValue="0" Format="Number" Format.UseLocale="true" HorzAlign="Right" VertAlign="Bottom" WordWrap="false" Font="Arial, 7pt"/&gt;
+        &lt;TextObject Name="Text52" Left="461.76" Width="49.92" Height="10.56" Border.Lines="Left, Right" Border.Width="0.5" Fill.Color="White" Padding="2, 1, 2, 1" HideZeros="true" HideValue="0" Format="Number" Format.UseLocale="true" HorzAlign="Right" VertAlign="Bottom" Font="Arial, 7pt"/&gt;
+        &lt;TextObject Name="Text53" Left="511.68" Width="49.92" Height="10.56" Border.Lines="Left, Right" Border.Width="0.5" Fill.Color="White" Padding="2, 1, 2, 1" HideZeros="true" HideValue="0" Format="Number" Format.UseLocale="true" HorzAlign="Right" VertAlign="Bottom" Font="Arial, 7pt"/&gt;
+        &lt;TextObject Name="Text54" Left="561.6" Width="59.52" Height="10.56" Border.Lines="Left, Right" Border.Width="0.5" Fill.Color="White" Padding="2, 1, 2, 1" HideZeros="true" HideValue="0" Format="Number" Format.UseLocale="true" HorzAlign="Right" VertAlign="Bottom" Font="Arial, 7pt"/&gt;
+        &lt;TextObject Name="Text55" Left="621.12" Width="54.72" Height="10.56" Border.Lines="Left, Right" Border.Width="0.5" Fill.Color="White" Padding="2, 1, 2, 1" HideZeros="true" HideValue="0" Format="Number" Format.UseLocale="true" HorzAlign="Right" VertAlign="Bottom" Font="Arial, 7pt"/&gt;
+        &lt;TextObject Name="Text56" Left="675.84" Width="65.28" Height="10.56" Border.Lines="Left, Right" Border.Width="0.5" Fill.Color="White" Padding="2, 1, 2, 1" HideZeros="true" HideValue="0" Format="Number" Format.UseLocale="true" HorzAlign="Right" VertAlign="Bottom" WordWrap="false" Font="Arial, 7pt"/&gt;
+      &lt;/ChildBand&gt;
+    &lt;/DataBand&gt;
+  &lt;/ReportPage&gt;
+  &lt;ReportPage Name="Page3"&gt;
+    &lt;DataBand Name="Data4" Width="718.2" Height="76.8" DataSource="Table2"&gt;
+      &lt;TextObject Name="Memo36" Width="388" Height="33" Text="[Itog.shiefregion] инн [Itog.inn] [Itog.schet] БИК [Itog.bik] корр/c [Itog.coraccount]" Padding="2, 1, 2, 1" Font="Arial, 7pt"/&gt;
+    &lt;/DataBand&gt;
+  &lt;/ReportPage&gt;
+  &lt;ReportPage Name="Page4"&gt;
+    &lt;DataBand Name="Data5" Width="718.2" Height="139.2" DataSource="Table2"&gt;
+      &lt;TextObject Name="Memo3" Width="118.08" Height="12.48" Fill.Color="White" BeforePrintEvent="Memo3_BeforePrint" Text="Долг на 01.11.2012" Padding="2, 1, 2, 1" VertAlign="Center" Font="Arial, 8pt"/&gt;
+      &lt;TextObject Name="Memo13" Top="12.48" Width="118.08" Height="12.48" Fill.Color="White" Text="Оплачено в тек.мес.:" Padding="2, 1, 2, 1" VertAlign="Center" Font="Arial, 8pt"/&gt;
+      &lt;TextObject Name="Memo14" Top="24" Width="118.08" Height="13.44" Border.Lines="Left, Top" Border.Width="0.1" Fill.Color="White" Text="Начислено за месяц:" Padding="2, 1, 2, 1" VertAlign="Center" WordWrap="false" Font="Arial, 8pt, style=Bold"/&gt;
+      &lt;TextObject Name="Memo33" Left="118.08" Width="60.48" Height="12.48" Fill.Color="White" BeforePrintEvent="Memo33_BeforePrint" Text="[Itog.dolg]" Padding="2, 1, 2, 1" HideValue="0" Format="Number" Format.UseLocale="true" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt"/&gt;
+      &lt;TextObject Name="Memo61" Left="118.08" Top="12.48" Width="60.48" Height="12.48" Fill.Color="White" Text="[[Itog.pay]-[Main.sumcomp]-[Main.sumstar]]" Padding="2, 1, 2, 1" Format="Number" Format.UseLocale="true" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt"/&gt;
+      &lt;TextObject Name="Memo64" Left="118.08" Top="24" Width="60.48" Height="13.44" Border.Lines="Right, Top" Border.Width="0.1" Fill.Color="White" Text="[Itog.itog]" Padding="2, 1, 2, 1" Format="Number" Format.UseLocale="true" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt, style=Bold"/&gt;
+      &lt;TextObject Name="Memo156" Top="61.44" Width="118.08" Height="24.96" Border.Lines="Left, Bottom" Border.Width="0.1" Fill.Color="White" Text="Итого к оплате за месяц:" Padding="2, 1, 2, 1" VertAlign="Center" Font="Arial, 8pt, style=Bold"/&gt;
+      &lt;TextObject Name="Memo177" Left="118.08" Top="61.44" Width="60.48" Height="24.96" Border.Lines="Right, Bottom" Border.Width="0.1" Fill.Color="White" Text="[[Itog.itog]+[Itog.sumcomp]-[Main.sumcomp]]" Padding="2, 1, 2, 1" Format="Number" Format.UseLocale="true" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt, style=Bold"/&gt;
+      &lt;TextObject Name="Memo349" Top="37.44" Width="118.08" Height="24.96" Border.Lines="Left" Border.Width="0.1" Fill.Color="White" BeforePrintEvent="Memo349_BeforePrint" Padding="2, 1, 2, 1" HideValue="0" VertAlign="Center" Font="Arial, 8pt, style=Bold"/&gt;
+      &lt;TextObject Name="Memo350" Left="118.08" Top="37.44" Width="60.48" Height="24.96" Border.Lines="Right" Border.Width="0.1" Fill.Color="White" Text="[-[Itog.sumcomp]+[Main.sumcomp]]&amp;#13;&amp;#10;" Padding="2, 1, 2, 1" HideZeros="true" HideValue="0" Format="Number" Format.UseLocale="true" HorzAlign="Right" VertAlign="Bottom" Font="Arial, 8pt, style=Bold"/&gt;
+      &lt;TextObject Name="Memo292" Left="118.08" Top="87.36" Width="60.48" Height="12.48" Fill.Color="White" Text="[Main.sumstar]" Padding="2, 1, 2, 1" HideZeros="true" HideValue="0" Format="Number" Format.UseLocale="true" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt"/&gt;
+      &lt;TextObject Name="Memo182" Top="112.32" Width="105.6" Height="14.4" Fill.Color="White" Text="Всего к оплате:" Padding="2, 1, 2, 1" VertAlign="Center" Font="Arial, 9pt, style=Bold"/&gt;
+      &lt;TextObject Name="Memo183" Left="105.6" Top="112.32" Width="72.96" Height="14.4" Fill.Color="White" BeforePrintEvent="Memo41_BeforePrint" Text="4570.00" Padding="2, 1, 2, 1" Format="Number" Format.UseLocale="true" HorzAlign="Right" VertAlign="Center" WordWrap="false" Font="Arial, 9pt, style=Bold"/&gt;
+      &lt;TextObject Name="Text57" Top="87.36" Width="118.08" Height="12.48" BeforePrintEvent="Memo292_BeforePrint" Text="Компенс-я старостам:&amp;#13;&amp;#10;" WordWrap="false" Font="Arial, 8pt"/&gt;
+      &lt;TextObject Name="Text69" Left="118.08" Top="99.84" Width="60.48" Height="12.48" Fill.Color="White" BeforePrintEvent="Text57_BeforePrint" Text="[Itog.peniout]" Padding="2, 1, 2, 1" HideValue="0" Format="Number" Format.UseLocale="true" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt"/&gt;
+      &lt;TextObject Name="Text70" Top="99.84" Width="118.08" Height="12.48" BeforePrintEvent="Text57_BeforePrint" Text="Пени: &amp;#13;&amp;#10;" WordWrap="false" Font="Arial, 8pt"/&gt;
+      &lt;TextObject Name="Text85" Top="126.72" Width="114.24" Height="12.48" BeforePrintEvent="Text85_BeforePrint" Text="Назнач. субсидия:" Font="Arial, 8pt"/&gt;
+      &lt;TextObject Name="Text138" Left="113.28" Top="126.72" Width="65.28" Height="12.48" Fill.Color="White" BeforePrintEvent="Text85_BeforePrint" Text="[Main.subsid]" Padding="2, 1, 2, 1" HideValue="0" Format="Number" Format.UseLocale="true" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt"/&gt;
+      &lt;ChildBand Name="Child8" Top="141.76" Width="718.2" Height="139.2" CompleteToNRows="1"&gt;
+        &lt;TextObject Name="Text192" Top="12.48" Width="118.08" Height="12.48" Fill.Color="White" Text="Оплачено в тек.мес.:" Padding="2, 1, 2, 1" VertAlign="Center" Font="Arial, 8pt"/&gt;
+        &lt;TextObject Name="Text193" Top="24" Width="118.08" Height="13.44" Border.Lines="Left, Top" Border.Width="0.1" Fill.Color="White" Text="Начислено за месяц:" Padding="2, 1, 2, 1" VertAlign="Center" WordWrap="false" Font="Arial, 8pt, style=Bold"/&gt;
+        &lt;TextObject Name="Text195" Left="118.08" Top="12.48" Width="60.48" Height="12.48" Fill.Color="White" Text="0.00" Padding="2, 1, 2, 1" Format="Number" Format.UseLocale="true" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt"/&gt;
+        &lt;TextObject Name="Text196" Left="118.08" Top="24" Width="60.48" Height="13.44" Border.Lines="Right, Top" Border.Width="0.1" Fill.Color="White" Text="0.00" Padding="2, 1, 2, 1" Format="Number" Format.UseLocale="true" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt, style=Bold"/&gt;
+        &lt;TextObject Name="Text197" Top="61.44" Width="118.08" Height="24.96" Border.Lines="Left, Bottom" Border.Width="0.1" Fill.Color="White" Text="Итого к оплате за месяц:" Padding="2, 1, 2, 1" VertAlign="Center" Font="Arial, 8pt, style=Bold"/&gt;
+        &lt;TextObject Name="Text198" Left="118.08" Top="61.44" Width="60.48" Height="24.96" Border.Lines="Right, Bottom" Border.Width="0.1" Fill.Color="White" Text="0.00" Padding="2, 1, 2, 1" Format="Number" Format.UseLocale="true" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt, style=Bold"/&gt;
+        &lt;TextObject Name="Text199" Top="37.44" Width="118.08" Height="24.96" Border.Lines="Left" Border.Width="0.1" Fill.Color="White" BeforePrintEvent="Memo349_BeforePrint" Padding="2, 1, 2, 1" HideValue="0" VertAlign="Center" Font="Arial, 8pt, style=Bold"/&gt;
+        &lt;TextObject Name="Text200" Left="118.08" Top="37.44" Width="60.48" Height="24.96" Border.Lines="Right" Border.Width="0.1" Fill.Color="White" Padding="2, 1, 2, 1" HideZeros="true" HideValue="0" Format="Number" Format.UseLocale="true" HorzAlign="Right" VertAlign="Bottom" Font="Arial, 8pt, style=Bold"/&gt;
+        &lt;TextObject Name="Text202" Top="112.32" Width="105.6" Height="14.4" Fill.Color="White" Text="Всего к оплате:" Padding="2, 1, 2, 1" VertAlign="Center" Font="Arial, 9pt, style=Bold"/&gt;
+        &lt;TextObject Name="Text203" Left="105.6" Top="112.32" Width="72.96" Height="14.4" Fill.Color="White" BeforePrintEvent="Memo41_BeforePrint" Text="0.00" Padding="2, 1, 2, 1" Format="Number" Format.UseLocale="true" HorzAlign="Right" VertAlign="Center" WordWrap="false" Font="Arial, 9pt, style=Bold"/&gt;
+        &lt;TextObject Name="Text207" Top="126.72" Width="114.24" Height="12.48" BeforePrintEvent="Text85_BeforePrint" Text="Назнач. субсидия:" Font="Arial, 8pt"/&gt;
+        &lt;TextObject Name="Text208" Left="113.28" Top="126.72" Width="65.28" Height="12.48" Fill.Color="White" BeforePrintEvent="Text85_BeforePrint" Text="[Main.subsid]" Padding="2, 1, 2, 1" HideValue="0" Format="Number" Format.UseLocale="true" HorzAlign="Right" VertAlign="Center" Font="Arial, 8pt"/&gt;
+      &lt;/ChildBand&gt;
+    &lt;/DataBand&gt;
+  &lt;/ReportPage&gt;
+  &lt;ReportPage Name="Page5"&gt;
+    &lt;DataBand Name="Data6" Width="718.2" Height="10.56" DataSource="Table2"&gt;
+      &lt;TextObject Name="Text71" Width="140.16" Height="10.56" Border.Lines="All" Border.Width="0.5" Fill.Color="White" Text="ИТОГО:" Padding="2, 1, 2, 1" HorzAlign="Center" VertAlign="Center" Font="Arial, 7pt"/&gt;
+      &lt;TextObject Name="Text72" Left="312" Width="49.92" Height="10.56" Border.Lines="All" Border.Width="0.5" Fill.Color="White" Text="[Itog.calc]" Padding="2, 1, 2, 1" HideZeros="true" HideValue="0" Format="Number" Format.UseLocale="true" HorzAlign="Right" VertAlign="Center" WordWrap="false" Font="Arial, 7pt"/&gt;
+      &lt;TextObject Name="Text73" Left="411.84" Width="49.92" Height="10.56" Border.Lines="All" Border.Width="0.5" Fill.Color="White" Text="[[Itog.past]-[Itog.past1]]" Padding="2, 1, 2, 1" HideZeros="true" HideValue="0" Format="Number" Format.UseLocale="true" HorzAlign="Right" VertAlign="Center" WordWrap="false" Font="Arial, 7pt"/&gt;
+      &lt;TextObject Name="Text74" Left="511.68" Width="49.92" Height="10.56" Border.Lines="All" Border.Width="0.5" Fill.Color="White" Text="[Itog.comphelp]" Padding="2, 1, 2, 1" HideZeros="true" HideValue="0" Format="Number" Format.UseLocale="true" HorzAlign="Right" VertAlign="Center" WordWrap="false" Font="Arial, 7pt"/&gt;
+      &lt;TextObject Name="Text75" Left="461.76" Width="49.92" Height="10.56" Border.Lines="All" Border.Width="0.5" Fill.Color="White" Text="[[Itog.itog]+[Itog.bankproc]]" Padding="2, 1, 2, 1" HideZeros="true" HideValue="0" Format="Number" Format.UseLocale="true" HorzAlign="Right" VertAlign="Center" WordWrap="false" Font="Arial, 7pt"/&gt;
+      &lt;TextObject Name="Text76" Left="140.16" Width="45.12" Height="10.56" Border.Lines="All" Border.Width="0.5" Fill.Color="White" Padding="2, 1, 2, 1" HideZeros="true" HorzAlign="Right" VertAlign="Center" Font="Arial, 7pt"/&gt;
+      &lt;TextObject Name="Text77" Left="185.28" Width="41.28" Height="10.56" Border.Lines="All" Border.Width="0.5" Fill.Color="White" Padding="2, 1, 2, 1" HideZeros="true" HorzAlign="Right" VertAlign="Center" Font="Arial, 7pt"/&gt;
+      &lt;TextObject Name="Text78" Left="226.56" Width="40.32" Height="10.56" Border.Lines="All" Border.Width="0.5" Fill.Color="White" Padding="2, 1, 2, 1" HideZeros="true" HorzAlign="Center" VertAlign="Center" Font="Arial, 7pt"/&gt;
+      &lt;TextObject Name="Text79" Left="266.88" Width="45.12" Height="10.56" Border.Lines="All" Border.Width="0.5" Fill.Color="White" Padding="2, 1, 2, 1" HideZeros="true" HorzAlign="Right" VertAlign="Center" Font="Arial, 7pt"/&gt;
+      &lt;TextObject Name="Text80" Left="361.92" Width="49.92" Height="10.56" Border.Lines="All" Border.Width="0.5" Fill.Color="White" Text="[Itog.past1]" Padding="2, 1, 2, 1" HideZeros="true" HideValue="0" Format="Number" Format.UseLocale="true" HorzAlign="Right" VertAlign="Center" WordWrap="false" Font="Arial, 7pt"/&gt;
+      &lt;TextObject Name="Text81" Left="561.6" Width="59.52" Height="10.56" Border.Lines="All" Border.Width="0.5" Fill.Color="White" Padding="2, 1, 2, 1" HideZeros="true" HorzAlign="Right" VertAlign="Center" Font="Arial, 7pt"/&gt;
+      &lt;TextObject Name="Text82" Left="621.12" Width="54.72" Height="10.56" Border.Lines="All" Border.Width="0.5" Fill.Color="White" Padding="2, 1, 2, 1" HideZeros="true" HorzAlign="Right" VertAlign="Center" Font="Arial, 7pt"/&gt;
+      &lt;TextObject Name="Text83" Left="675.84" Width="65.28" Height="10.56" Border.Lines="All" Border.Width="0.5" Fill.Color="White" Padding="2, 1, 2, 1" HideZeros="true" HorzAlign="Right" VertAlign="Center" Font="Arial, 7pt"/&gt;
+      &lt;ChildBand Name="Child5" Top="13.12" Width="718.2" Height="10.56" CompleteToNRows="1"&gt;
+        &lt;TextObject Name="Text165" Width="140.16" Height="10.56" Border.Lines="All" Border.Width="0.5" Fill.Color="White" Text="ИТОГО:" Padding="2, 1, 2, 1" HorzAlign="Center" VertAlign="Center" Font="Arial, 7pt"/&gt;
+        &lt;TextObject Name="Text166" Left="312" Width="49.92" Height="10.56" Border.Lines="All" Border.Width="0.5" Fill.Color="White" Padding="2, 1, 2, 1" HideZeros="true" HideValue="0" Format="Number" Format.UseLocale="true" HorzAlign="Right" VertAlign="Center" WordWrap="false" Font="Arial, 7pt"/&gt;
+        &lt;TextObject Name="Text167" Left="411.84" Width="49.92" Height="10.56" Border.Lines="All" Border.Width="0.5" Fill.Color="White" Padding="2, 1, 2, 1" HideZeros="true" HideValue="0" Format="Number" Format.UseLocale="true" HorzAlign="Right" VertAlign="Center" WordWrap="false" Font="Arial, 7pt"/&gt;
+        &lt;TextObject Name="Text168" Left="511.68" Width="49.92" Height="10.56" Border.Lines="All" Border.Width="0.5" Fill.Color="White" Padding="2, 1, 2, 1" HideZeros="true" HideValue="0" Format="Number" Format.UseLocale="true" HorzAlign="Right" VertAlign="Center" WordWrap="false" Font="Arial, 7pt"/&gt;
+        &lt;TextObject Name="Text169" Left="461.76" Width="49.92" Height="10.56" Border.Lines="All" Border.Width="0.5" Fill.Color="White" Padding="2, 1, 2, 1" HideZeros="true" HideValue="0" Format="Number" Format.UseLocale="true" HorzAlign="Right" VertAlign="Center" WordWrap="false" Font="Arial, 7pt"/&gt;
+        &lt;TextObject Name="Text170" Left="140.16" Width="45.12" Height="10.56" Border.Lines="All" Border.Width="0.5" Fill.Color="White" Padding="2, 1, 2, 1" HideZeros="true" HorzAlign="Right" VertAlign="Center" Font="Arial, 7pt"/&gt;
+        &lt;TextObject Name="Text171" Left="185.28" Width="41.28" Height="10.56" Border.Lines="All" Border.Width="0.5" Fill.Color="White" Padding="2, 1, 2, 1" HideZeros="true" HorzAlign="Right" VertAlign="Center" Font="Arial, 7pt"/&gt;
+        &lt;TextObject Name="Text172" Left="226.56" Width="40.32" Height="10.56" Border.Lines="All" Border.Width="0.5" Fill.Color="White" Padding="2, 1, 2, 1" HideZeros="true" HorzAlign="Center" VertAlign="Center" Font="Arial, 7pt"/&gt;
+        &lt;TextObject Name="Text173" Left="266.88" Width="45.12" Height="10.56" Border.Lines="All" Border.Width="0.5" Fill.Color="White" Padding="2, 1, 2, 1" HideZeros="true" HorzAlign="Right" VertAlign="Center" Font="Arial, 7pt"/&gt;
+        &lt;TextObject Name="Text174" Left="361.92" Width="49.92" Height="10.56" Border.Lines="All" Border.Width="0.5" Fill.Color="White" Padding="2, 1, 2, 1" HideZeros="true" HideValue="0" Format="Number" Format.UseLocale="true" HorzAlign="Right" VertAlign="Center" WordWrap="false" Font="Arial, 7pt"/&gt;
+        &lt;TextObject Name="Text175" Left="561.6" Width="59.52" Height="10.56" Border.Lines="All" Border.Width="0.5" Fill.Color="White" Padding="2, 1, 2, 1" HideZeros="true" HorzAlign="Right" VertAlign="Center" Font="Arial, 7pt"/&gt;
+        &lt;TextObject Name="Text176" Left="621.12" Width="54.72" Height="10.56" Border.Lines="All" Border.Width="0.5" Fill.Color="White" Padding="2, 1, 2, 1" HideZeros="true" HorzAlign="Right" VertAlign="Center" Font="Arial, 7pt"/&gt;
+        &lt;TextObject Name="Text177" Left="675.84" Width="65.28" Height="10.56" Border.Lines="All" Border.Width="0.5" Fill.Color="White" Padding="2, 1, 2, 1" HideZeros="true" HorzAlign="Right" VertAlign="Center" Font="Arial, 7pt"/&gt;
+      &lt;/ChildBand&gt;
+    &lt;/DataBand&gt;
+  &lt;/ReportPage&gt;
+  &lt;ReportPage Name="Page6"&gt;
+    &lt;DataBand Name="Data7" Width="70.08" Height="21.12" DataSource="Table4" MaxRows="6" Columns.Count="6" Columns.Width="70.08"&gt;
+      &lt;TextObject Name="Text100" Width="70.08" Height="10.56" Border.Lines="All" Border.Width="0.5" BeforePrintEvent="Text98_BeforePrint" Text="[MSP.socfio]" WordWrap="false" Font="Arial, 6pt"/&gt;
+      &lt;TextObject Name="Text101" Top="10.56" Width="70.08" Height="10.56" Border.Lines="All" Border.Width="0.5" BeforePrintEvent="Text98_BeforePrint" Text="[MSP.socpay]" HideZeros="true" Format="Number" Format.UseLocale="true" HorzAlign="Right" WordWrap="false" Font="Arial, 6pt"/&gt;
+    &lt;/DataBand&gt;
+  &lt;/ReportPage&gt;
+  &lt;ReportPage Name="Page7"&gt;
+    &lt;DataBand Name="Data8" Width="718.2" Height="10.56" BeforePrintEvent="Data8_BeforePrint" DataSource="Table3"&gt;
+      &lt;TextObject Name="Memo24" Width="45.12" Height="10.56" Border.Lines="Left, Right" Border.Width="0.5" Fill.Color="White" BeforePrintEvent="Memo24_BeforePrint" Padding="2, 1, 2, 1" Font="Arial, 6pt"/&gt;
+      &lt;TextObject Name="Memo37" Left="86.4" Width="23.04" Height="10.56" Border.Lines="Left, Right" Border.Width="0.5" BeforePrintEvent="Memo37_BeforePrint" Padding="2, 1, 2, 1" HideValue="0" HorzAlign="Center" VertAlign="Center" Font="Arial, 6pt"/&gt;
+      &lt;TextObject Name="Memo44" Left="144" Width="34.56" Height="10.56" Border.Lines="Left, Right" Border.Width="0.5" Padding="2, 1, 2, 1" HideValue="0" VertAlign="Center" Font="Arial, 6pt"/&gt;
+      &lt;TextObject Name="Memo104" Left="109.44" Width="34.56" Height="10.56" Border.Lines="Left, Right" Border.Width="0.5" BeforePrintEvent="Memo104_BeforePrint" Text="[Counters.evidence_current]" Padding="2, 1, 2, 1" HideValue="0" Format="Custom" Format.Format="######.####" HorzAlign="Center" VertAlign="Center" WordWrap="false" Font="Arial, 6pt"/&gt;
+      &lt;TextObject Name="Text58" Left="45.12" Width="41.28" Height="10.56" Border.Lines="Left, Right" Border.Width="0.5" BeforePrintEvent="Memo42_BeforePrint" Text="[Counters.counter_num]" HorzAlign="Center" Font="Arial, 6pt"/&gt;
+      &lt;ChildBand Name="Child2" Top="13.12" Width="718.2" Height="10.56" CompleteToNRows="7"&gt;
+        &lt;TextObject Name="Text102" Width="45.12" Height="10.56" Border.Lines="Left, Right" Border.Width="0.5" Fill.Color="White" Padding="2, 1, 2, 1" Font="Arial, 6pt"/&gt;
+        &lt;TextObject Name="Text103" Left="86.4" Width="23.04" Height="10.56" Border.Lines="Left, Right" Border.Width="0.5" Padding="2, 1, 2, 1" HideValue="0" HorzAlign="Center" VertAlign="Center" Font="Arial, 6pt"/&gt;
+        &lt;TextObject Name="Text104" Left="144" Width="34.56" Height="10.56" Border.Lines="Left, Right" Border.Width="0.5" Padding="2, 1, 2, 1" HideValue="0" VertAlign="Center" Font="Arial, 6pt"/&gt;
+        &lt;TextObject Name="Text105" Left="45.12" Width="41.28" Height="10.56" Border.Lines="Left, Right" Border.Width="0.5" Padding="2, 1, 2, 1" HideValue="0" Format="Number" Format.UseLocale="true" HorzAlign="Center" VertAlign="Center" WordWrap="false" Font="Arial, 6pt"/&gt;
+        &lt;TextObject Name="Text106" Left="109.44" Width="34.56" Height="10.56" Border.Lines="Left, Right" Border.Width="0.5" Padding="2, 1, 2, 1" HideValue="0" HorzAlign="Center" VertAlign="Center" WordWrap="false" Font="Arial, 6pt"/&gt;
+      &lt;/ChildBand&gt;
+    &lt;/DataBand&gt;
+  &lt;/ReportPage&gt;
+  &lt;ReportPage Name="Page8"&gt;
+    &lt;DataBand Name="Data9" Width="718.2" Height="10.56" BeforePrintEvent="Data8_BeforePrint" DataSource="Table3"&gt;
+      &lt;TextObject Name="Text113" Width="45.12" Height="10.56" Border.Lines="Left, Right" Border.Width="0.5" Fill.Color="White" BeforePrintEvent="Memo24_BeforePrint" Padding="2, 1, 2, 1" Font="Arial, 6pt"/&gt;
+      &lt;TextObject Name="Text114" Left="86.4" Width="23.04" Height="10.56" Border.Lines="Left, Right" Border.Width="0.5" BeforePrintEvent="Memo37_BeforePrint" Padding="2, 1, 2, 1" HideValue="0" HorzAlign="Center" VertAlign="Center" Font="Arial, 6pt"/&gt;
+      &lt;TextObject Name="Text115" Left="144" Width="34.56" Height="10.56" Border.Lines="Left, Right" Border.Width="0.5" Padding="2, 1, 2, 1" HideValue="0" VertAlign="Center" Font="Arial, 6pt"/&gt;
+      &lt;TextObject Name="Text117" Left="109.44" Width="34.56" Height="10.56" Border.Lines="Left, Right" Border.Width="0.5" BeforePrintEvent="Memo104_BeforePrint" Text="[Counters.evidence_current]" Padding="2, 1, 2, 1" HideValue="0" Format="Custom" Format.Format="######.####" HorzAlign="Center" VertAlign="Center" WordWrap="false" Font="Arial, 6pt"/&gt;
+      &lt;TextObject Name="Text137" Left="45.12" Width="41.28" Height="10.56" Border.Lines="Left, Right" Border.Width="0.5" BeforePrintEvent="Memo42_BeforePrint" Text="[Counters.counter_num]" HorzAlign="Center" Font="Arial, 6pt"/&gt;
+      &lt;ChildBand Name="Child3" Top="13.12" Width="718.2" Height="10.56" CompleteToNRows="7"&gt;
+        &lt;TextObject Name="Text118" Width="45.12" Height="10.56" Border.Lines="Left, Right" Border.Width="0.5" Fill.Color="White" Padding="2, 1, 2, 1" Font="Arial, 6pt"/&gt;
+        &lt;TextObject Name="Text119" Left="86.4" Width="23.04" Height="10.56" Border.Lines="Left, Right" Border.Width="0.5" Padding="2, 1, 2, 1" HideValue="0" HorzAlign="Center" VertAlign="Center" Font="Arial, 6pt"/&gt;
+        &lt;TextObject Name="Text120" Left="144" Width="34.56" Height="10.56" Border.Lines="Left, Right" Border.Width="0.5" Padding="2, 1, 2, 1" HideValue="0" VertAlign="Center" Font="Arial, 6pt"/&gt;
+        &lt;TextObject Name="Text121" Left="45.12" Width="41.28" Height="10.56" Border.Lines="Left, Right" Border.Width="0.5" Padding="2, 1, 2, 1" HideValue="0" Format="Number" Format.UseLocale="true" HorzAlign="Center" VertAlign="Center" WordWrap="false" Font="Arial, 6pt"/&gt;
+        &lt;TextObject Name="Text122" Left="109.44" Width="34.56" Height="10.56" Border.Lines="Left, Right" Border.Width="0.5" Padding="2, 1, 2, 1" HideValue="0" HorzAlign="Center" VertAlign="Center" WordWrap="false" Font="Arial, 6pt"/&gt;
+      &lt;/ChildBand&gt;
+    &lt;/DataBand&gt;
+  &lt;/ReportPage&gt;
+  &lt;ReportPage Name="Page9"&gt;
+    &lt;DataBand Name="Data10" Width="718.2" Height="19.2" DataSource="Table5"&gt;
+      &lt;TextObject Name="Text123" Width="76.8" Height="9.6" Border.Lines="All" Border.Width="0.1" ShiftMode="WhenOverlapped" BeforePrintEvent="Text123_BeforePrint" Text="[DetailEvidence.start1] - [DetailEvidence.finish1]" Padding="2, 1, 2, 1" HideValue="0" HorzAlign="Center" VertAlign="Center" WordWrap="false" Font="Arial, 5pt"&gt;
+        &lt;Formats&gt;
+          &lt;GeneralFormat/&gt;
+          &lt;GeneralFormat/&gt;
+        &lt;/Formats&gt;
+      &lt;/TextObject&gt;
+      &lt;TextObject Name="Text124" Left="76.8" Width="36.48" Height="9.6" Border.Lines="All" Border.Width="0.1" ShiftMode="WhenOverlapped" Text="[DetailEvidence.kol1]" Padding="2, 1, 2, 1" HideValue="0" HorzAlign="Center" VertAlign="Center" Font="Arial, 5pt"/&gt;
+      &lt;TextObject Name="Text125" Left="113.28" Width="33.6" Height="9.6" Border.Lines="All" Border.Width="0.1" ShiftMode="WhenOverlapped" Text="[DetailEvidence.evidence1]" Padding="2, 1, 2, 1" HideZeros="true" HideValue="0" Format="Number" Format.UseLocale="false" Format.DecimalDigits="4" Format.DecimalSeparator="," Format.GroupSeparator=" " Format.NegativePattern="1" HorzAlign="Center" VertAlign="Center" WordWrap="false" Font="Arial, 5pt"/&gt;
+      &lt;TextObject Name="Text126" Top="9.6" Width="76.8" Height="9.6" Border.Lines="All" Border.Width="0.1" ShiftMode="WhenOverlapped" BeforePrintEvent="Text126_BeforePrint" Text="[DetailEvidence.start2] - [DetailEvidence.finish2]" Padding="2, 1, 2, 1" HideValue="0" HorzAlign="Center" VertAlign="Center" WordWrap="false" Font="Arial, 5pt"&gt;
+        &lt;Formats&gt;
+          &lt;GeneralFormat/&gt;
+          &lt;GeneralFormat/&gt;
+        &lt;/Formats&gt;
+      &lt;/TextObject&gt;
+      &lt;TextObject Name="Text127" Left="76.8" Top="9.6" Width="36.48" Height="9.6" Border.Lines="All" Border.Width="0.1" ShiftMode="WhenOverlapped" Text="[DetailEvidence.kol2]" Padding="2, 1, 2, 1" HideValue="0" HorzAlign="Center" VertAlign="Center" Font="Arial, 5pt"/&gt;
+      &lt;TextObject Name="Text128" Left="113.28" Top="9.6" Width="33.6" Height="9.6" Border.Lines="All" Border.Width="0.1" ShiftMode="WhenOverlapped" Text="[DetailEvidence.evidence2]" Padding="2, 1, 2, 1" HideZeros="true" HideValue="0" Format="Number" Format.UseLocale="false" Format.DecimalDigits="4" Format.DecimalSeparator="," Format.GroupSeparator=" " Format.NegativePattern="1" HorzAlign="Center" VertAlign="Center" WordWrap="false" Font="Arial, 5pt"/&gt;
+      &lt;TextObject Name="Text129" Left="146.88" Width="39.36" Height="19.2" Border.Lines="All" Border.Width="0.1" Fill.Color="White" ShiftMode="WhenOverlapped" Text="[[DetailEvidence.evidence1]+[DetailEvidence.evidence2]]" Padding="2, 1, 2, 1" HideValue="0" Format="Number" Format.UseLocale="false" Format.DecimalDigits="4" Format.DecimalSeparator="," Format.GroupSeparator=" " Format.NegativePattern="1" HorzAlign="Center" VertAlign="Center" WordWrap="false" Font="Arial, 5pt"/&gt;
+      &lt;ChildBand Name="Child4" Top="21.76" Width="718.2" Height="19.2" CompleteToNRows="2"&gt;
+        &lt;TextObject Name="Text130" Width="76.8" Height="9.6" Border.Lines="All" Border.Width="0.1" ShiftMode="WhenOverlapped" Padding="2, 1, 2, 1" HideValue="0" HorzAlign="Center" VertAlign="Center" WordWrap="false" Font="Arial, 5pt"&gt;
+          &lt;Formats&gt;
+            &lt;DateFormat/&gt;
+            &lt;GeneralFormat/&gt;
+          &lt;/Formats&gt;
+        &lt;/TextObject&gt;
+        &lt;TextObject Name="Text131" Left="76.8" Width="36.48" Height="9.6" Border.Lines="All" Border.Width="0.1" ShiftMode="WhenOverlapped" Padding="2, 1, 2, 1" HideValue="0" HorzAlign="Center" VertAlign="Center" Font="Arial, 5pt"/&gt;
+        &lt;TextObject Name="Text132" Left="113.28" Width="33.6" Height="9.6" Border.Lines="All" Border.Width="0.1" ShiftMode="WhenOverlapped" Padding="2, 1, 2, 1" HideValue="0" Format="Number" Format.UseLocale="true" HorzAlign="Center" VertAlign="Center" WordWrap="false" Font="Arial, 5pt"/&gt;
+        &lt;TextObject Name="Text133" Top="9.6" Width="76.8" Height="9.6" Border.Lines="All" Border.Width="0.1" ShiftMode="WhenOverlapped" Padding="2, 1, 2, 1" HideValue="0" HorzAlign="Center" VertAlign="Center" WordWrap="false" Font="Arial, 5pt"&gt;
+          &lt;Formats&gt;
+            &lt;DateFormat/&gt;
+            &lt;GeneralFormat/&gt;
+          &lt;/Formats&gt;
+        &lt;/TextObject&gt;
+        &lt;TextObject Name="Text134" Left="76.8" Top="9.6" Width="36.48" Height="9.6" Border.Lines="All" Border.Width="0.1" ShiftMode="WhenOverlapped" Padding="2, 1, 2, 1" HideValue="0" HorzAlign="Center" VertAlign="Center" Font="Arial, 5pt"/&gt;
+        &lt;TextObject Name="Text135" Left="113.28" Top="9.6" Width="33.6" Height="9.6" Border.Lines="All" Border.Width="0.1" ShiftMode="WhenOverlapped" Padding="2, 1, 2, 1" HideValue="0" Format="Number" Format.UseLocale="true" HorzAlign="Center" VertAlign="Center" WordWrap="false" Font="Arial, 5pt"/&gt;
+        &lt;TextObject Name="Text136" Left="146.88" Width="39.36" Height="19.2" Border.Lines="All" Border.Width="0.1" Fill.Color="White" ShiftMode="WhenOverlapped" Padding="2, 1, 2, 1" HideValue="0" HorzAlign="Center" VertAlign="Center" WordWrap="false" Font="Arial, 5pt"/&gt;
+      &lt;/ChildBand&gt;
+    &lt;/DataBand&gt;
+  &lt;/ReportPage&gt;
+  &lt;ReportPage Name="Page10"&gt;
+    &lt;DataBand Name="Data11" Width="718.2" Height="85.76" DataSource="Table2"&gt;
+      &lt;BarcodeObject Name="Bar1" Left="0.96" Top="-0.96" Width="156.48" Height="34.88" BeforePrintEvent="Bar1_BeforePrint" AutoSize="false" Text="123456" Barcode="Code128" Barcode.AutoEncode="true"/&gt;
+      &lt;TextObject Name="Memo15" Left="0.96" Top="33.6" Width="98" Height="12.48" Fill.Color="White" Text="Итого к оплате:" Padding="2, 1, 2, 1" VertAlign="Center" Font="Arial, 8pt, style=Bold"/&gt;
+      &lt;TextObject Name="Memo128" Left="98.96" Top="33.6" Width="77.52" Height="12.48" Fill.Color="White" Text="[[Itog.out2]+[Itog.bankproc]]" Padding="2, 1, 2, 1" Format="Number" Format.UseLocale="true" VertAlign="Center" Font="Arial, 8pt, style=Bold"/&gt;
+      &lt;BarcodeObject Name="Barcode1" Top="46.08" Width="134.4" Height="35.84" BeforePrintEvent="Barcode1_BeforePrint" AutoSize="false" Text="123456" Barcode="Code128" Barcode.AutoEncode="true"/&gt;
+      &lt;TextObject Name="Text59" Left="208.48" Width="76" Height="12" Fill.Color="White" Text="Прош. месяц: " Padding="2, 1, 2, 1" VertAlign="Center" WordWrap="false" Font="Arial, 8pt"/&gt;
+      &lt;TextObject Name="Text60" Left="208.48" Top="11.04" Width="76" Height="12" Fill.Color="White" Text="Начислено: " Padding="2, 1, 2, 1" VertAlign="Center" Font="Arial, 8pt"/&gt;
+      &lt;TextObject Name="Text61" Left="208.48" Top="24" Width="76" Height="12" Fill.Color="White" Text="Оплачено:" Padding="2, 1, 2, 1" VertAlign="Center" Font="Arial, 8pt"/&gt;
+      &lt;TextObject Name="Text62" Left="284.48" Width="55" Height="12" Fill.Color="White" Text="[Itog.dolg]" Padding="2, 1, 2, 1" Format="Number" Format.UseLocale="true" VertAlign="Center" WordWrap="false" Font="Arial, 8pt"/&gt;
+      &lt;TextObject Name="Text63" Left="284.48" Top="11.04" Width="55" Height="12" Fill.Color="White" Text="[[Itog.itog]+[Itog.sumcomp]]" Padding="2, 1, 2, 1" Format="Number" Format.UseLocale="true" VertAlign="Center" WordWrap="false" Font="Arial, 8pt"/&gt;
+      &lt;TextObject Name="Text64" Left="284.48" Top="24" Width="55" Height="12" Fill.Color="White" Text="[[Itog.pay]-[Main.sumcomp]-[Main.sumstar]]" Padding="2, 1, 2, 1" Format="Number" Format.UseLocale="true" VertAlign="Center" WordWrap="false" Font="Arial, 8pt"/&gt;
+      &lt;TextObject Name="Text65" Left="208.32" Top="34.88" Width="76" Height="12" Fill.Color="White" BeforePrintEvent="Text57_BeforePrint" Text="Пени" Padding="2, 1, 2, 1" VertAlign="Center" Font="Arial, 8pt"/&gt;
+      &lt;TextObject Name="Text66" Left="284.32" Top="34.88" Width="55" Height="12" Fill.Color="White" BeforePrintEvent="Text57_BeforePrint" Text="[Itog.peniout]" Padding="2, 1, 2, 1" Format="Number" Format.UseLocale="true" VertAlign="Center" WordWrap="false" Font="Arial, 8pt"/&gt;
+      &lt;TextObject Name="Text67" Left="302.32" Top="54.72" Width="67.8" Height="14" Fill.Color="White" BeforePrintEvent="Memo41_BeforePrint" CanBreak="false" Text="[Itog.out2]" Padding="2, 1, 2, 1" Format="Number" Format.UseLocale="true" VertAlign="Center" WordWrap="false" Font="Arial, 9pt, style=Bold"/&gt;
+      &lt;TextObject Name="Text68" Left="208.48" Top="54.72" Width="93.84" Height="14" Fill.Color="White" Text="Всего к оплате:" Padding="2, 1, 2, 1" VertAlign="Center" Font="Arial, 8pt, style=Bold"/&gt;
+      &lt;ChildBand Name="Child6" Top="88.32" Width="718.2" Height="69.68" CompleteToNRows="1"&gt;
+        &lt;BarcodeObject Name="Barcode2" Left="0.96" Width="156.48" Height="34.88" BeforePrintEvent="Barcode2_BeforePrint" AutoSize="false" Text="123456" Barcode="Code128" Barcode.AutoEncode="true"/&gt;
+        &lt;TextObject Name="Text178" Left="0.96" Top="34.56" Width="98" Height="12.48" Fill.Color="White" Text="Итого к оплате:" Padding="2, 1, 2, 1" VertAlign="Center" Font="Arial, 8pt, style=Bold"/&gt;
+        &lt;TextObject Name="Text179" Left="98.96" Top="34.56" Width="77.52" Height="12.48" Fill.Color="White" Text="0" Padding="2, 1, 2, 1" Format="Number" Format.UseLocale="true" VertAlign="Center" Font="Arial, 8pt, style=Bold"/&gt;
+        &lt;TextObject Name="Text180" Left="208.48" Top="0.96" Width="76" Height="12" Fill.Color="White" Text="Прош. месяц: " Padding="2, 1, 2, 1" VertAlign="Center" WordWrap="false" Font="Arial, 8pt"/&gt;
+        &lt;TextObject Name="Text181" Left="208.48" Top="12" Width="76" Height="12" Fill.Color="White" Text="Начислено: " Padding="2, 1, 2, 1" VertAlign="Center" Font="Arial, 8pt"/&gt;
+        &lt;TextObject Name="Text182" Left="208.48" Top="24.96" Width="76" Height="12" Fill.Color="White" Text="Оплачено:" Padding="2, 1, 2, 1" VertAlign="Center" Font="Arial, 8pt"/&gt;
+        &lt;TextObject Name="Text183" Left="284.48" Top="0.96" Width="55" Height="12" Fill.Color="White" Text="0.00" Padding="2, 1, 2, 1" Format="Number" Format.UseLocale="true" VertAlign="Center" WordWrap="false" Font="Arial, 8pt"/&gt;
+        &lt;TextObject Name="Text184" Left="284.48" Top="12" Width="55" Height="12" Fill.Color="White" Text="0.00" Padding="2, 1, 2, 1" Format="Number" Format.UseLocale="true" VertAlign="Center" WordWrap="false" Font="Arial, 8pt"/&gt;
+        &lt;TextObject Name="Text185" Left="284.48" Top="24.96" Width="55" Height="12" Fill.Color="White" Text="0.00" Padding="2, 1, 2, 1" Format="Number" Format.UseLocale="true" VertAlign="Center" WordWrap="false" Font="Arial, 8pt"/&gt;
+        &lt;TextObject Name="Text186" Left="208.32" Top="35.84" Width="76" Height="12" Visible="false" Fill.Color="White" Text="Пени" Padding="2, 1, 2, 1" VertAlign="Center" Font="Arial, 8pt"/&gt;
+        &lt;TextObject Name="Text187" Left="284.32" Top="35.84" Width="55" Height="12" Visible="false" Fill.Color="White" Text="0.00" Padding="2, 1, 2, 1" Format="Number" Format.UseLocale="true" VertAlign="Center" WordWrap="false" Font="Arial, 8pt"/&gt;
+        &lt;TextObject Name="Text188" Left="302.32" Top="55.68" Width="67.8" Height="14" Fill.Color="White" CanBreak="false" Text="0.00" Padding="2, 1, 2, 1" Format="Number" Format.UseLocale="true" VertAlign="Center" WordWrap="false" Font="Arial, 9pt, style=Bold"/&gt;
+        &lt;TextObject Name="Text189" Left="208.48" Top="55.68" Width="93.84" Height="14" Fill.Color="White" Text="Всего к оплате:" Padding="2, 1, 2, 1" VertAlign="Center" Font="Arial, 8pt, style=Bold"/&gt;
+      &lt;/ChildBand&gt;
+    &lt;/DataBand&gt;
+  &lt;/ReportPage&gt;
+  &lt;ReportPage Name="Page2"&gt;
+    &lt;DataBand Name="Data3" Width="718.2" Height="19" DataSource="Table2"&gt;
+      &lt;TextObject Name="Memo141" Width="185" Height="19" Text="Код квитанции [Itog.receipt_id]" Padding="2, 1, 2, 1" WordWrap="false" Font="Arial, 10pt, style=Bold"/&gt;
+      &lt;ChildBand Name="Child7" Top="21.56" Width="718.2" Height="19" CompleteToNRows="1"&gt;
+        &lt;TextObject Name="Text190" Width="185" Height="19" Text="Код квитанции 0" Padding="2, 1, 2, 1" WordWrap="false" Font="Arial, 10pt, style=Bold"/&gt;
+      &lt;/ChildBand&gt;
+    &lt;/DataBand&gt;
+  &lt;/ReportPage&gt;
+&lt;/Report&gt;
+</value>
+  </data>
+</root>

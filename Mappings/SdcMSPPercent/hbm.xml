@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="SdcMSPPercent" table="DBA.sdcMSPPercent">
+    <composite-id>
+      <key-property name="MSP_id"
+                     column="MSP_id"/>
+      <key-many-to-one name="Period"
+                     column="Period_id" class="Kvartplata.Classes.Period"/>
+      <key-property name="Dbeg"
+                   column="DBeg" />
+      <key-property name="Service" column="Service_id" />
+    </composite-id>
+
+    <property name="Dend" column="DEnd" not-null="false"/>
+    <property name="Spreading_id" column="Spreading_id" not-null="true"/>
+    <property name="Scheme" column="Scheme" not-null="false"/>
+    <property name="Percent" column="Percent" not-null="true"/>
+    <property name="Share_id" column="Share_id" not-null="false"/>
+    <property name="Uname" column="Uname" not-null="true"/>
+    <property name="Dedit" column="Dedit" not-null="true"/>
+
+  </class>
+  <query name="UpdateMSPPercent">
+    <![CDATA[
+        update SdcMSPPercent cmp set Dbeg=:dbeg,Scheme=:scheme,Dend=:dend,Spreading_id=:s_id,
+        Percent=:percent,Share_id=:share_id,Uname=:uname,Dedit=:dedit
+        where cmp.Period=:period
+        and cmp.Dbeg = :dbeg2 and cmp.Service = :service and cmp.MSP_id=:MSP_id
+        ]]>
+  </query>
+</hibernate-mapping>

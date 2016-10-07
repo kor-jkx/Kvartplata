@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="TypeSeal" table="DBA.dcTypeSeal">
+    <id name="TypeSealId" column="TypeSeal_id" >
+      <generator class="assigned"/>
+    </id>
+    <property name="TypeSealName"
+              column="TypeSeal_name" not-null="true"/>    
+    <property name="Uname" column="Uname" not-null="true"/>
+    <property name="Dedit" column="Dedit" not-null="true"/>
+  </class>
+
+</hibernate-mapping>

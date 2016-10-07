@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="CmpParam" table="DBA.cmpParam">
+    <composite-id>
+      <key-property name="Company_id" column="Company_id"/>
+      <key-many-to-one name="Period" column="Period_id" class="Kvartplata.Classes.Period"/>
+      <key-property name="Dbeg" column="DBeg" />
+      <key-property name="Param_id" column="Param_id"/>
+    </composite-id>
+
+
+    <property name="Dend" column="DEnd" not-null="false"/>
+    <property name="Param_value" column="Param_value" not-null="false"/>
+    <property name="Uname" column="Uname" not-null="true"/>
+    <property name="Dedit" column="Dedit" not-null="true"/>
+  </class>
+  <query name="UpdateParam">
+    <![CDATA[
+        update CmpParam cmpP set Dbeg=:dbeg,Dend=:dend,Param_value=:pv,Uname=:uname,Dedit=:dedit
+        where cmpP.Company_id=:company_id and cmpP.Period=:period
+        and cmpP.Dbeg=:dbeg2 and cmpP.Param_id=:param_id
+        ]]>
+  </query>
+</hibernate-mapping>

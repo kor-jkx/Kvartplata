@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="Policy" table="DBA.lsPolicy">
+    <composite-id>
+      <key-many-to-one name="LsClient" class="LsClient" column="client_id"/>
+      <key-property name="PolicyNum" column="policy_num"/>
+<!--      <key-property name="DBeg" column="DBeg"/>-->
+    </composite-id>
+    <property name="DEnd" column="DEnd"/>
+    <property name="DBeg" column="DBeg"/>
+    <property name="UName" column="UName"/>
+    <property name="DEdit" column="DEdit"/>
+    <!--<many-to-one class="Period" name="Period" column="period_id"/>-->
+  </class>
+
+</hibernate-mapping>

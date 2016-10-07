@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="Complex" table="DBA.Adm_fk">
+    <id name="IdFk" column="IdFk"  >
+      <generator class="identity"/>
+    </id>
+    <property name="ComplexId"
+              column="Kompl" />
+    <property name="ComplexName"
+          column="FK" />
+
+  </class>
+
+</hibernate-mapping>

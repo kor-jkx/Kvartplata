@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="LsClient" table="DBA.lsClient">
+    <id name="ClientId" unsaved-value="0">
+      <column name="Client_id" not-null="true" />
+      <generator class="assigned"/>
+
+    </id>
+  <!--  <property name="CompanyId"
+              column="Company_Id"
+              not-null="true"/>-->
+    <many-to-one name="Company" class="Company" column="Company_id" fetch="join"/>
+    <many-to-one name="Home" class="Home" column="IdHome" fetch="join"/>
+    <many-to-one name="Flat" class="Flat" column="IdFlat"/>
+
+    <!-- <property name="Fio" 
+              column="Fio"
+              not-null="true"/>  -->
+      
+    <property name="SurFlat"
+              column="NumberRoom"
+              not-null="false"/>
+    <property name="Uname"
+              column="uname"
+              not-null="true"/>
+    <property name="Dedit"
+              column="dedit"
+              not-null="true"/>
+
+    <property name="OldId"
+                  column="Old_Id"
+                  not-null="false"/>
+    
+    <property name="Phone"
+              column="Phone"
+              not-null="false"/>
+    <property name="Floor"
+              column="Floor"
+              not-null="false"/>
+    <property name="Entrance"
+              column="Entrance"
+              not-null="false"/>
+    <property name="Remark"
+              column="Remark"
+              not-null="false"/>
+    <property name="Note"
+              column="Note"
+              not-null="false"/>
+    <!--<property name="Arenda" column="Arenda"/>-->
+    <many-to-one name="Complex" class="Complex" column="Complex_id"/>
+    <property name="Locality" column="Locality"/>
+  </class>
+  
+</hibernate-mapping>

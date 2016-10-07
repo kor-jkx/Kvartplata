@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="Raion" table="DBA.DI_RNN">
+    <id name="IdRnn" unsaved-value="0">
+      <column name="IdRnn" not-null="true" />
+      <generator class="identity"/>
+    </id>
+    <property name="Rnn" column="Rnn" not-null="true"/>    
+  </class>
+
+</hibernate-mapping>

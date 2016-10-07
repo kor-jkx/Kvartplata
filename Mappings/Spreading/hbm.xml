@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="Spreading" table="DBA.dcSpreading">
+    <id name="Id" unsaved-value="0">
+      <column name="Spreading_id" not-null="true" />
+      <generator class="identity"/>
+    </id>
+    <property name="Name" column="Spreading_name" not-null="true"/>
+  </class>
+
+</hibernate-mapping>

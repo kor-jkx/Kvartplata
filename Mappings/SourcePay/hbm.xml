@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="SourcePay" table="DBA.dcSourcePay">
+    <id name="SourcePayId" column="SourcePay_id" >
+      <generator class="assigned"/>
+    </id>
+    <property name="SourcePayName"
+              column="SourcePay_name"/>
+    <property name="Uname" column="Uname" not-null="true"/>
+    <property name="Dedit" column="Dedit" not-null="true"/>
+
+  </class>
+
+</hibernate-mapping>

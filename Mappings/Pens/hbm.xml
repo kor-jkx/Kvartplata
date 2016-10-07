@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="Pens" table="DBA.Di_Pens">
+    <id name="PensTypeId" unsaved-value="0">
+      <column name="IdPens" not-null="true" />
+      <generator class="identity"/>
+    </id>
+    <property name="PensTypeName"
+              column="Pens"/>
+  </class>
+
+</hibernate-mapping>

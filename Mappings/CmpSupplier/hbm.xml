@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="CmpSupplier" table="DBA.cmpSupplier">
+    <composite-id >     
+      <key-many-to-one name="SupplierOrg" column="Supplier_id" class="Kvartplata.Classes.Supplier"/>
+      <key-many-to-one name="Service" column="Service_id" class="Kvartplata.Classes.Service"/>
+      <key-many-to-one name="Company" column="Company_id" class="Company"/>
+    </composite-id>
+
+    <property name="Priority" column="Priority" not-null="true"/>
+    <many-to-one name="SupplierPeni"  class="Kvartplata.Classes.Supplier" column="Supplier_id_peni"/>
+    <many-to-one name="RecipientId"  class="Kvartplata.Classes.BaseOrg" column="Recipient_id"/>
+    <many-to-one name="RecipientPeniId"  class="Kvartplata.Classes.BaseOrg" column="Recipient_peni_id"/>
+    <property name="Vat" column="Vat" not-null="true"/>    
+    <property name="UName" column="Uname" not-null="true"/>
+    <property name="DEdit" column="Dedit" not-null="true"/>
+
+  </class>
+
+</hibernate-mapping>

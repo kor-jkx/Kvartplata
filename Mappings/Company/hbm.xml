@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="Company" table="DBA.DcCompany" >
+    <id name="CompanyId" unsaved-value="0" >
+      <column name="Company_Id" not-null="true"  />
+      <generator class="assigned"/>
+    </id>
+    <property name="CompanyName"
+              column="Company_Name" not-null="true"/>
+    <property name="CompanySName"
+          column="Company_SName" not-null="true"/>
+
+    <!--
+    <property name="RnnId"
+             column="Rnn_id"/> -->
+
+    <many-to-one name="Raion" class="Raion" column="Rnn_id" />
+    <many-to-one name="Manager" class="BaseOrg" column="Manager_id" />
+    <property name="WorkTime"
+              column="WorkTime" />
+    <property name="WorkTimeCash"
+          column="WorkTimeCash" />
+    <property name="WorkPlaceCash"
+          column="WorkPlaceCash" />
+    <property name="Address"
+              column="Address"  />
+    <property name="SocOrgId"
+          column="SocOrg_Id"  />
+    <property name="UName" column="Uname"  />
+    <property name="DEdit" column="Dedit"  />
+  <!--  <property name="Account"
+              column="Account"  />-->
+
+    <!--  <many-to-one name="KvrClosed" class="Period" column="KvrClosed" fetch="join"/>
+    <many-to-one name="PaspClosed" class="Period" column="PaspClosed" fetch="join"/>
+    <many-to-one name="SubsClosed" class="Period" column="SubsClosed" fetch="join"/>-->
+    <!--  <sql-update>update dba.dcCompany set WorkTime=? where Company_Id=?</sql-update>-->
+
+
+  </class>
+
+</hibernate-mapping>

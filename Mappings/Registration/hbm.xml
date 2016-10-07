@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="Registration" table="DBA.TypePropis" >
+    <id name="RegId" unsaved-value="0" >
+      <column name="IdTypePropis" not-null="true"  />
+      <generator class="assigned"/>
+    </id>
+    <property name="RegName"
+              column="Propiska"/>
+  </class>
+
+</hibernate-mapping>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="ActionPeni" table="DBA.lsActionPeni" >
+    <composite-id  >
+      <key-many-to-one name="LsClient" class="LsClient" column="Client_Id"   />
+      <key-many-to-one name="Period" class="Period" column="Period_Id"  />
+      <key-many-to-one name="Service" class="Service" column="Service_Id" />
+      <key-many-to-one name="Supplier" class="Supplier" column="Supplier_Id" />
+      <key-property name="Code" column="Code"/>
+    </composite-id>
+    <property name="Note" column="Note" not-null="true"/>
+    <property name="Correct" column="Correct"  not-null="true"/>
+  </class>
+
+</hibernate-mapping>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="ohlAccounts" table="DBA.ohlAccounts">
+    <id name="ohlAccountsId" >
+      <column name="ohlAccount_id" not-null="true" />
+      <generator class="assigned"/>
+    </id>
+    <property name="Account" column="Account" not-null="true"/>
+    <many-to-one name="Bank" class="Bank" column="Bank_id" />
+    <many-to-one name="OwnerAccount" class="BaseOrg" column="Owner_id" />
+    <many-to-one name="TypeAccount" class="dcohlTypeAccount" column="TypeAccount_id" />
+    <property name="UName" column="UName"/>
+    <property name="DEdit" column="DEdit"/>
+    <property name="CodeSbrf" column="Code_sbrf"/>
+    <property name="ComplexId" column="Complex_id"/>
+  </class>
+</hibernate-mapping>

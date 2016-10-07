@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="Rent" table="DBA.lsRent" >
+    <composite-id  >
+      <key-many-to-one name="LsClient" class="LsClient" column="Client_Id"   />
+      <key-many-to-one name="Period" class="Period" column="Period_Id"  />
+      <key-many-to-one name="Service" class="Service" column="Service_Id" />
+      <key-many-to-one name="Supplier" class="Supplier" column="Supplier_Id" />
+      <key-many-to-one name="Month" class="Period" column="Month_Id"  />
+      <key-property name="Code" column="Code" />
+      <key-property name="Motive" column="Motive_id" />
+    </composite-id>
+    <property name="Volume"
+              column="Volume" />
+    <property name="RentMain"
+              column="Rent"  />
+    <property name="RentEO" column="Rent_eo"/>
+    <property name="RentVat" column="Rent_vat"/>
+    <property name="RentType" column="Rent_type"/>
+  </class>
+
+</hibernate-mapping>

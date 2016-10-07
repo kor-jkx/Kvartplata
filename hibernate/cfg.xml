@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<hibernate-configuration xmlns="urn:nhibernate-configuration-2.2">
+
+  <session-factory>
+
+    <property name="connection.provider">NHibernate.Connection.DriverConnectionProvider</property>
+
+    <property name="dialect">NHibernate.Dialect.SybaseASA9Dialect</property>
+
+    <property name="connection.driver_class">NHibernate.Driver.OleDbDriver</property>  
+    <!--<property name="connection.driver_class">NHibernate.Driver.SybaseAsaClientDriver</property>-->
+    <property name="connection.connection_string">Provider=ASAProv;Eng=testkvr;Uid=katy;Pwd=123456; Links=tcpip{}; </property>
+
+    <property name="proxyfactory.factory_class">NHibernate.ByteCode.LinFu.ProxyFactoryFactory, NHibernate.ByteCode.LinFu</property>
+    <!--<property name="proxyfactory.factory_class">NHibernate.ByteCode.Castle.ProxyFactoryFactory, NHibernate.ByteCode.Castle</property> -->
+    <!--<property name ="show_sql">true</property>-->
+
+    <mapping resource="Kvartplata.Mappings.Absence.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.AbsenceCoeff.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.LsAbsence.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.LsClient.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.Home.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.Str.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.Address.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.Flat.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.Company.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.Raion.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.ClientParam.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.HomeLink.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.SourcePay.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.PurposePay.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.Period.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.Service.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.Payment.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.Param.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.Bank.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.Complex.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.CompanyPeriod.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.CompanyParam.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.Norm.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.Tariff.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.LsService.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.dcUnitMeasuring.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.UnitMeasuring.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.BaseTariff.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.cmpNorm.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.ClosedPeriod.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.BaseCounter.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.DcMSP.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.SdcMSPPercent.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.Spreading.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.cmpTariffCost.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.Receipt.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.City.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.Legislation.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.Quality.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.dcShare.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.Person.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.Registration.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.Relation.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.Owner.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.LsQuality.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.RightDoc.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.TypeCounter.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.CmpParam.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.CmpSupplier.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.BaseOrg.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.FlatCategory.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.YesNo.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.AdmTbl.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.ParamRelation.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.Counter.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.Evidence.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.CounterRelation.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.MSPDoc.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.LsFamily.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.LsMSPGku.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.FrFamily.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.Deliver.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.ServiceParam.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.MspDocument.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.Balance.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.CmpReceipt.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.LsSupplier.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.Pens.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.PensDoc.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.OwnDoc.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.Dog.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.OwnerDoc.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.Rent.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.RentMSP.hbm.xml" assembly="Kvartplata" />
+	  <mapping resource="Kvartplata.Mappings.ClassTable.hbm.xml" assembly="Kvartplata" />
+	  <mapping resource="Kvartplata.Mappings.CounterDetail.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.StatLic.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.HomeParam.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.Transfer.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.Di_PhonesServ.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.Mwl.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.Operation.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.Proxy.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.HomesPhones.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.BalancePeni.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.CorrectPeni.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.ActionPeni.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.Postaver.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.Adm_Scripts.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.SocFamily.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.Distribute.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.DepReg.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.LsServiceParam.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.Overpay.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.Scheme.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.DistributeDetail.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.SocSaldo.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.Reg.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.StrAll.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.StreetRu.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.Audit.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.TypeSeal.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.CounterLocation.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.Seal.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.CmpCoeffLocation.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.DetailEvidence.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.CounterScheme.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.Pers.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.SupplierClient.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.CorrectRent.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.NoteBook.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.CrossType.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.CrossService.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.TypeNoteBook.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.BuiltIn.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.LsArenda.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.DogPeriod.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.UsesType.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.PayDoc.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.Bill.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.Policy.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.DistrictHome.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.Dogovor.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.Guild.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.Contract.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.Bond.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.Register.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.Agreement.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.Instalment.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.BaseOrgPerson.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.CmpHmReceipt.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.Supplier.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.ParamForeign.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.hmWorkDistribute.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.lsWorkDistribute.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.lsWorkPayRent.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.Di_Ruleorg.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.dcohlTypeAccount.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.ohlAccounts.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.ReceiptParam.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.TypeArendaDocument.hbm.xml" assembly="Kvartplata" />
+    <!--<mapping resource="Kvartplata.Mappings.SndAdress.hbm.xml" assembly="Kvartplata" />-->
+    <mapping resource="Kvartplata.Mappings.dcohlCauseOut.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.RcptAccounts.hbm.xml" assembly="Kvartplata" />
+    <mapping resource="Kvartplata.Mappings.RentPeni.hbm.xml" assembly="Kvartplata" />
+  </session-factory>
+
+</hibernate-configuration>
+
+

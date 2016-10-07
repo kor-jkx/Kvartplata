@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="Guild" table="sdcGuild">
+    <id name="GuildId" column="Guild_id" >
+      <generator class="assigned"/>
+    </id>
+    <many-to-one name="BaseOrg" class="BaseOrg" column="idbaseorg" />
+    <property name="GuildName" column="Guild_name"/>
+    <property name="UName" column="UName"/>
+    <property name="DEdit" column="DEdit"/>
+  </class>
+
+</hibernate-mapping>

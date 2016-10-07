@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="StatLic" table="DBA.Stat_Lic" >
+    <id name="StatLicId" unsaved-value="0">
+      <column name="IdStat_Lic" not-null="true" />
+      <generator class="identity"/>
+    </id>
+    <property name="StatLicName"
+              column="Stat_Lic" not-null="false"/>
+    <property name="UName"
+              column="UName" not-null="false" />
+    <property name="DEdit"
+              column="DEdit"  not-null="false"/>
+  </class>
+
+</hibernate-mapping>

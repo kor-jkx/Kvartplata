@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="HomesPhones" table="DBA.hmReceipt" >
+    <composite-id  >
+      <key-many-to-one name="Company" class="Company" column="Company_id"   />
+      <key-property name="ClientId" column="Client_id"   />
+      <key-many-to-one name="Home" column="IdHome" class="Home"/>
+      <key-many-to-one name="PhonesServ" class="Di_PhonesServ" column="IdService"  />
+      <key-many-to-one name="Receipt" class="Receipt" column="Receipt_id" />
+      <key-property name="DBeg" column="DBeg" />
+    </composite-id>
+    <property name="Phone"
+              column="Phone" not-null="false"/>
+    <property name="DEnd" column="DEnd"/>
+        <property name="Note" column="Note" />
+    <property name="UName" column="UName" not-null="false"/>
+    <property name="DEdit" column="DEdit" not-null="false"/>
+  </class>
+
+
+</hibernate-mapping>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="TypeNoteBook" table="DBA.dcTypeNoteBook">
+    <id name="TypeNoteBookId" column="TypeNoteBook_id" >
+      <generator class="assigned"/>
+    </id>
+    <property name="TypeNoteBookName"
+              column="TypeNoteBook_name" />
+    <property name="UName" column="Uname" />
+    <property name="DEdit" column="Dedit" />
+  </class>
+
+</hibernate-mapping>

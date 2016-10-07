@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="Agreement" table="dba.lsAgreement">
+    <id name="AgreementId" column="agreement_id" >
+      <generator class="assigned"/>
+    </id>
+    <many-to-one name="LsClient" class="LsClient" column="client_id" />
+    <property name="AgreementNum" column="agreement_num"/>
+    <property name="MonthCount" column="MonthCount"/>
+    <property name="DBeg" column="dbeg"/>
+    <property name="DEnd" column="dend"/>
+    <property name="Dept" column="dept"/>
+    <property name="DeptPeni" column="deptpeni"/>
+    <property name="Note" column="Note"/>
+    <property name="UName" column="uname"/>
+    <property name="DEdit" column="dedit"/>
+  </class>
+
+</hibernate-mapping>

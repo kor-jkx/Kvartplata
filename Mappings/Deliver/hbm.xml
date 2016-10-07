@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="Deliver" table="DBA.BASE_ORG">
+    <id name="IDBASEORG" unsaved-value="0">
+      <column name="IDBASEORG"/>
+      <generator class="identity"/>
+    </id>
+    <property name="NAMEORG" column="NAMEORG" />
+    <property name="NAMEORGMIN" column="NAMEORG_MIN" />
+    <property name="Inn" column="Inn" />
+    
+  </class>
+
+</hibernate-mapping>

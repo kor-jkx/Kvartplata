@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="HomeLink" table="DBA.HomeLink">
+    <composite-id>
+     <!-- <key-property name="CompanyId"
+                     column="Codeu"/>-->
+    <!--  <key-property name="IdHome"
+                     column="IdHome"/>-->
+      <key-many-to-one name="Home" class="Home" column="IdHome"/>
+      <key-many-to-one name="Company" class="Company" column="Codeu"/>
+      <key-property name="DBeg"
+          column="Startday"/>
+    </composite-id>
+
+    <property name="DEnd"
+              column="Last"/>
+
+
+  </class>
+
+</hibernate-mapping>

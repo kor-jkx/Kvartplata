@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="Scheme" table="DBA.dcScheme">
+    <composite-id>
+      <key-property name="SchemeId" column="Scheme"/>
+      <key-property name="SchemeType" column="Scheme_type"/>
+    </composite-id>
+    <property name="SchemeName" column="Scheme_name" />
+    <property name="SchemeNote" column="Scheme_note" />
+    <property name="UName" column="UName" />
+    <property name="DEdit" column="DEdit" />
+    <property name="Sorter" column="Sorter" />
+
+  </class>
+
+</hibernate-mapping>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="CmpNorm" table="DBA.cmpNorm">
+    <composite-id>
+      <key-property name="Company_id"
+                     column="Company_id"/>
+      <key-many-to-one name="Period"
+                     column="Period_id" class="Kvartplata.Classes.Period"/>
+      <key-property name="Dbeg"
+                   column="DBeg" />
+     <!-- <key-property name="Norm_id" column="Norm_id"/>-->
+      <key-many-to-one name="Norm" column="Norm_id" class="Kvartplata.Classes.Norm"/>
+    </composite-id>
+
+
+    <property name="Dend" column="DEnd" not-null="false"/>
+    <property name="Norm_value" column="Norm_value" not-null="true"/>
+    <property name="NormMSP_value" column="NormMSP_value" not-null="true"/>
+    <property name="Norm_Value_C" column="Norm_value_c" not-null="true"/>
+    <property name="Uname" column="Uname" not-null="true"/>
+    <property name="Dedit" column="Dedit" not-null="true"/>
+   <!-- <property name="Note" column="Note"/>-->
+  </class>
+  <query name="UpdatecmpNorm">
+    <![CDATA[
+        update CmpNorm cmpN set Dbeg=:dbeg,Dend=:dend,Norm_value=:nv,NormMSP_value=:nmspv,Uname=:uname,Dedit=:dedit
+        where cmpN.Company_id=:company_id and cmpN.Period=:period
+        and cmpN.Dbeg=:dbeg2 and cmpN.Norm.Norm_id=:norm_id
+        ]]>
+  </query>
+</hibernate-mapping>

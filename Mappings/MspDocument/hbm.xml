@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="MspDocument" table="DBA.MspDocument">
+    <id name="MSPDocumentId" unsaved-value="0">
+      <column name="MspDocument_Id" not-null="true" />
+      <generator class="assigned"/>
+    </id>
+    
+    <many-to-one name="Person" class="Person" column="IdForm"/>       
+    <many-to-one name="MSPDoc" class="MSPDoc" column="MSPDoc_id" not-null="0"/>
+    
+    <property name="Series"
+              column="series"/>
+    <property name="Number"
+             column="number"/>
+    <property name="Source"
+             column="source"/>
+    <property name="DateIssue"
+         column="dateIssue"/>
+    <property name="PicPath"
+         column="PicPath"/>
+    <property name="Uname"
+          column="uname"/>
+    <property name="Dedit"
+              column="Dedit"/>
+    
+  </class>
+
+</hibernate-mapping>

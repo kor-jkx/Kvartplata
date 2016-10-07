@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="Audit" table="DBA.cntrAudit">
+    <composite-id>
+      <key-many-to-one name="Period" class="Period" column="Period_Id"/>
+      <key-many-to-one name="Counter" class="Counter" column="Counter_Id"/>
+      <key-property name="DBeg" column="DBeg" />
+    </composite-id>
+    <property name="DEnd" column="DEnd" />
+    <property name="Scheme" column="Scheme" />
+    <property name="Note" column="Note" />
+
+    <property name="UName" column="UName"/>
+    <property name="DEdit" column="DEdit"/>
+  </class>
+
+</hibernate-mapping>

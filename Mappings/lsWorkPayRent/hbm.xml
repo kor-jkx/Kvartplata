@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+  <class name="lsWorkPayRent" table="DBA.lsWorkPayRent">
+    <composite-id>
+      <key-many-to-one name="WorkDistribute" class="hmWorkDistribute" column="WorkDistribute_id"/>
+      <key-many-to-one name="Client" class="LsClient" column="Client_id"/>
+      <key-many-to-one name="Period" class="Period" column="Period_id"/>
+    </composite-id>
+    <property name="Pay" column="Pay" not-null="true"/>
+    <property name="PayDept" column="Pay_Dept" not-null="true"/>
+    <property name="PayPercent" column="Pay_Percent" not-null="true"/>
+    <property name="PayComission" column="Pay_Comission" not-null="true"/>
+    <property name="BalanceIn" column="Balance_In" not-null="true"/>
+    <property name="BalanceOut" column="Balance_Out" not-null="true"/>
+    <property name="Rent" column="Rent" not-null="true"/>
+    <property name="RentPercent" column="Rent_Percent" not-null="true"/>
+    <property name="RentDept" column="Rent_Dept" not-null="true"/>
+    <property name="RentComission" column="Rent_Comission" not-null="true"/>
+    <many-to-one name="Supplier" class="Kvartplata.Classes.Supplier" column="Supplier_id"/>
+  </class>
+</hibernate-mapping>
+  

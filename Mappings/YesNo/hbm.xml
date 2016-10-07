@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="YesNo" table="DBA.DI_YesNo">
+    <id name="YesNoId" unsaved-value="0">
+      <column name="idyesno" not-null="true" />
+      <generator class="assigned"/>
+    </id>
+    <property name="YesNoName"
+              column="yesno"
+              not-null="true"/>
+  </class>
+
+</hibernate-mapping>

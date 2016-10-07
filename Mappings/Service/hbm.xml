@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="Service" table="DBA.dcService">
+    <id name="ServiceId" column="Service_id">    
+      <generator class="assigned"/>
+    </id>
+    <property name="ServiceName"
+              column="Service_name"
+              not-null="true"/>
+   
+    <property name="Root" column="Root" not-null="false"/>
+  <!--  <property name="Root_id" column="Root_id" not-null="false"/> -->
+    <property name="Uname" column="Uname" not-null="true"/>
+    <property name="Dedit" column="Dedit" not-null="true"/>
+    
+    <set name="ChildService" inverse="true"
+      cascade="all-delete-orphan" order-by="Service_id">
+      <key column="Root"/>
+      <one-to-many class="Kvartplata.Classes.Service"/>
+    </set>
+   <!-- <set name="Tariffs" inverse="true" where="Tariff_id>0"
+      cascade="all-delete-orphan" order-by="Tariff_num">
+      <key column="Service_id"/>
+      <one-to-many class="Kvartplata.Classes.Tariff"/>
+    </set>
+           
+    <set name="Norms" inverse="true" where="Norm_id>0"
+      cascade="all-delete-orphan" order-by="Norm_num">
+      <key column="Service_Id"/>
+      <one-to-many class="Kvartplata.Classes.Norm"/>
+    </set> -->
+
+    
+  </class>
+
+</hibernate-mapping>

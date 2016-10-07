@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="Absence" table="DBA.dcAbsence">
+    <id name="Absence_id" column="Absence_id">
+      <generator class="assigned"/>
+    </id>
+    <property name="Absence_name" column="Absence_name" not-null="true"/>
+    <property name="Uname" column="Uname" not-null="true"/>
+    <property name="Dedit" column="Dedit" not-null="true"/>
+
+
+    <set name="AbsenceCoeff" inverse="true" 
+      cascade="all-delete-orphan" order-by="Absence_id">
+      <key column="Absence_id"/>
+      <one-to-many class="Kvartplata.Classes.AbsenceCoeff"/>
+    </set>
+  </class>
+
+</hibernate-mapping>

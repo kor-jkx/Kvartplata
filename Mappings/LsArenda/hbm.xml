@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="LsArenda" table="DBA.lsArenda">
+    <composite-id  >
+      <key-many-to-one name="LsClient" class="LsClient" column="Client_id"   />
+    </composite-id>
+    <many-to-one name="BaseOrg" class="BaseOrg" column="idbaseorg" />
+    <many-to-one name="TypeArendaDocument" class="TypeArendaDocument" column="Document_type" />
+   <!-- <many-to-one name="BuiltIn" class="BuiltIn" column="BuiltIn_Id" fetch="join"/>-->
+    <property name="DogovorNum" column="Dogovor_num" />
+    <property name="DogovorDate" column="Dogovor_date" />
+    <!--<property name="DocumentType" column="Document_type" />-->
+    
+    <property name="KumiNum" column="Kumi_Num" />
+    <property name="KumiDate" column="Kumi_Date" />
+    <property name="DBeg" column="Dbeg" />
+    <property name="DEnd" column="Dend"/>
+    <property name="RentPrior" column="Rent_prior"/>
+    <property name="UName" column="UName" />
+    <property name="DEdit" column="DEdit"/>
+  </class>
+
+</hibernate-mapping>

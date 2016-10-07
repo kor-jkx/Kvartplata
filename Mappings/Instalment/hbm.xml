@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="Instalment" table="DBA.lsInstalment" >
+    <composite-id  >
+      <key-many-to-one name="Agreement" class="Agreement" column="agreement_id"   />
+      <key-many-to-one name="Period" class="Period" column="period_id" />
+    </composite-id>
+    <property name="Debt" column="dept"/>
+    <property name="DebtPeni" column="deptpeni"/>
+    <property name="UName" column="uname"/>
+    <property name="DEdit" column="dedit"/>
+  </class>
+
+</hibernate-mapping>

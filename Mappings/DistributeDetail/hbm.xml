@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="DistributeDetail" table="DBA.dstrDetail">
+    <composite-id>
+      <key-many-to-one name="Period" class="Period" column="Period_Id"/>
+      <key-many-to-one name="Distribute" class="Distribute" column="Distribute_Id"/>
+    </composite-id>
+    <property name ="Rent" column="Rent" />
+    <property name ="RentDstr" column="Rent_dstr"/>
+    <property name ="ParamDstr" column="Param_dstr"/>
+    <property name ="Coeff" column="Coeff" />
+  </class>
+
+</hibernate-mapping>

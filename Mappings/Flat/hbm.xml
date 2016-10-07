@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="Flat" table="DBA.Flats">
+    <id name="IdFlat" unsaved-value="0">
+      <column name="IdFlat" not-null="true" />
+      <generator class="identity"/>
+    </id>
+    <property name="IdFlat"
+              column="IdFlat"
+              not-null="true"/>
+    <many-to-one name="Home" class="Home" column="IdHome"/>
+  <!--  <property name="IdHome"
+              column="IdHome"
+              not-null="true"/>-->
+    <property name="CompanyId"
+              column="Codeu"
+              not-null="false"/>
+    <property name="NFlat"
+             column="NFlat"
+             not-null="true"/>
+    <property name="Entrance" column="Entrance" />
+
+  </class>
+
+</hibernate-mapping>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="Address">
+    <id name="ClientLsId" unsaved-value="0">
+
+    </id>
+    <property name="Str"/>
+    <property name="Number"/>
+    <property name="Korp"/>
+    <property name="Flat"/>
+    <property name="SurFlat"/> 
+    
+    
+
+  </class>
+
+</hibernate-mapping>
+

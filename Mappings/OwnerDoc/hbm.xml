@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="OwnerDoc" table="DBA.OwnerDoc">
+    <id name="OwnerDocId" unsaved-value="0">
+      <column name="IDOWNERDOC" not-null="true" />
+      <generator class="assigned"/>
+    </id>
+   <many-to-one name="Owner" class="Owner" column="Owner"/>
+   <many-to-one name="RightDoc" class="RightDoc" column="CodeDoc"/>
+    <property name="Percent"
+              column="Percent" not-null="true"/>
+    <property name="DocNum"
+          column="NumDoc" not-null="true"/>
+    <property name="DocDate"
+          column="DateDoc" not-null="false"/>
+    <many-to-one name="OwnDoc" class="OwnDoc" column="IdOwnDoc"/>
+    <property name="Seria"
+         column="SeriaD" not-null="true"/>
+    <property name="Number"
+      column="NumberD" not-null="true"/>
+    <property name="Date"
+      column="DateD" not-null="false"/>
+    <many-to-one name="Archive" class="YesNo" column="Arhiv"/>
+    <property name="UName"
+         column="UName" not-null="true"/>   
+    <property name="DEdit"
+          column="DEdit" not-null="true"/>
+
+  </class>
+
+</hibernate-mapping>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="RcptAccounts" table="DBA.rcptAccounts">
+    <composite-id  >
+      <key-many-to-one name="Company" class="Company" column="Company_id"   />
+      <key-many-to-one name="Receipt" class="Receipt" column="Receipt_id"  />
+      <key-property name="IdHome" column="IdHome" />
+      <key-many-to-one name="Complex" column="Complex_id" />
+      <key-property name="Priorites" column="Priority" />
+      <key-property name="DBeg" column="DBeg" />
+    </composite-id>
+    <property name="DEnd" column="DEnd"/>
+    <many-to-one name="ohlAccounts" class="ohlAccounts" column="Account_id"  />
+    <property name="UName" column="Uname"/>
+    <property name="DEdit" column="Dedit"/>
+  </class>
+
+</hibernate-mapping> 

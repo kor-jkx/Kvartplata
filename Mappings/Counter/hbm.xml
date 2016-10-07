@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="Counter" table="DBA.cntrCounter">
+    <id name="CounterId" column="Counter_id" >
+      <generator class="assigned"/>
+    </id>
+    <many-to-one name="LsClient" class="LsClient" column="Client_id"  />
+    <many-to-one name="Service" class="Service" column="Service_Id"/>
+    <many-to-one name="Company" class="Company" column="Company_Id"/>
+    <many-to-one name="Complex" class="Complex" column="Complex_Id"/>
+    <many-to-one name="Home" class="Home" column="IdHome"/>
+    <property name="CounterNum"
+              column="Counter_num"/>
+    <many-to-one name="BaseCounter" class="BaseCounter" column="BaseCounter_id"/>
+    <many-to-one name="TypeCounter" class="TypeCounter" column="TypeCounter_id"/>
+    <many-to-one name="Location" class="CounterLocation" column="CntrLocation_id"/>
+    <property name="Series"
+              column="Series" not-null="false"/>
+    <property name="Notice"
+           column="Notice" not-null="false"/>
+    <property name="ArchivesDate"
+          column="Archives_Date"/>
+    <property name="SetDate" column="Set_Date"/>
+    <property name="RemoveDate" column="Remove_Date"/>
+    <property name="AuditDate" column="Audit_Date"/>
+    <property name="EvidenceStart" column="Evidence_Start"/>
+    <property name="CoeffTrans" column="Coeff_trans"/>
+    <property name="UName"
+      column="UName"/>
+    <property name="DEdit"
+      column="DEdit"/>
+    <many-to-one name="MainCounter" class="Counter" column="MainCounter_id"/>
+    
+   <!-- <set name="ChildCounters" table="cntrCounter_Relation" inverse="true">
+      <key column="Counter_Id"/>
+      <one-to-many class="CounterRelation" />
+    </set>
+    <property name="MasterCounter"   />
+    <one-to-one name="MasterCounter" class="CounterRelation"/>-->
+
+  </class>
+
+</hibernate-mapping> 

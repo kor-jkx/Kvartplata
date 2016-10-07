@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="Quality" table="DBA.cmpQuality">
+    <id name="Quality_id" column="Quality_id">
+      <generator class="assigned"/>
+    </id>
+    <property name="Quality_name" column="Quality_name" not-null="true"/>
+    <property name="Company_id" column="Company_id" not-null="true"/>
+    <property name="Service_id" column="Service_id" not-null="true"/>
+    <property name="DocNumber" column="DocNumber" not-null="true"/>
+
+    <property name="DocDate" column="DocDate" not-null="false"/>
+    <property name="Legislation_id" column="Legislation_id" not-null="false"/>
+    <property name="Coeff" column="Coeff" not-null="true"/>
+    <property name="Quantity_hour" column="Quantity_hour" not-null="true"/>
+    <property name="Quantity_degree" column="Quantity_degree" not-null="false"/>
+    <!--<property name="Supplier_id" column="Supplier_id" not-null="false"/>-->
+    <many-to-one name="Supplier" class="Supplier" column="Supplier_id" />
+    <property name="Uname" column="Uname" not-null="true"/>
+    <property name="Dedit" column="Dedit" not-null="true"/>
+
+  </class>
+
+</hibernate-mapping>

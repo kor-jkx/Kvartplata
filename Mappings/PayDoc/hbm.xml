@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="PayDoc" table="dcPayDoc">
+    <id name="PayDocId" column="paydoc_id" >
+      <generator class="assigned"/>
+    </id>
+    <property name="PayDocName" column="paydoc_name" />
+    <property name="UName" column="UName" />
+    <property name="DEdit" column="DEdit" />
+  </class>
+
+</hibernate-mapping>

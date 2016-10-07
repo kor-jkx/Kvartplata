@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="report.ReportResourceString" xml:space="preserve">
+    <value>﻿&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;Report ReportInfo.Created="07/20/2012 13:41:56" ReportInfo.Modified="03/09/2016 17:30:25" ReportInfo.CreatorVersion="1.2.47.0"&gt;
+  &lt;ScriptText&gt;using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Windows.Forms;
+using System.Drawing;
+using System.Data;
+using FastReport;
+using FastReport.Data;
+using FastReport.Dialog;
+using FastReport.Barcode;
+using FastReport.Table;
+using FastReport.Utils;
+
+namespace FastReport
+{
+  public class ReportScript
+  {
+   private Int16 rowCount;
+
+    private void Memo40_BeforePrint(object sender, EventArgs e)
+    {
+
+    }
+
+    private void Memo26_BeforePrint(object sender, EventArgs e)
+    {if ((int)Report.GetColumnValue(&amp;quot;Main.seller_id&amp;quot;) != 1679990001 || (string)Report.GetColumnValue(&amp;quot;Tarif.edizm&amp;quot;) != &amp;quot;м2.&amp;quot;)                 
+    ((TextObject)sender).Text = ((TextObject)sender).Text;
+    else
+    ((TextObject)sender).Text  = Convert.ToString((Decimal)Report.GetColumnValue(&amp;quot;Main.plflat&amp;quot;));
+    }
+    
+    private void Text144_BeforePrint(object sender, EventArgs e)
+    {
+      if ((string)Report.GetColumnValue(&amp;quot;Tarif.edizm&amp;quot;) != &amp;quot;м2.&amp;quot;)                 
+        ((TextObject)sender).Text = ((TextObject)sender).Text;
+      else
+        ((TextObject)sender).Text  = Convert.ToString((Decimal)Report.GetColumnValue(&amp;quot;Main.plflat&amp;quot;));
+    }
+
+    private void Text142_AfterPrint(object sender, EventArgs e)
+    {
+      rowCount ++;
+    }
+
+    private void Data1_BeforePrint(object sender, EventArgs e)
+    {
+      
+    }
+
+    private void MasterData1_BeforePrint(object sender, EventArgs e)
+    {
+         rowCount = 0;
+    }
+  }
+}
+&lt;/ScriptText&gt;
+  &lt;Dictionary&gt;
+    &lt;OdbcDataConnection Name="Connection" ConnectionString="rijcmlq9cfbeItDLlJLWjk2ZpdP9O5YV1GCGHw5+zJWt22Wd7w="&gt;
+      &lt;TableDataSource Name="Table" Alias="Main" DataType="System.Int32" Enabled="true" SelectCommand="select '' as adrbuyer, '' as adrconsignor, '' as adrseller,0 as bill_num, '' as bikbank,'' as buyer,'' as buyertel,0.00 as buyerdolg,'' as buyerbank, '' as buyerbik,'' as buyersch,&amp;#13;&amp;#10; '' as innseller,'' as kppseller,'' as nameseller,'' as telseller, '' as namebank,'' as accountseller,'' as korbank,  '' as inn,'' as rschbuyer,  '' as dogovor_num, null as dogovor_date, 0 as client_id,null as period,0.00 as buyercalc,0.00 as buyervat, 0.00 as peni, null as bill_date, 0 as company_id,0 as month_id,1 as receipt_id, 0 as seller_id,'' as nameminseller,'' as nameconsignor, '' as kpp,0 as idbuyer,0.00 as plflat,'' as namesupplier, '' as namebuyer,0 as supplier_id,'' as innsupplier,'' as kppsupplier,'' as adrsupplier,'' as telsupplier,'' as faxsupplier"&gt;
+        &lt;Column Name="adrbuyer" DataType="System.String"/&gt;
+        &lt;Column Name="adrconsignor" DataType="System.String"/&gt;
+        &lt;Column Name="adrseller" DataType="System.String"/&gt;
+        &lt;Column Name="bill_num" DataType="System.Int16"/&gt;
+        &lt;Column Name="bikbank" DataType="System.String"/&gt;
+        &lt;Column Name="buyer" DataType="System.String"/&gt;
+        &lt;Column Name="buyertel" DataType="System.String"/&gt;
+        &lt;Column Name="buyerdolg" DataType="System.Decimal"/&gt;
+        &lt;Column Name="buyerbank" DataType="System.String"/&gt;
+        &lt;Column Name="buyerbik" DataType="System.String"/&gt;
+        &lt;Column Name="buyersch" DataType="System.String"/&gt;
+        &lt;Column Name="innseller" DataType="System.String"/&gt;
+        &lt;Column Name="kppseller" DataType="System.String"/&gt;
+        &lt;Column Name="nameseller" DataType="System.String"/&gt;
+        &lt;Column Name="telseller" DataType="System.String"/&gt;
+        &lt;Column Name="namebank" DataType="System.String"/&gt;
+        &lt;Column Name="accountseller" DataType="System.String"/&gt;
+        &lt;Column Name="korbank" DataType="System.String"/&gt;
+        &lt;Column Name="inn" DataType="System.String"/&gt;
+        &lt;Column Name="rschbuyer" DataType="System.String"/&gt;
+        &lt;Column Name="dogovor_num" DataType="System.String"/&gt;
+        &lt;Column Name="dogovor_date" DataType="System.Int16"/&gt;
+        &lt;Column Name="client_id" DataType="System.Int16"/&gt;
+        &lt;Column Name="period" DataType="System.Int16"/&gt;
+        &lt;Column Name="buyercalc" DataType="System.Decimal"/&gt;
+        &lt;Column Name="buyervat" DataType="System.Decimal"/&gt;
+        &lt;Column Name="peni" DataType="System.Decimal"/&gt;
+        &lt;Column Name="bill_date" DataType="System.Int16"/&gt;
+        &lt;Column Name="company_id" DataType="System.Int16"/&gt;
+        &lt;Column Name="month_id" DataType="System.Int16"/&gt;
+        &lt;Column Name="receipt_id" DataType="System.Int16"/&gt;
+        &lt;Column Name="seller_id" DataType="System.Int16"/&gt;
+        &lt;Column Name="nameminseller" DataType="System.String"/&gt;
+        &lt;Column Name="nameconsignor" DataType="System.String"/&gt;
+        &lt;Column Name="kpp" DataType="System.String"/&gt;
+        &lt;Column Name="idbuyer" DataType="System.Int16"/&gt;
+        &lt;Column Name="plflat" DataType="System.Decimal"/&gt;
+        &lt;Column Name="namesupplier" DataType="System.String"/&gt;
+        &lt;Column Name="namebuyer" DataType="System.String"/&gt;
+        &lt;Column Name="supplier_id" DataType="System.Int16"/&gt;
+        &lt;Column Name="innsupplier" DataType="System.String"/&gt;
+        &lt;Column Name="kppsupplier" DataType="System.String"/&gt;
+        &lt;Column Name="adrsupplier" DataType="System.String"/&gt;
+        &lt;Column Name="telsupplier" DataType="System.String"/&gt;
+        &lt;Column Name="faxsupplier" DataType="System.String"/&gt;
+      &lt;/TableDataSource&gt;
+      &lt;TableDataSource Name="Table1" Alias="Tarif" DataType="System.Int32" Enabled="true" SelectCommand="select 0.00 as calc, '' as edizm, 0 as isvat,'' as sname,0.00 as tax,0.00 as vat,0.0000 as volume1,0.0000 as volume"&gt;
+        &lt;Column Name="calc" DataType="System.Decimal"/&gt;
+        &lt;Column Name="edizm" DataType="System.String"/&gt;
+        &lt;Column Name="isvat" DataType="System.Int16"/&gt;
+        &lt;Column Name="sname" DataType="System.String"/&gt;
+        &lt;Column Name="tax" DataType="System.Decimal"/&gt;
+        &lt;Column Name="vat" DataType="System.Decimal"/&gt;
+        &lt;Column Name="volume1" DataType="System.Decimal"/&gt;
+        &lt;Column Name="volume" DataType="System.Decimal"/&gt;
+        &lt;CommandParameter Name="client_id" DataType="10" Expression="[Main.client_id]" DefaultValue="0"/&gt;
+        &lt;CommandParameter Name="company_id" DataType="17" Expression="[Main.company_id]" DefaultValue="0"/&gt;
+        &lt;CommandParameter Name="month_id" DataType="10" Expression="[Main.month_id]" DefaultValue="0"/&gt;
+        &lt;CommandParameter Name="receipt_id" DataType="17" Expression="[Main.receipt_id]" DefaultValue="0"/&gt;
+      &lt;/TableDataSource&gt;
+    &lt;/OdbcDataConnection&gt;
+    &lt;Parameter Name="adr" DataType="System.String"/&gt;
+  &lt;/Dictionary&gt;
+  &lt;ReportPage Name="Page1" Guides="17.28,120.96,119.04,642.2401,644.16,122.85,718.05,50.88,350.4,428.16,480,564.48,670.08,443.52,573.12,18.24,139.2,326.4,385.92,474.24,668.16,610.56,20.16,696,571.2,505.92,572.16,675.84,368.64,327.36"&gt;
+    &lt;DataBand Name="MasterData1" Width="718.2" Height="303.84" CanGrow="true" CanShrink="true" BeforePrintEvent="MasterData1_BeforePrint" StartNewPage="true" Guides="77.76,97.92,134.1,154.26,10.56,32.64,41.28,63.36,132.24,175.44,75.6,125.52" DataSource="Table" PrintIfDetailEmpty="true" KeepTogether="true"&gt;
+      &lt;TextObject Name="Memo9" Left="17.28" Top="77.76" Width="103.68" Height="20.16" Text="Исполнитель:" Padding="2, 1, 2, 1"/&gt;
+      &lt;TextObject Name="Memo11" Left="17.28" Top="134.1" Width="101.76" Height="20.16" ShiftMode="Never" Text="Заказчик:" Padding="2, 1, 2, 1"/&gt;
+      &lt;TextObject Name="Text112" Left="17.28" Top="10.56" Width="624.96" Height="22.08" Text="Акт № [Main.bill_num] от [Main.bill_date]" VertAlign="Center" Font="Arial, 14pt, style=Bold"&gt;
+        &lt;Formats&gt;
+          &lt;GeneralFormat/&gt;
+          &lt;DateFormat Format="D"/&gt;
+        &lt;/Formats&gt;
+      &lt;/TextObject&gt;
+      &lt;TextObject Name="Text118" Left="17.28" Top="41.28" Width="626.88" Height="22.08" Text="[adr] ЛС № [Main.client_id] за [Main.period] года" VertAlign="Center" WordWrap="false" Font="Arial, 14pt, style=Bold"&gt;
+        &lt;Formats&gt;
+          &lt;GeneralFormat/&gt;
+          &lt;GeneralFormat/&gt;
+          &lt;DateFormat Format="MMMM yyyy"/&gt;
+        &lt;/Formats&gt;
+      &lt;/TextObject&gt;
+      &lt;TextObject Name="Text101" Left="122.85" Top="132.24" Width="595.2" Height="43.2" Text="ИНН [Main.inn], [Main.buyer], [Main.adrbuyer]" Font="Arial, 10pt, style=Bold"/&gt;
+      &lt;TextObject Name="Text166" Left="122.85" Top="75.6" Width="595.2" Height="49.92" Text="ИНН [Main.innsupplier], КПП [Main.kppsupplier],  [Main.namesupplier], [Main.adrsupplier], тел.: [Main.telsupplier] факс: [Main.faxsupplier]" Font="Arial, 10pt, style=Bold"/&gt;
+      &lt;DataBand Name="DetailData1" Top="328.16" Width="718.2" Height="15.36" Guides="0,15.36" DataSource="Table1"&gt;
+        &lt;TextObject Name="Text142" Left="17.28" Width="33.6" Height="15.36" Border.Lines="All" AfterPrintEvent="Text142_AfterPrint" Text="[Row#]" HorzAlign="Center" Font="Arial, 8pt"/&gt;
+        &lt;TextObject Name="Text143" Left="50.88" Width="299.52" Height="15.36" Border.Lines="All" Text="[Tarif.sname]" Font="Arial, 8pt"/&gt;
+        &lt;TextObject Name="Text144" Left="350.4" Width="77.76" Height="15.36" Border.Lines="All" BeforePrintEvent="Text144_BeforePrint" Text="[Tarif.volume]" Format="Number" Format.UseLocale="false" Format.DecimalDigits="5" Format.DecimalSeparator="." Format.GroupSeparator=" " Format.NegativePattern="1" HorzAlign="Center" WordWrap="false" Font="Arial, 8pt"/&gt;
+        &lt;TextObject Name="Text145" Left="428.16" Width="51.84" Height="15.36" Border.Lines="All" Text="[Tarif.edizm]" HorzAlign="Center" Font="Arial, 8pt"/&gt;
+        &lt;TextObject Name="Text146" Left="480" Width="84.48" Height="15.36" Border.Lines="All" Text="[Tarif.tax]" Format="Number" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="." Format.GroupSeparator=" " Format.NegativePattern="1" HorzAlign="Center" Font="Arial, 8pt"/&gt;
+        &lt;TextObject Name="Text147" Left="564.48" Width="105.6" Height="15.36" Border.Lines="All" Text="[Tarif.calc]" Format="Number" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="." Format.GroupSeparator=" " Format.NegativePattern="1" HorzAlign="Right" Font="Arial, 8pt"/&gt;
+        &lt;DataHeaderBand Name="Header1" Top="307.84" Width="718.2" Height="16.32" Guides="-0.96,16.32"&gt;
+          &lt;TextObject Name="Text136" Left="17.28" Top="-0.96" Width="33.6" Height="17.28" Border.Lines="All" Text="№" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt, style=Bold"/&gt;
+          &lt;TextObject Name="Text137" Left="50.88" Top="-0.96" Width="299.52" Height="17.28" Border.Lines="All" Text="Наименование услуги" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt, style=Bold"/&gt;
+          &lt;TextObject Name="Text138" Left="350.4" Top="-0.96" Width="77.76" Height="17.28" Border.Lines="All" Text="Кол-во" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt, style=Bold"/&gt;
+          &lt;TextObject Name="Text139" Left="428.16" Top="-0.96" Width="51.84" Height="17.28" Border.Lines="All" Text="Ед." HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt, style=Bold"/&gt;
+          &lt;TextObject Name="Text140" Left="480" Top="-0.96" Width="84.48" Height="17.28" Border.Lines="All" Text="Тариф" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt, style=Bold"/&gt;
+          &lt;TextObject Name="Text141" Left="564.48" Top="-0.96" Width="105.6" Height="17.28" Border.Lines="All" Text="Сумма" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt, style=Bold"/&gt;
+        &lt;/DataHeaderBand&gt;
+        &lt;DataFooterBand Name="Footer1" Top="347.52" Width="718.2" Height="350.34" Guides="29.76,44.16,157.44,176.64,206.4,219.84,172.8,201.6,218.88,55.68,74.88,94.08,7.68,22.08,8.64,23.04,111.36,140.16,177.6,238.08" KeepWithData="true"&gt;
+          &lt;TextObject Name="Text115" Left="443.52" Top="29.76" Width="129.6" Height="14.4" Text="Без налога (НДС)" HorzAlign="Right" VertAlign="Center" Font="Arial, 10pt, style=Bold"/&gt;
+          &lt;TextObject Name="Text65" Left="18.24" Top="157.44" Width="120.96" Height="19.2" Text="ИСПОЛНИТЕЛЬ" Font="Arial, 10pt, style=Bold"/&gt;
+          &lt;TextObject Name="Text154" Left="18.24" Top="206.4" Width="308.16" Height="13.44" Border.Lines="Bottom" Text="                           " HorzAlign="Right" WordWrap="false" Font="Arial, 8pt"/&gt;
+          &lt;TextObject Name="Text153" Left="385.92" Top="157.44" Width="88.32" Height="15.36" Text="ЗАКАЗЧИК" Font="Arial, 10pt, style=Bold"/&gt;
+          &lt;TextObject Name="Text155" Left="385.92" Top="201.6" Width="282.24" Height="17.28" Border.Lines="Bottom" HorzAlign="Right" Font="Arial, 8pt"/&gt;
+          &lt;TextObject Name="Text162" Left="610.56" Top="29.76" Width="59.52" Height="14.4" Text="-" HorzAlign="Right" VertAlign="Center" Font="Arial, 10pt, style=Bold"/&gt;
+          &lt;TextObject Name="Text4" Left="20.16" Top="55.68" Width="675.84" Height="19.2" Text="Всего оказано услуг [rowCount], на сумму [Main.buyercalc] руб." Font="Arial, 8pt"/&gt;
+          &lt;TextObject Name="Text163" Left="20.16" Top="74.88" Width="675.84" Height="19.2" Text="[ToWordsRu([Main.buyercalc])]" Font="Arial, 10pt, style=Bold"/&gt;
+          &lt;TextObject Name="Text127" Left="571.2" Top="7.68" Width="98.88" Height="14.4" Text="[Main.buyercalc]" HorzAlign="Right" WordWrap="false" Font="Arial, 10pt, style=Bold"/&gt;
+          &lt;TextObject Name="Text113" Left="505.92" Top="8.64" Width="66.24" Height="14.4" Text="Итого:" HorzAlign="Right" VertAlign="Center" Font="Arial, 10pt, style=Bold" HtmlTags="true"/&gt;
+          &lt;TextObject Name="Text1" Left="20.16" Top="111.36" Width="655.68" Height="28.8" Text="Вышеперечисленные услуги выполнены полностью и в срок. Заказчик претензий по объему, качеству и срокам оказания услуг не имеет." Font="Arial, 8pt"/&gt;
+          &lt;TextObject Name="Text164" Left="18.24" Top="177.6" Width="350.4" Height="28.8" Text="Директор [Main.namesupplier]" Font="Arial, 8pt"/&gt;
+          &lt;TextObject Name="Text165" Left="18.24" Top="218.88" Width="309.12" Height="19.2" Text="[ruk]" HorzAlign="Center" Font="Arial, 8pt"/&gt;
+        &lt;/DataFooterBand&gt;
+      &lt;/DataBand&gt;
+    &lt;/DataBand&gt;
+  &lt;/ReportPage&gt;
+&lt;/Report&gt;
+</value>
+  </data>
+</root>

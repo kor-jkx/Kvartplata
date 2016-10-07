@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+  <class name="LsFamily" table="DBA.LsFamily">
+    <id name="FamilyId" column="Family_Id">
+      <generator class="assigned"/>
+    </id>
+    <many-to-one name="LsClient" class="LsClient" column="Client_id"/>
+    <property name="FamilyName"
+              column="Family_Name"/>
+    <property name="Uname"
+          column="uname"/>
+    <property name="Dedit"
+              column="Dedit"/>
+  </class>
+</hibernate-mapping>

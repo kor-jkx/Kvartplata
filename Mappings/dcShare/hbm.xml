@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="dcShare" table="DBA.dcShare">
+    <id name="Share_id" unsaved-value="0">
+      <column name="Share_id" not-null="true" />
+      <generator class="identity"/>
+    </id>
+    <property name="Share_name" column="Share_name" not-null="true"/>
+  </class>
+
+</hibernate-mapping>

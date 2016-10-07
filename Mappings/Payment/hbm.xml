@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="Payment" table="DBA.lsPayment">
+    <id name="PaymentId" unsaved-value="0">
+      <column name="Payment_Id" not-null="true" />
+      <generator class="assigned"/>
+    </id>
+    <many-to-one name="LsClient" class="LsClient" column="Client_Id" /> 
+    <many-to-one name="Period" class="Period" column="Period_Id" />
+    <many-to-one name="PeriodPay" class="Period" column="Month_Id"/>
+    <many-to-one name="Service" class="Service" column="Service_Id" fetch="join"/>
+    <many-to-one name="SPay" class="SourcePay" column="SourcePay_Id" />
+    <many-to-one name="PPay" class="PurposePay" column="PurposePay_Id"/>
+    <many-to-one name="Receipt" class="Receipt" column="Receipt_Id" />
+    <many-to-one name="Supplier" class="Supplier" column="supplier_id" />
+    <many-to-one name="RecipientId" class="BaseOrg" column="Recipient_id" />
+    <property name="PaymentDate"
+         column="Payment_Date"
+          not-null="true"/>
+    <property name="PacketNum"
+         column="Packet_Num"
+          not-null="true"/>
+    <property name="PaymentValue"
+         column="Payment_Value"
+          not-null="true"/>
+    <property name="PaymentPeni"
+         column="Payment_Peni"
+          not-null="true"/>
+    <property name="UName"
+      column="UName" not-null="true"/>
+    <property name="DEdit"
+          column="DEdit" not-null="true"/>
+    <property name="OhlaccountId"
+          column="Ohlaccount_Id" />
+    <many-to-one name="PayDoc" class="PayDoc" column="paydoc_id" />
+   </class>
+
+</hibernate-mapping>

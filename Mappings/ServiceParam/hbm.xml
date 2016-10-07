@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="ServiceParam" table="DBA.cmpServiceParam">
+    <composite-id>
+      <key-property name="Company_id"
+                     column="Company_id"/>
+      <key-property name="Service_id"
+                   column="Service_id"/>
+      <key-many-to-one name="Complex" class="Complex" column="Complex_id"/>
+    </composite-id>
+
+
+    <property name="PrintShow" column="PrintShow" not-null="true"/>
+    <property name="Sorter" column="Sorter" not-null="true"/>
+    <property name="Receipt_id" column="Receipt_id" not-null="true"/>
+    <property name="Group_num" column="Group_num" not-null="true"/>
+    <property name="CodeSoc_id" column="CodeSoc_id" not-null="true"/>
+    <property name="AcceptPeni" column="AcceptPeni" not-null="true"/>
+ <!--   <property name="CalcAlone" column="CalcAlone" not-null="true"/>-->
+    <property name="SpecialId" column="Special_id" not-null="true"/>
+    <property name="BalanceIn" column="BalanceIn" not-null="true"/>
+    <!--<property name="SubsidIn" column="SubsidIn" not-null="true"/>-->
+   <!-- <property name="CrossService_id" column="CrossService_id" not-null="false"/>-->
+    <property name="Uname" column="Uname" not-null="true"/>
+    <property name="Dedit" column="Dedit" not-null="true"/>
+    <many-to-one name="DistrService" class="YesNo" column="DistrService_id"/>
+    <many-to-one name="DublService" class="YesNo" column="DublService_id"/>
+    <many-to-one name="SubsidIn" class="Service" column="SubsidIn"/>
+    <many-to-one name="SaveOverpay" class="YesNo" column="SaveOverpay"/>
+    <many-to-one name="BoilService" class="YesNo" column="BoilService_id"/>
+    <many-to-one name="SendRent" class="YesNo" column="SendRent"/>
+    <many-to-one name="ShowService" class="YesNo" column="calcalone"/>
+    <many-to-one name="ShowServiceInfo" class="YesNo" column="crossservice_id"/>
+  </class>
+</hibernate-mapping>

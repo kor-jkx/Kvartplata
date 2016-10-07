@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="Seal" table="DBA.cntrSeal">
+    <composite-id  >
+      <key-many-to-one name="Counter" class="Counter" column="Counter_id"   />
+      <key-property name="SealId" column="Seal_id"/>
+    </composite-id>
+    <many-to-one name="TypeSeal" class="TypeSeal" column="TypeSeal_Id"/>
+    <property name="Inspector" column="Inspector"/>
+    <property name="Number" column="Seal_Number" />
+    <property name="Date" column="Seal_Date" />
+    <property name="RemoveDate" column="Remove_Date" />
+    <property name="Note" column="Seal_Note" />
+    <property name="UName" column="UName"/>
+    <property name="DEdit" column="DEdit"/>
+
+  </class>
+
+</hibernate-mapping>

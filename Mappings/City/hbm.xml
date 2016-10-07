@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="City" table="DBA.Di_KomplCity" >
+    <id name="CityId" unsaved-value="0" >
+      <column name="IdCity" not-null="true"  />
+      <generator class="assigned"/>
+    </id>
+    <property name="CityName"
+              column="NameCity"/>
+    <property name="GenId"
+              column="IdGen"  />
+
+
+  </class>
+
+</hibernate-mapping>

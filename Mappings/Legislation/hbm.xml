@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="Legislation" table="DBA.dcLegislation" where="Legislation_id>0">
+    <id name="Legislation_id" column="Legislation_id">
+      <generator class="identity"/>
+    </id>
+    <property name="Service_name" column="Service_name" not-null="true"/>
+    <property name="OverShoot" column="OverShoot" not-null="true"/>
+    <property name="Normal" column="Normal" not-null="true"/>
+    <property name="Description" column="Description" not-null="true"/>
+
+    <property name="Measure" column="Measure" not-null="true"/>
+    <property name="Standart" column="Standart" not-null="true"/>
+    <property name="Percent" column="Percent" not-null="true"/>
+
+  </class>
+
+</hibernate-mapping>

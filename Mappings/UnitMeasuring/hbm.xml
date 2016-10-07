@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="UnitMeasuring" table="DBA.dcUnitMeasuring">
+    <id name="UnitMeasuringId" unsaved-value="0">
+      <column name="UnitMeasuring_Id" not-null="true" />
+      <generator class="identity"/>
+    </id>
+    <property name="UnitMeasuringName"
+              column="UnitMeasuring_Name"/>
+    <property name="Uname"
+              column="Uname"/>
+    <property name="Dedit"
+              column="Dedit"/>
+  </class>
+
+</hibernate-mapping>

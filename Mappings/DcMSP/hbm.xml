@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="DcMSP" table="DBA.dcMSP" where="MSP_id>0">
+    <id name="MSP_id" >
+      <generator class="assigned"/>
+    </id>
+    <property name="MSP_name" column="MSP_name" not-null="true"/>
+    <property name="CodeSoc" column="CodeSoc" not-null="true"/>
+    <property name="Complex_id" column="Complex_id" not-null="true"/>
+    <property name="Priority" column="Priority" not-null="true"/>
+    <property name="Account" column="Account" not-null="true"/>
+    <property name="Uname" column="Uname" not-null="true"/>
+    <property name="Dedit" column="Dedit" not-null="true"/>
+    <many-to-one name="MSPPeriod" class="Period" column="MSPPeriod_id"/>
+  <!--  <set name="Percents" inverse="true" 
+      cascade="all-delete-orphan" order-by="service_id,Dbeg">
+      <key column="MSP_id"/>
+      <one-to-many class="Kvartplata.Classes.SdcMSPPercent"/>
+    </set>-->
+
+  </class>
+
+</hibernate-mapping>

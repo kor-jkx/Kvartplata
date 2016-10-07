@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="BaseOrgPerson" table="DBA.BASE_ORG_Persons">
+    <id name="PersonId" unsaved-value="0">
+      <column name="IDPerson" />
+      <generator class="assigned"/>
+    </id>
+    <many-to-one name="BaseOrg" class="BaseOrg" column="idbaseorg" />    
+    <property name="Family" column="Family" />
+    <property name="Name" column="Name" />
+    <property name="LastName" column="LastName" />
+    <property name="PlaceWork" column="Placework" />
+    <property name="Phone" column="Phone" />
+    <property name="ICQ" column="icq" />
+    <property name="EMail" column="EMail" />
+    <property name="Note" column="Note" />
+    <property name="BasedOn" column="BasedOn" />
+    <many-to-one name="IncRep" class="YesNo" column="increp" />
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="Transfer" table="DBA.cmpTransfer" >
+    <composite-id  >
+      <key-many-to-one name="Company" class="Company" column="Company_id"   />
+    </composite-id>
+    <many-to-one name="Raion" class="Raion" column="Rnn_id"/>
+    <property name="KvrCmp"
+              column="kvr_cmp" />
+    <property name="PaspCmp"
+          column="pasp_cmp" />
+    <property name="FarmCmp"
+          column="farm_cmp" />
+    <property name="ArmyCmp"
+          column="army_cmp" />
+    <property name="OhlBeg"
+          column="ohlls_beg" />
+    <property name="OhlEnd"
+          column="ohlls_end" />
+    
+    <property name="UName"
+              column="UName" not-null="true" />
+    <property name="DEdit"
+              column="DEdit" not-null="true"/>
+  </class>
+
+</hibernate-mapping>

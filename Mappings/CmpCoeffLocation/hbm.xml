@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="CmpCoeffLocation" table="DBA.cmpCoeffLocation">
+    <composite-id>
+      <key-property name="CompanyId"
+                     column="Company_id"/>
+      <key-many-to-one name="Period"
+                     column="Period_id" class="Kvartplata.Classes.Period"/>
+      <key-property name="DBeg"
+                   column="DBeg" />
+      <key-many-to-one name="CntrLocation"
+                     column="CntrLocation_id" class="Kvartplata.Classes.CounterLocation"/>
+    </composite-id>
+
+
+    <property name="Dend" column="DEnd" not-null="false"/>
+    <property name="Coeff" column="Coeff" not-null="true"/>    
+    <property name="Uname" column="Uname" not-null="true"/>
+    <property name="Dedit" column="Dedit" not-null="true"/>
+  </class>
+<!--  <query name="UpdatecmpCoeffLocation">
+    <![CDATA[
+        update CmpCoeffLocation cmpN set Dbeg=:dbeg,Dend=:dend,Coeff=:coeff,Uname=:uname,Dedit=:dedit
+        where cmpN.Company_id=:company_id and cmpN.Period=:period
+        and cmpN.Dbeg=:dbeg2 and cmpN.CntrCoeffLocation=:cntrCoeffLocation
+        ]]>
+  </query>-->
+</hibernate-mapping>

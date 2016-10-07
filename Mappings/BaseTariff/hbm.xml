@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="BaseTariff" table="DBA.dcBaseTariff">
+    <id name="BaseTariff_id" unsaved-value="0">
+      <column name="BaseTariff_id" not-null="true" />
+      <generator class="identity"/>
+    </id>
+    <property name="BaseTariff_name" column="BaseTariff_name" not-null="true"/>
+  </class>
+
+</hibernate-mapping>

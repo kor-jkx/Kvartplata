@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="StrAll" table="DBA.DI_Str_All">
+    <id name="StrId" unsaved-value="0">
+      <column name="IdStr" not-null="true" />
+      <generator class="identity"/>
+    </id>
+    <property name="StrName" column="Str" />
+    <property name="Ulc" column="Ulc" />
+    <property name="AreaId" column="IdArea" />
+    <property name="RnnId" column="IdRaion" />
+    <property name="CityId" column="IdCity" />
+
+  </class>
+
+</hibernate-mapping>

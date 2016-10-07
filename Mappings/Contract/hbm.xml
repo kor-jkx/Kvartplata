@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="Contract" table="dba.mngContract">
+    <id name="ContractId" column="contract_id" >
+      <generator class="assigned"/>
+    </id>
+    <many-to-one name="Manager" class="BaseOrg" column="manager_id" />
+    <many-to-one name="BaseOrg" class="BaseOrg" column="idbaseorg" />
+    <property name="ContractNum" column="contract_num"/>
+    <property name="DBeg" column="dbeg"/>
+    <property name="DEnd" column="dend"/>
+    <property name="UName" column="uname"/>
+    <property name="DEdit" column="dedit"/>
+  </class>
+
+</hibernate-mapping>

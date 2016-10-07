@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="SocSaldo" table="DBA.Soc_Saldo" >
+    <composite-id  >
+      <key-many-to-one name="LsClient" class="LsClient" column="Idlic"   />
+      <key-many-to-one name="Person" class="Person" column="idpers"  />
+      <key-many-to-one name="Service" class="Service" column="Numserv" />
+      <key-many-to-one name="MSP" class="DcMSP" column="Codehelp" />
+      <key-property name="Period" column="Period" />
+    </composite-id>
+    <property name="Incoming" column="Incoming" />
+    <property name="Past" column="Past" />
+    <property name="Calc" column="Calc" />
+    <property name="Corr" column="Corr" />
+    <property name="Pay" column="Pay" />
+    <property name="Outcoming" column="Outcoming" />
+  </class>
+
+</hibernate-mapping>

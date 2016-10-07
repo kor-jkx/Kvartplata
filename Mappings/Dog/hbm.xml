@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="Dog" table="DBA.Slv_Dog">
+    <id name="DocId" unsaved-value="0">
+      <column name="CodeDoc" not-null="true" />
+      <generator class="assigned"/>
+    </id>
+
+    <property name="DocName"
+              column="NameDoc"/>
+    <property name="Section"
+          column="Section"/>
+    <property name="UName"
+          column="UName"/>
+    <property name="DEdit"
+          column="DEdit"/>
+
+  </class>
+
+</hibernate-mapping>

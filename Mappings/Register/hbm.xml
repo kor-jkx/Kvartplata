@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="Register" table="DBA.lsRegister" >
+    <composite-id  >
+      <key-many-to-one name="LsClient" class="LsClient" column="client_id"   />
+      <key-many-to-one name="Period" class="Period" column="period_id" />
+      <key-many-to-one name="Manager" class="BaseOrg" column="manager_id" />
+      <key-many-to-one name="Receipt" class="Receipt" column="Receipt_Id" />
+    </composite-id>
+    <many-to-one name="Contract" class="Contract" column="contract_id"  />
+    <many-to-one name="Person" class="Person" column="idform" />
+    <many-to-one name="Guild" class="Guild" column="guild_id"  />
+    <many-to-one name="Manager" class="BaseOrg" column="manager_id" />
+    <many-to-one name="Receipt" class="Receipt" column="Receipt_Id" />
+    
+    <property name="TabNum" column="tab_num"/>
+    <property name="PaymentId" column="payment_id"/>
+   <!--<many-to-one name="Payment" class="Payment" column="payment_id" />
+   <property name="DBeg" column="dbeg"/>
+    <property name="DEnd" column="dend"/>-->
+    <property name="Rent" column="rent"/>
+    <property name="RentPeni" column="rentpeni"/>
+    <property name="Deduction" column="deduction"/>
+    <property name="DeductionPeni" column="deductionpeni"/>
+    <property name="Debt" column="dept"/>
+    <property name="DebtPeni" column="deptpeni"/>
+    <property name="UName" column="uname"/>
+    <property name="DEdit" column="dedit"/>
+  </class>
+
+</hibernate-mapping>

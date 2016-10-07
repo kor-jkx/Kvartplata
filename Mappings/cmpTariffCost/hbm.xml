@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="cmpTariffCost" table="DBA.cmpTariff">
+    <composite-id>
+      <key-property name="Company_id"
+                     column="Company_id"/>
+      <key-many-to-one name="Period"
+                     column="Period_id" class="Kvartplata.Classes.Period"/>
+      <key-property name="Dbeg" column="DBeg"/>
+      <key-many-to-one name="Service" column="Service_id" class="Kvartplata.Classes.Service"/>
+      <key-property name="Tariff_id"
+                   column="Tariff_id"/>
+    </composite-id>
+
+    <property name="Dend" column="DEnd" not-null="false"/>
+    <property name="Scheme" column="Scheme" not-null="false"/>
+    <property name="SchemeParam" column="Scheme_param" />
+    <property name="Cost" column="Cost" not-null="false"/>
+    <property name="UnitMeasuring_id" column="UnitMeasuring_id" not-null="false"/>
+    <property name="BaseTariff_id" column="BaseTariff_id" not-null="false"/>
+    <property name="Cost_eo" column="Cost_eo" not-null="false"/>
+    <property name="Cost_c" column="Cost_c" not-null="false"/>
+    <property name="Complex_id" column="Complex_id" not-null="false"/>
+    <property name="Uname" column="Uname" not-null="true"/>
+    <property name="Dedit" column="Dedit" not-null="true"/>
+    <property name="BaseTariffMSP_id" column="BaseTariffMSP_id" not-null="false" />
+    <many-to-one name="IsVat" class ="YesNo" column="isvat"/>
+    <!--<property name="Note" column="Note"/>-->
+    
+  </class>
+  <query name="UpdateTariff">
+    <![CDATA[
+        update cmpTariffCost cmp set Dbeg=:dbeg,Scheme=:scheme,Dend=:dend,Cost=:cost,Cost_eo=:c_eo,Cost_c=:c_c,UnitMeasuring_id=:u_id,BaseTariff_id=:b_id,Uname=:uname,Dedit=:dedit
+        where cmp.Company_id=:company_id and cmp.Period=:period
+        and cmp.Dbeg = :dbeg2 and cmp.Service = :service and cmp.Tariff_id=:tariff_id
+        ]]>
+  </query>
+</hibernate-mapping>

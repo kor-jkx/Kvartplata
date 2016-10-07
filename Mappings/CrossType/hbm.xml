@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="CrossType" table="DBA.dcCrossType">
+    <id name="CrossTypeId" column="CrossType_id" >
+      <generator class="assigned"/>
+    </id>
+    <property name="CrossTypeName"
+              column="CrossType_name"/>
+    <property name="UName" column="Uname"/>
+    <property name="DEdit" column="Dedit"/>
+  </class>
+
+</hibernate-mapping>

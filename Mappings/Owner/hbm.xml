@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="Owner" table="DBA.Owners" >
+    <id name="OwnerId" unsaved-value="0" >
+      <column name="Owner" not-null="true"  />
+      <generator class="identity"/>
+    </id>
+    <property name="Family"
+              column="Family" not-null="true"/>
+    <many-to-one name="LsClient" class="LsClient" column="Idlic" fetch="join"  />
+    <many-to-one name="Relation" class="Relation" column="Rodstv"/>
+    <property name="Name"
+              column="Name" not-null="true" />
+    <property name="LastName"
+              column="LastName" not-null="true" />
+    <property name="FirstPropDate"
+          column="FirstPropDate" not-null="false" />
+    <property name="OutToDate"
+      column="OutToDate" not-null="false" />
+    <property name="BornDate"
+  column="BornDate" not-null="false" />
+    <property name="RegDate"
+  column="RegDate" not-null="true" />
+    <property name="RegOutDate"
+  column="RegOutDate" not-null="false" />
+     <property name="Archive"
+    column="Archive" />
+    <property name="RegDEdit"
+      column="RegDEdit" not-null="false" />
+    <property name="OutDEdit"
+      column="OutDEdit" not-null="false" />
+    <property name="UNameReg"
+  column="UName_Reg" not-null="false" />
+    <property name="UNameUnReg"
+      column="UName_UnReg" not-null="false" />
+    <property name="FamilyNum"
+  column="FamilyNum" not-null="false" />
+    <property name="Note"
+  column="Note" not-null="false" />
+  <!--<many-to-one name="Consent" class="YesNo" column="Address"/>-->
+  <property name="Consent" column="Address" />
+  </class>
+
+</hibernate-mapping>

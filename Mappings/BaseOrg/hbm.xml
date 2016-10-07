@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Kvartplata"
+                   namespace="Kvartplata.Classes">
+
+  <class name="BaseOrg" table="DBA.BASE_ORG">
+    <id name="BaseOrgId" unsaved-value="0">
+      <column name="IDBASEORG" />
+      <generator class="assigned"/>
+    </id>
+    <property name="BaseOrgName" column="NAMEORG" />
+    <property name="NameOrgMin" column="NAMEORG_MIN" />
+    <property name="INN" column="INN" />
+    <property name="KPP" column="KPP" />
+    <property name="RSch" column="R_sch" />
+    <property name="BossFam" column="RukFam" />
+    <property name="BossName" column="RukImj" />
+    <property name="BossLastName" column="RukOtc" />
+    <many-to-one name="Bank" class="Bank" column="Bank" />
+    <property name="TypeWork" column="TypeWork" />
+    <property name="OKPO" column="OKPO" />
+    <property name="OGRN" column="OGRN" />
+    <property name="OKONH" column="OKONH" />
+    <property name="UInd" column="UaInd" />
+    <property name="UPost" column="UaPocht" />
+    <many-to-one name="UCity" class="Reg" column="UaCity" />
+    <property name="UPos" column="UaPos" />
+    <property name="UStreet" column="UaStreet" />
+    <property name="UHome" column="UaHouse" />
+    <property name="UKorp" column="UaKorp" />
+    <property name="UFlat" column="UaFlat" />
+    <property name="UDop" column="UaDop" />
+    <property name="Phone" column="Tel" />
+    <property name="Fax" column="Fax" />
+    <property name="PInd" column="PaInd" />
+    <property name="PPost" column="PaPocht" />
+    <many-to-one name="PCity" class="Reg" column="PaCity" />
+    <property name="PPos" column="PaPos" />
+    <property name="PStreet" column="PaStreet" />
+    <property name="PHome" column="PaHouse" />
+    <property name="PKorp" column="PaKorp" />
+    <property name="PFlat" column="PaFlat" />
+    <property name="PDop" column="PaDop" />
+    <property name="AdditionalCode" column="Additional_code" />
+    <property name="AdressPriority" column="AdressPriority" />
+    <property name="Kbk" column="KBK" />
+  </class>
+  
+
+</hibernate-mapping>
