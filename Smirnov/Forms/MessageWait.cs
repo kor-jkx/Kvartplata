@@ -58,7 +58,7 @@ namespace Kvartplata.Smirnov.Forms
       this.Controls.Add((Control) this.rtbMes);
       this.Cursor = Cursors.Default;
       this.FormBorderStyle = FormBorderStyle.FixedToolWindow;
-      this.Icon = (Icon) componentResourceManager.GetObject("$this.Icon");
+      //this.Icon = (Icon) componentResourceManager.GetObject("$this.Icon");
       this.Name = "MessageWait";
       this.StartPosition = FormStartPosition.CenterScreen;
       this.Text = "Сообщение";

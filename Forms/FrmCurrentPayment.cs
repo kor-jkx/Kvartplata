@@ -144,7 +144,7 @@ namespace Kvartplata.Forms
       this.Controls.Add((Control) this.dgvCurrentPayment);
       this.Controls.Add((Control) this.pnButtons);
       this.Font = new Font("Microsoft Sans Serif", 10f, FontStyle.Regular, GraphicsUnit.Point, (byte) 204);
-      this.Icon = (Icon) componentResourceManager.GetObject("$this.Icon");
+      //this.Icon = (Icon) componentResourceManager.GetObject("$this.Icon");
       this.Margin = new Padding(4);
       this.Name = "FrmCurrentPayment";
       this.Text = "Текущие платежи";

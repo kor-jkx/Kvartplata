@@ -390,7 +390,7 @@ namespace Kvartplata.Forms
       this.Controls.Add((Control) this.pnBtn);
       this.Controls.Add((Control) this.toolStrip1);
       this.Font = new Font("Microsoft Sans Serif", 10f, FontStyle.Regular, GraphicsUnit.Point, (byte) 204);
-      this.Icon = (Icon) componentResourceManager.GetObject("$this.Icon");
+      //this.Icon = (Icon) componentResourceManager.GetObject("$this.Icon");
       this.Margin = new Padding(4);
       this.Name = "FrmBase";
       this.Text = "FrmBase";

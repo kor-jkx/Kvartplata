@@ -10,13 +10,17 @@ using System.Windows.Forms;
 
 namespace Kvartplata.Forms
 {
-  public class FrmBaseForm : Form
+  public partial class FrmBaseForm : Form
   {
-    private IContainer components = (IContainer) null;
-
-    public FrmBaseForm()
+        
+        private IContainer components = (IContainer) null;
+        //private ComponentResourceManager AcomponentResourceManager = new ComponentResourceManager(typeof(FrmBaseForm));
+        //System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmBaseForm));
+        public FrmBaseForm()
     {
-      this.InitializeComponent();
+            //Icon = (System.Drawing.Icon)this.resources.GetObject("$this.Icon");
+            this.InitializeComponent();
+
     }
 
     protected override void Dispose(bool disposing)
@@ -28,14 +32,14 @@ namespace Kvartplata.Forms
 
     private void InitializeComponent()
     {
-      ComponentResourceManager componentResourceManager = new ComponentResourceManager(typeof (FrmBaseForm));
-      this.SuspendLayout();
+            this.SuspendLayout();
       this.AutoScaleDimensions = new SizeF(8f, 16f);
       this.AutoScaleMode = AutoScaleMode.Font;
       this.ClientSize = new Size(765, 322);
       this.Font = new Font("Microsoft Sans Serif", 9.75f, FontStyle.Regular, GraphicsUnit.Point, (byte) 204);
-      this.Icon = (Icon) componentResourceManager.GetObject("$this.Icon");
-      this.Margin = new Padding(4, 4, 4, 4);
+            
+            //this.Icon = (Icon)AcomponentResourceManager.GetObject("$this.Icon");
+            this.Margin = new Padding(4, 4, 4, 4);
       this.Name = "FrmBaseForm";
       this.Text = "Ввод сумм квартального перерасчета";
       this.ResumeLayout(false);

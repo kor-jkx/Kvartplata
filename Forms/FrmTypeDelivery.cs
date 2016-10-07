@@ -318,7 +318,7 @@ namespace Kvartplata.Forms
       this.btnExit.Anchor = AnchorStyles.Top | AnchorStyles.Right;
       this.btnExit.DialogResult = DialogResult.Cancel;
       this.btnExit.Font = new Font("Microsoft Sans Serif", 9.75f, FontStyle.Regular, GraphicsUnit.Point, (byte) 204);
-      this.btnExit.Image = (Image) componentResourceManager.GetObject("btnExit.Image");
+      //this.btnExit.Image = (Image) componentResourceManager.GetObject("btnExit.Image");
       this.btnExit.ImageAlign = ContentAlignment.MiddleLeft;
       this.btnExit.Location = new Point(957, 8);
       this.btnExit.Margin = new Padding(4);
@@ -349,7 +349,7 @@ namespace Kvartplata.Forms
       this.ClientSize = new Size(1053, 315);
       this.Controls.Add((Control) this.panel1);
       this.Controls.Add((Control) this.panelDGV);
-      this.Icon = (Icon) componentResourceManager.GetObject("$this.Icon");
+      ////this.Icon = (Icon) componentResourceManager.GetObject("$this.Icon");
       this.Name = "FrmTypeDelivery";
       this.StartPosition = FormStartPosition.CenterScreen;
       this.Text = "Способ доставки";

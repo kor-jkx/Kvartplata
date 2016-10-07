@@ -260,7 +260,7 @@ namespace Kvartplata.Forms
       this.Controls.Add((Control) this.btnCancel);
       this.Controls.Add((Control) this.dgvLegislation);
       this.Font = new Font("Microsoft Sans Serif", 10f, FontStyle.Regular, GraphicsUnit.Point, (byte) 204);
-      this.Icon = (Icon) componentResourceManager.GetObject("$this.Icon");
+      //this.Icon = (Icon) componentResourceManager.GetObject("$this.Icon");
       this.Name = "FrmLegislation";
       this.Text = "Основания для перерасчета за недопоставку";
       this.WindowState = FormWindowState.Maximized;

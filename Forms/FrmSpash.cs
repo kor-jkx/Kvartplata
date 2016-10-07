@@ -112,7 +112,7 @@ namespace Kvartplata.Forms
       this.Controls.Add((Control) this.panel2);
       this.DoubleBuffered = true;
       this.FormBorderStyle = FormBorderStyle.None;
-      this.Icon = (Icon) componentResourceManager.GetObject("$this.Icon");
+      //this.Icon = (Icon) componentResourceManager.GetObject("$this.Icon");
       this.Name = "FrmSpash";
       this.ShowInTaskbar = false;
       this.StartPosition = FormStartPosition.CenterScreen;

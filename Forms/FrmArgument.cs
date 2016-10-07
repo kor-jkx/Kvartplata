@@ -95,7 +95,7 @@ namespace Kvartplata.Forms
       this.ClientSize = new Size(389, 142);
       this.Controls.Add((Control) this.pnBtn);
       this.Controls.Add((Control) this.txbText);
-      this.Icon = (Icon) componentResourceManager.GetObject("$this.Icon");
+      //this.Icon = (Icon) componentResourceManager.GetObject("$this.Icon");
       this.Name = "FrmArgument";
       this.Text = "Введите основание";
       this.pnBtn.ResumeLayout(false);

@@ -323,7 +323,7 @@ namespace Kvartplata.Forms
       this.Controls.Add((Control) this.dgvChoice);
       this.Controls.Add((Control) this.pnBtn);
       this.Font = new Font("Microsoft Sans Serif", 9.75f, FontStyle.Regular, GraphicsUnit.Point, (byte) 204);
-      this.Icon = (Icon) componentResourceManager.GetObject("$this.Icon");
+      //this.Icon = (Icon) componentResourceManager.GetObject("$this.Icon");
       this.Margin = new Padding(4);
       this.Name = "FrmChoice";
       this.StartPosition = FormStartPosition.CenterParent;

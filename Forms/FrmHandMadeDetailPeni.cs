@@ -482,7 +482,7 @@ namespace Kvartplata.Forms
       this.Controls.Add((Control) this.pnBtn);
       this.Controls.Add((Control) this.pnUp);
       this.Font = new Font("Microsoft Sans Serif", 9.75f);
-      this.Icon = (Icon) componentResourceManager.GetObject("$this.Icon");
+      //this.Icon = (Icon) componentResourceManager.GetObject("$this.Icon");
       this.Name = "FrmHandMadeDetailPeni";
       this.Text = "Разбивка по состовляющим пени";
       this.Shown += new EventHandler(this.FrmHandMadeDetailPeni_Shown);

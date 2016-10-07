@@ -300,7 +300,7 @@ namespace Kvartplata.Forms
       this.Controls.Add((Control) this.panelMain);
       this.Controls.Add((Control) this.panelControl);
       this.Font = new Font("Microsoft Sans Serif", 10f, FontStyle.Regular, GraphicsUnit.Point, (byte) 204);
-      this.Icon = (Icon) componentResourceManager.GetObject("$this.Icon");
+      //this.Icon = (Icon) componentResourceManager.GetObject("$this.Icon");
       this.Margin = new Padding(4);
       this.Name = "FrmFileClient";
       this.Text = "Документы лицевого счета";

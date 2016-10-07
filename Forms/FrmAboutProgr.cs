@@ -133,7 +133,7 @@ namespace Kvartplata.Forms
       this.Controls.Add((Control) this.label3);
       this.Controls.Add((Control) this.lblName);
       this.FormBorderStyle = FormBorderStyle.Fixed3D;
-      this.Icon = (Icon) componentResourceManager.GetObject("$this.Icon");
+      //this.Icon = (Icon) componentResourceManager.GetObject("$this.Icon");
       this.Name = "FrmAboutProgr";
       this.SizeGripStyle = SizeGripStyle.Show;
       this.StartPosition = FormStartPosition.CenterScreen;

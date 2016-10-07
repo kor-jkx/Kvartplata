@@ -58,7 +58,7 @@ namespace Kvartplata.Forms
       this.AutoScaleMode = AutoScaleMode.Font;
       this.ClientSize = new Size(292, 46);
       this.Controls.Add((Control) this.progressBar);
-      this.Icon = (Icon) componentResourceManager.GetObject("$this.Icon");
+      //this.Icon = (Icon) componentResourceManager.GetObject("$this.Icon");
       this.Name = "frmProgress";
       this.Text = "Выполнено";
       this.ResumeLayout(false);

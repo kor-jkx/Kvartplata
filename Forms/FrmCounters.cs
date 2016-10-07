@@ -6662,7 +6662,7 @@ label_5:
       this.Controls.Add((Control) this.pnTools);
       this.Controls.Add((Control) this.pnBtn);
       this.Font = new Font("Microsoft Sans Serif", 9.75f, FontStyle.Regular, GraphicsUnit.Point, (byte) 204);
-      this.Icon = (Icon) componentResourceManager.GetObject("$this.Icon");
+      //this.Icon = (Icon) componentResourceManager.GetObject("$this.Icon");
       this.Margin = new Padding(4);
       this.Name = "FrmCounters";
       this.StartPosition = FormStartPosition.CenterScreen;

@@ -21477,7 +21477,7 @@ label_4:
       this.Font = new Font("Microsoft Sans Serif", 10f, FontStyle.Regular, GraphicsUnit.Point, (byte) 204);
       this.hp.SetHelpKeyword((Control) this, "kv41.html");
       this.hp.SetHelpNavigator((Control) this, HelpNavigator.Topic);
-      this.Icon = (Icon) componentResourceManager.GetObject("$this.Icon");
+      //this.Icon = (Icon) componentResourceManager.GetObject("$this.Icon");
       this.KeyPreview = true;
       this.Margin = new Padding(4);
       this.Name = "FrmClientCard";

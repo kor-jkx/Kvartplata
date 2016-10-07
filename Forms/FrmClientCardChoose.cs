@@ -381,7 +381,7 @@ namespace Kvartplata.Forms
       this.Controls.Add((Control) this.groupBox1);
       this.Controls.Add((Control) this.panel1);
       this.Font = new Font("Microsoft Sans Serif", 10f, FontStyle.Regular, GraphicsUnit.Point, (byte) 204);
-      this.Icon = (Icon) componentResourceManager.GetObject("$this.Icon");
+      //this.Icon = (Icon) componentResourceManager.GetObject("$this.Icon");
       this.Margin = new Padding(4);
       this.Name = "FrmClientCardChoose";
       this.Text = "FrmClientCardChoose";

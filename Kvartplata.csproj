@@ -106,6 +106,12 @@
     <Reference Include="System.Configuration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\Formn1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Formn1.Designer.cs">
+      <DependentUpon>Formn1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\__Boxed.cs" />
     <Compile Include="PrivateImplementationDetails.cs" />
     <Compile Include="sbsit\utils\DBF.cs" />
@@ -649,6 +655,9 @@
     <EmbeddedResource Include="Forms\Controls\UCRegion.resx" />
     <EmbeddedResource Include="Forms\Controls\UCSupplier.resx" />
     <EmbeddedResource Include="Forms\Controls\UСVariant.resx" />
+    <EmbeddedResource Include="Forms\Formn1.resx">
+      <DependentUpon>Formn1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmAboutProgr.resx" />
     <EmbeddedResource Include="Forms\FrmAbsence.resx" />
     <EmbeddedResource Include="Forms\FrmAgreement.resx" />
@@ -896,6 +905,20 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="key.dat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="skey.dat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="sndhdd.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="snhdd.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

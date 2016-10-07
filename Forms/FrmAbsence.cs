@@ -1005,7 +1005,7 @@ namespace Kvartplata.Forms
       this.Font = new Font("Microsoft Sans Serif", 10f, FontStyle.Regular, GraphicsUnit.Point, (byte) 204);
       this.hp.SetHelpKeyword((Control) this, "kv53.html");
       this.hp.SetHelpNavigator((Control) this, HelpNavigator.Topic);
-      this.Icon = (Icon) componentResourceManager.GetObject("$this.Icon");
+      //this.Icon = (Icon) componentResourceManager.GetObject("$this.Icon");
       this.Margin = new Padding(4);
       this.Name = "FrmAbsence";
       this.hp.SetShowHelp((Control) this, true);

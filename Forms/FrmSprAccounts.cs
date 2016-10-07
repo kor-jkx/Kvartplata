@@ -664,7 +664,7 @@ namespace Kvartplata.Forms
       this.Controls.Add((Control) this.dgvBase);
       this.Controls.Add((Control) this.pnFilter);
       this.Controls.Add((Control) this.toolStrip1);
-      this.Icon = (Icon) componentResourceManager.GetObject("$this.Icon");
+      //this.Icon = (Icon) componentResourceManager.GetObject("$this.Icon");
       this.Margin = new Padding(5);
       this.Name = "FrmSprAccounts";
       this.StartPosition = FormStartPosition.CenterScreen;

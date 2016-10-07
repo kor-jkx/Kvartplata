@@ -149,7 +149,7 @@ namespace Kvartplata.Forms
       this.ClientSize = new Size(507, 506);
       this.hp.SetHelpKeyword((Control) this, "kv513.html");
       this.hp.SetHelpNavigator((Control) this, HelpNavigator.Topic);
-      this.Icon = (Icon) componentResourceManager.GetObject("$this.Icon");
+      //this.Icon = (Icon) componentResourceManager.GetObject("$this.Icon");
       this.Location = new Point(0, 0);
       this.Name = "FrmDi_PhonesServ";
       this.hp.SetShowHelp((Control) this, true);

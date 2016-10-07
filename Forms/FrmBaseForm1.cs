@@ -13,7 +13,7 @@ using System.Windows.Forms;
 
 namespace Kvartplata.Forms
 {
-  public class FrmBaseForm1 : FrmBaseForm
+  public partial class FrmBaseForm1 : FrmBaseForm
   {
     private FormStateSaver fss = new FormStateSaver(FrmBaseForm1.container);
     private IContainer components = (IContainer) null;

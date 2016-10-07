@@ -242,7 +242,7 @@ namespace Kvartplata.Forms
       this.ClientSize = new Size(489, 425);
       this.hp.SetHelpKeyword((Control) this, "kv56.html");
       this.hp.SetHelpNavigator((Control) this, HelpNavigator.Topic);
-      this.Icon = (Icon) componentResourceManager.GetObject("$this.Icon");
+      //this.Icon = (Icon) componentResourceManager.GetObject("$this.Icon");
       this.Location = new Point(0, 0);
       this.Margin = new Padding(5);
       this.Name = "FrmPurposePay";

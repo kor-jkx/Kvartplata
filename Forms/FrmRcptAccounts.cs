@@ -712,7 +712,7 @@ label_35:
       this.Controls.Add((Control) this.dgvRcptAccounts);
       this.Controls.Add((Control) this.tsMenu);
       this.Font = new Font("Tahoma", 10f, FontStyle.Regular, GraphicsUnit.Point, (byte) 204);
-      this.Icon = (Icon) componentResourceManager.GetObject("$this.Icon");
+      //this.Icon = (Icon) componentResourceManager.GetObject("$this.Icon");
       this.Name = "FrmRcptAccounts";
       this.Text = "Квитанции и счета";
       this.Load += new EventHandler(this.FrmRcptAccounts_Load);

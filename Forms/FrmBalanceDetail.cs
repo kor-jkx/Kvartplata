@@ -173,7 +173,7 @@ namespace Kvartplata.Forms
       this.AutoScaleMode = AutoScaleMode.Font;
       this.ClientSize = new Size(565, 322);
       this.Controls.Add((Control) this.dgvBalanceDetail);
-      this.Icon = (Icon) componentResourceManager.GetObject("$this.Icon");
+      //this.Icon = (Icon) componentResourceManager.GetObject("$this.Icon");
       this.Name = "FrmBalanceDetail";
       this.StartPosition = FormStartPosition.CenterParent;
       this.Text = "Начисления по составляющим";
