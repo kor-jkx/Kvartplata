@@ -106,13 +106,6 @@
     <Reference Include="System.Configuration" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\Formn1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Formn1.Designer.cs">
-      <DependentUpon>Formn1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\__Boxed.cs" />
     <Compile Include="PrivateImplementationDetails.cs" />
     <Compile Include="sbsit\utils\DBF.cs" />
     <Compile Include="Crypt.cs" />
@@ -646,106 +639,297 @@
     <EmbeddedResource Include="Classes\Form1.resx" />
     <EmbeddedResource Include="Classes\FrmCheck.resx" />
     <EmbeddedResource Include="config.xml" />
-    <EmbeddedResource Include="Forms\Controls\UCCmpParam.resx" />
-    <EmbeddedResource Include="Forms\Controls\UCLsSupplier.resx" />
-    <EmbeddedResource Include="Forms\Controls\UCMSPPercent.resx" />
-    <EmbeddedResource Include="Forms\Controls\UCNorm.resx" />
-    <EmbeddedResource Include="Forms\Controls\UCPensDoc.resx" />
-    <EmbeddedResource Include="Forms\Controls\UCPfr.resx" />
-    <EmbeddedResource Include="Forms\Controls\UCRegion.resx" />
-    <EmbeddedResource Include="Forms\Controls\UCSupplier.resx" />
-    <EmbeddedResource Include="Forms\Controls\UСVariant.resx" />
-    <EmbeddedResource Include="Forms\Formn1.resx">
-      <DependentUpon>Formn1.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Controls\UCCmpParam.resx">
+      <DependentUpon>UCCmpParam.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FrmAboutProgr.resx" />
-    <EmbeddedResource Include="Forms\FrmAbsence.resx" />
-    <EmbeddedResource Include="Forms\FrmAgreement.resx" />
-    <EmbeddedResource Include="Forms\FrmArgument.resx" />
-    <EmbeddedResource Include="Forms\FrmAttribute.resx" />
-    <EmbeddedResource Include="Forms\FrmAudit.resx" />
-    <EmbeddedResource Include="Forms\FrmBalanceDetail.resx" />
-    <EmbeddedResource Include="Forms\FrmBank.resx" />
-    <EmbeddedResource Include="Forms\FrmBase.resx" />
-    <EmbeddedResource Include="Forms\FrmBaseForm.resx" />
-    <EmbeddedResource Include="Forms\FrmBaseForm1.resx" />
-    <EmbeddedResource Include="Forms\FrmBasik.resx" />
-    <EmbeddedResource Include="Forms\FrmBigSearch.resx" />
-    <EmbeddedResource Include="Forms\FrmBills.resx" />
-    <EmbeddedResource Include="Forms\FrmChangeAttribute.resx" />
-    <EmbeddedResource Include="Forms\FrmChoice.resx" />
-    <EmbeddedResource Include="Forms\FrmChooseObject.resx" />
-    <EmbeddedResource Include="Forms\FrmClientCard.resx" />
-    <EmbeddedResource Include="Forms\FrmClientCardChoose.resx" />
-    <EmbeddedResource Include="Forms\FrmCloseScheme.resx" />
-    <EmbeddedResource Include="Forms\FrmCoeffLocation.resx" />
-    <EmbeddedResource Include="Forms\FrmConnect.resx" />
-    <EmbeddedResource Include="Forms\FrmContract.resx" />
-    <EmbeddedResource Include="Forms\FrmCorrect.resx" />
-    <EmbeddedResource Include="Forms\FrmCorrectPeni.resx" />
-    <EmbeddedResource Include="Forms\FrmCounters.resx" />
-    <EmbeddedResource Include="Forms\FrmCrossService.resx" />
-    <EmbeddedResource Include="Forms\FrmCrossType.resx" />
-    <EmbeddedResource Include="Forms\FrmCurrentPayment.resx" />
-    <EmbeddedResource Include="Forms\FrmDcOnlTypeAccount.resx" />
-    <EmbeddedResource Include="Forms\FrmDetailAllRent.resx" />
-    <EmbeddedResource Include="Forms\FrmDetailCorrectRent.resx" />
-    <EmbeddedResource Include="Forms\FrmDi_PhonesServ.resx" />
-    <EmbeddedResource Include="Forms\FrmEditOrg.resx" />
-    <EmbeddedResource Include="Forms\FrmFileClient.resx" />
-    <EmbeddedResource Include="Forms\FrmGuild.resx" />
-    <EmbeddedResource Include="Forms\FrmHandMadeDetail.resx" />
-    <EmbeddedResource Include="Forms\FrmHandMadeDetailPeni.resx" />
-    <EmbeddedResource Include="Forms\FrmHomeParam.resx" />
-    <EmbeddedResource Include="Forms\FrmLegislation.resx" />
-    <EmbeddedResource Include="Forms\FrmList.resx" />
-    <EmbeddedResource Include="Forms\FrmLoadPays.resx" />
-    <EmbeddedResource Include="Forms\FrmLsWorkDistribute.resx" />
-    <EmbeddedResource Include="Forms\FrmMakeEntrance.resx" />
-    <EmbeddedResource Include="Forms\FrmMassChooseObject.resx" />
-    <EmbeddedResource Include="Forms\FrmMSP.resx" />
-    <EmbeddedResource Include="Forms\FrmNewHomesTariff.resx" />
-    <EmbeddedResource Include="Forms\FrmNoteBook.resx" />
-    <EmbeddedResource Include="Forms\FrmOptions.resx" />
-    <EmbeddedResource Include="Forms\FrmOrg.resx" />
-    <EmbeddedResource Include="Forms\FrmOrgPersons.resx" />
-    <EmbeddedResource Include="Forms\FrmParam.resx" />
-    <EmbeddedResource Include="Forms\FrmPayment.resx" />
-    <EmbeddedResource Include="Forms\FrmPaymentOhl.resx" />
-    <EmbeddedResource Include="Forms\FrmPolicy.resx" />
-    <EmbeddedResource Include="Forms\frmProgress.resx" />
-    <EmbeddedResource Include="Forms\FrmPurposePay.resx" />
-    <EmbeddedResource Include="Forms\FrmQuality.resx" />
-    <EmbeddedResource Include="Forms\FrmQuarterSum.resx" />
-    <EmbeddedResource Include="Forms\FrmQuickPay.resx" />
-    <EmbeddedResource Include="Forms\FrmRcptAccounts.resx" />
-    <EmbeddedResource Include="Forms\FrmReceipt.resx" />
-    <EmbeddedResource Include="Forms\FrmReceipts.resx" />
-    <EmbeddedResource Include="Forms\FrmRecviz.resx" />
-    <EmbeddedResource Include="Forms\FrmRegion.resx" />
-    <EmbeddedResource Include="Forms\FrmRightDoc.resx" />
-    <EmbeddedResource Include="Forms\FrmScheme.resx" />
-    <EmbeddedResource Include="Forms\FrmSearch.resx" />
-    <EmbeddedResource Include="Forms\FrmSearchDog.resx" />
-    <EmbeddedResource Include="Forms\FrmSearchTabNum.resx" />
-    <EmbeddedResource Include="Forms\FrmSelectAccountForOverhaul.resx" />
-    <EmbeddedResource Include="Forms\FrmSelectPeriod.resx" />
-    <EmbeddedResource Include="Forms\FrmServiceParam.resx" />
-    <EmbeddedResource Include="Forms\FrmSourcePay.resx" />
-    <EmbeddedResource Include="Forms\FrmSpash.resx" />
-    <EmbeddedResource Include="Forms\FrmSprAccounts.resx" />
-    <EmbeddedResource Include="Forms\FrmStrSearch.resx" />
-    <EmbeddedResource Include="Forms\FrmSupplier.resx" />
-    <EmbeddedResource Include="Forms\FrmTariffs.resx" />
-    <EmbeddedResource Include="Forms\FrmTypeCounter.resx" />
-    <EmbeddedResource Include="Forms\FrmTypeDelivery.resx" />
-    <EmbeddedResource Include="Forms\FrmTypeNoteBook.resx" />
-    <EmbeddedResource Include="Forms\FrmTypeSeal.resx" />
-    <EmbeddedResource Include="Forms\FrmUZP.resx" />
-    <EmbeddedResource Include="Forms\MainForm.resx" />
-    <EmbeddedResource Include="Forms\UCBase.resx" />
-    <EmbeddedResource Include="Forms\UCMspDocument.resx" />
-    <EmbeddedResource Include="Forms\UCServParam.resx" />
+    <EmbeddedResource Include="Forms\Controls\UCLsSupplier.resx">
+      <DependentUpon>UCLsSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Controls\UCMSPPercent.resx">
+      <DependentUpon>UCMSPPercent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Controls\UCNorm.resx">
+      <DependentUpon>UCNorm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Controls\UCPensDoc.resx">
+      <DependentUpon>UCPensDoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Controls\UCPfr.resx">
+      <DependentUpon>UCPfr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Controls\UCRegion.resx">
+      <DependentUpon>UCRegion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Controls\UCSupplier.resx">
+      <DependentUpon>UCSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Controls\UСVariant.resx">
+      <DependentUpon>UСVariant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmAboutProgr.resx">
+      <DependentUpon>FrmAboutProgr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmAbsence.resx">
+      <DependentUpon>FrmAbsence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmAgreement.resx">
+      <DependentUpon>FrmAgreement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmArgument.resx">
+      <DependentUpon>FrmArgument.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmAttribute.resx">
+      <DependentUpon>FrmAttribute.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmAudit.resx">
+      <DependentUpon>FrmAudit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmBalanceDetail.resx">
+      <DependentUpon>FrmBalanceDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmBank.resx">
+      <DependentUpon>FrmBank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmBase.resx">
+      <DependentUpon>FrmBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmBaseForm.resx">
+      <DependentUpon>FrmBaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmBaseForm1.resx">
+      <DependentUpon>FrmBaseForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmBasik.resx">
+      <DependentUpon>FrmBasik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmBigSearch.resx">
+      <DependentUpon>FrmBigSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmBills.resx">
+      <DependentUpon>FrmBills.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmChangeAttribute.resx">
+      <DependentUpon>FrmChangeAttribute.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmChoice.resx">
+      <DependentUpon>FrmChoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmChooseObject.resx">
+      <DependentUpon>FrmChooseObject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmClientCard.resx">
+      <DependentUpon>FrmClientCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmClientCardChoose.resx">
+      <DependentUpon>FrmClientCardChoose.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmCloseScheme.resx">
+      <DependentUpon>FrmCloseScheme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmCoeffLocation.resx">
+      <DependentUpon>FrmCoeffLocation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmConnect.resx">
+      <DependentUpon>FrmConnect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmContract.resx">
+      <DependentUpon>FrmContract.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmCorrect.resx">
+      <DependentUpon>FrmCorrect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmCorrectPeni.resx">
+      <DependentUpon>FrmCorrectPeni.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmCounters.resx">
+      <DependentUpon>FrmCounters.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmCrossService.resx">
+      <DependentUpon>FrmCrossService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmCrossType.resx">
+      <DependentUpon>FrmCrossType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmCurrentPayment.resx">
+      <DependentUpon>FrmCurrentPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmDcOnlTypeAccount.resx">
+      <DependentUpon>FrmDcOnlTypeAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmDetailAllRent.resx">
+      <DependentUpon>FrmDetailAllRent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmDetailCorrectRent.resx">
+      <DependentUpon>FrmDetailCorrectRent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmDi_PhonesServ.resx">
+      <DependentUpon>FrmDi_PhonesServ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmEditOrg.resx">
+      <DependentUpon>FrmEditOrg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmFileClient.resx">
+      <DependentUpon>FrmFileClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmGuild.resx">
+      <DependentUpon>FrmGuild.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmHandMadeDetail.resx">
+      <DependentUpon>FrmHandMadeDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmHandMadeDetailPeni.resx">
+      <DependentUpon>FrmHandMadeDetailPeni.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmHomeParam.resx">
+      <DependentUpon>FrmHomeParam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmLegislation.resx">
+      <DependentUpon>FrmLegislation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmList.resx">
+      <DependentUpon>FrmList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmLoadPays.resx">
+      <DependentUpon>FrmLoadPays.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmLsWorkDistribute.resx">
+      <DependentUpon>FrmLsWorkDistribute.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmMakeEntrance.resx">
+      <DependentUpon>FrmMakeEntrance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmMassChooseObject.resx">
+      <DependentUpon>FrmMassChooseObject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmMSP.resx">
+      <DependentUpon>FrmMSP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmNewHomesTariff.resx">
+      <DependentUpon>FrmNewHomesTariff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmNoteBook.resx">
+      <DependentUpon>FrmNoteBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmOptions.resx">
+      <DependentUpon>FrmOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmOrg.resx">
+      <DependentUpon>FrmOrg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmOrgPersons.resx">
+      <DependentUpon>FrmOrgPersons.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmParam.resx">
+      <DependentUpon>FrmParam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmPayment.resx">
+      <DependentUpon>FrmPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmPaymentOhl.resx">
+      <DependentUpon>FrmPaymentOhl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmPolicy.resx">
+      <DependentUpon>FrmPolicy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmProgress.resx">
+      <DependentUpon>frmProgress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmPurposePay.resx">
+      <DependentUpon>FrmPurposePay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmQuality.resx">
+      <DependentUpon>FrmQuality.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmQuarterSum.resx">
+      <DependentUpon>FrmQuarterSum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmQuickPay.resx">
+      <DependentUpon>FrmQuickPay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmRcptAccounts.resx">
+      <DependentUpon>FrmRcptAccounts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmReceipt.resx">
+      <DependentUpon>FrmReceipt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmReceipts.resx">
+      <DependentUpon>FrmReceipts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmRecviz.resx">
+      <DependentUpon>FrmRecviz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmRegion.resx">
+      <DependentUpon>FrmRegion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmRightDoc.resx">
+      <DependentUpon>FrmRightDoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmScheme.resx">
+      <DependentUpon>FrmScheme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmSearch.resx">
+      <DependentUpon>FrmSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmSearchDog.resx">
+      <DependentUpon>FrmSearchDog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmSearchTabNum.resx">
+      <DependentUpon>FrmSearchTabNum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmSelectAccountForOverhaul.resx">
+      <DependentUpon>FrmSelectAccountForOverhaul.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmSelectPeriod.resx">
+      <DependentUpon>FrmSelectPeriod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmServiceParam.resx">
+      <DependentUpon>FrmServiceParam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmSourcePay.resx">
+      <DependentUpon>FrmSourcePay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmSpash.resx">
+      <DependentUpon>FrmSpash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmSprAccounts.resx">
+      <DependentUpon>FrmSprAccounts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmStrSearch.resx">
+      <DependentUpon>FrmStrSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmSupplier.resx">
+      <DependentUpon>FrmSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmTariffs.resx">
+      <DependentUpon>FrmTariffs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmTypeCounter.resx">
+      <DependentUpon>FrmTypeCounter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmTypeDelivery.resx">
+      <DependentUpon>FrmTypeDelivery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmTypeNoteBook.resx">
+      <DependentUpon>FrmTypeNoteBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmTypeSeal.resx">
+      <DependentUpon>FrmTypeSeal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmUZP.resx">
+      <DependentUpon>FrmUZP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UCBase.resx">
+      <DependentUpon>UCBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UCMspDocument.resx">
+      <DependentUpon>UCMspDocument.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UCServParam.resx">
+      <DependentUpon>UCServParam.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="hibernate\cfg.xml" />
     <EmbeddedResource Include="Mappings\Absence\hbm.xml" />
     <EmbeddedResource Include="Mappings\AbsenceCoeff\hbm.xml" />

@@ -11,16 +11,11 @@ using System.Windows.Forms;
 namespace Kvartplata.Forms
 {
   public partial class FrmBaseForm : Form
-  {
-        
-        private IContainer components = (IContainer) null;
-        //private ComponentResourceManager AcomponentResourceManager = new ComponentResourceManager(typeof(FrmBaseForm));
-        //System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmBaseForm));
-        public FrmBaseForm()
     {
-            //Icon = (System.Drawing.Icon)this.resources.GetObject("$this.Icon");
+        private IContainer components = (IContainer) null;
+    public FrmBaseForm()
+    {
             this.InitializeComponent();
-
     }
 
     protected override void Dispose(bool disposing)
@@ -33,16 +28,18 @@ namespace Kvartplata.Forms
     private void InitializeComponent()
     {
             this.SuspendLayout();
-      this.AutoScaleDimensions = new SizeF(8f, 16f);
-      this.AutoScaleMode = AutoScaleMode.Font;
-      this.ClientSize = new Size(765, 322);
-      this.Font = new Font("Microsoft Sans Serif", 9.75f, FontStyle.Regular, GraphicsUnit.Point, (byte) 204);
-            
-            //this.Icon = (Icon)AcomponentResourceManager.GetObject("$this.Icon");
-            this.Margin = new Padding(4, 4, 4, 4);
-      this.Name = "FrmBaseForm";
-      this.Text = "Ввод сумм квартального перерасчета";
-      this.ResumeLayout(false);
+            // 
+            // FrmBaseForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(622, 273);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "FrmBaseForm";
+            this.Text = "FrmBaseForm";
+            this.ResumeLayout(false);
+
     }
   }
 }
